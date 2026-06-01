@@ -1,0 +1,10 @@
+.DS_Store
+tmp/
+
+# Personal or administrative documents
+capstone/other/
+capstone/transcript.pdf
+
+# Local reference readings kept off the public repo
+capstone/material/*
+!capstone/material/README.md
