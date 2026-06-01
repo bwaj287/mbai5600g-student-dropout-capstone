@@ -20,7 +20,7 @@ The project has two linked goals:
 ```text
 capstone/
   work/        milestone requirements, reports, and working deliverables
-  material/    local reference-material index for readings used during the course
+  material/    code samples and a local reference-material index
 ```
 
 ## Included Content
@@ -30,6 +30,7 @@ This public repository currently includes:
 - milestone requirement PDFs used for course planning
 - milestone draft documents and revision guides
 - milestone structure documents for follow-up work
+- selected sample notebooks and sample datasets used to study course coding style
 - project-level documentation for organizing the capstone
 
 ## Excluded Content
@@ -53,7 +54,18 @@ At the time of the initial push, the main working files are under `capstone/work
 - `Milestone2.docx`
 - `Milestone2.pdf`
 - `Milestone2_revision_guide.docx`
+- `Milestone3_deliverable.docx`
 - `Milestone3_structure.docx`
+
+## Coding Style Reference
+
+The repository also includes a small `capstone/material/code sample/` folder containing example notebooks and sample datasets used to study the professor's preferred instructional coding style. These samples suggest a style that is:
+
+- step-by-step and notebook-friendly
+- explicit in imports, transformations, and print outputs
+- light on abstraction and heavy on clarity
+- organized around explanation, preprocessing, visualization, and interpretation
+- suitable for academic demonstrations rather than production engineering
 
 ## Data Plan
 
