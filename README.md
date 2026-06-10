@@ -19,8 +19,15 @@ The project has two linked goals:
 
 ```text
 capstone/
-  work/        milestone requirements, reports, and working deliverables
   material/    code samples and a local reference-material index
+  other/       private administrative documents kept out of the public repo
+  work/
+    milestone1/
+    milestone2/
+    milestone3/
+      data/
+      code/
+    milestone4/
 ```
 
 ## Included Content
@@ -44,18 +51,16 @@ These exclusions were made for privacy and copyright reasons.
 
 ## Current Milestone Artifacts
 
-At the time of the initial push, the main working files are under `capstone/work/`:
+The working files are now organized by milestone under `capstone/work/`:
 
-- `Activity 1-1.pdf`
-- `Activity 2.pdf`
-- `Activity 3-1.pdf`
-- `Milestone1.docx`
-- `Milestone1.pdf`
-- `Milestone2.docx`
-- `Milestone2.pdf`
-- `Milestone2_revision_guide.docx`
-- `Milestone3_deliverable.docx`
-- `Milestone3_structure.docx`
+- `capstone/work/milestone1/`
+  - milestone requirement PDF and Milestone 1 report files
+- `capstone/work/milestone2/`
+  - milestone requirement PDF, Milestone 2 report files, and revision guide
+- `capstone/work/milestone3/`
+  - milestone requirement PDF, Milestone 3 report files, structure document, and report code
+- `capstone/work/milestone4/`
+  - preprocessing and baseline-modeling workspace, including scripts, model-ready datasets, figures, and results
 
 ## Coding Style Reference
 
@@ -83,7 +88,7 @@ The modeling direction emphasizes:
 
 ## Notes
 
-This repository is currently document-focused. Raw project datasets and generated modeling outputs have not yet been added.
+This repository remains document-focused overall, but the local working tree also includes raw datasets and generated analysis artifacts used for Milestones 3 and 4.
 
 ## License
 

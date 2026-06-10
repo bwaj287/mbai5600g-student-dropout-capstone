@@ -7,6 +7,12 @@ capstone/transcript.pdf
 
 # Local raw/derived analysis artifacts
 capstone/data/
+capstone/work/milestone3/data/raw/
+capstone/work/milestone3/data/analysis/
+capstone/work/milestone3/data/figures/
+capstone/work/milestone4/data/
+capstone/work/milestone4/results/
+capstone/work/milestone4/figures/
 
 # Local reference readings kept off the public repo
 capstone/material/*
