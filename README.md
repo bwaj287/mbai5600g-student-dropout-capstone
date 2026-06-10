@@ -15,6 +15,21 @@ The project has two linked goals:
 - Reproduce the explainable machine learning workflow described by Islam et al. (2025) on the UCI Predict Students' Dropout and Academic Success dataset.
 - Extend that work by evaluating robustness, transferability, and explanation stability using the Open University Learning Analytics Dataset (OULAD).
 
+## Current Status
+
+The project has completed the first four milestones.
+
+- `Milestone 1`: finalized the capstone topic and business problem.
+- `Milestone 2`: completed the literature review and confirmed the two-dataset project design.
+- `Milestone 3`: collected the UCI and OULAD datasets, performed initial EDA, and identified the main preprocessing and leakage risks.
+- `Milestone 4`: built preprocessing pipelines and ran baseline models on both datasets.
+
+The current working direction is no longer just "build one dropout model." It is now:
+
+- reproduce a benchmark explainable ML workflow on UCI
+- build an early-warning pipeline on OULAD
+- compare whether predictive signals and explanations remain stable across datasets
+
 ## Repository Structure
 
 ```text
@@ -29,6 +44,80 @@ capstone/
       code/
     milestone4/
 ```
+
+## Milestone Snapshot
+
+| Milestone | Main focus | Main outcome | Folder |
+| --- | --- | --- | --- |
+| 1 | Project proposal | Defined the business problem and initial ML direction | `capstone/work/milestone1/` |
+| 2 | Literature review and data source identification | Reframed the project as reproduction plus cross-dataset extension | `capstone/work/milestone2/` |
+| 3 | Data collection and initial EDA | Confirmed dataset quality, EDA findings, and preprocessing risks | `capstone/work/milestone3/` |
+| 4 | Preprocessing and baseline modeling | Built model-ready datasets and ran baseline models | `capstone/work/milestone4/` |
+
+Each milestone folder now includes its own README so the work can be understood stage by stage without reading the whole repository at once.
+
+## Current Modeling Position
+
+Right now the project is at the end of the baseline stage.
+
+- `UCI` has been prepared both as:
+  - a multiclass benchmark reproduction task
+  - an early-warning binary attrition task
+- `OULAD` has been converted from multi-table raw data into a student-level early-warning modeling table
+- the next major step is to move from baseline performance into stronger validation, advanced modeling, and cross-dataset comparison
+
+## Current Baseline Results
+
+These are the main baseline results from `capstone/work/milestone4/`.
+
+| Task | Best model | Main metrics |
+| --- | --- | --- |
+| UCI multiclass reproduction | Random forest | accuracy `0.766`, macro F1 `0.703` |
+| UCI binary early warning | Logistic regression | accuracy `0.859`, F1 `0.785`, ROC AUC `0.913` |
+| OULAD binary early warning | Logistic regression | accuracy `0.825`, F1 `0.732`, ROC AUC `0.879` |
+
+## Core Terms
+
+### VLE
+
+`VLE` means `Virtual Learning Environment`.
+
+- In OULAD, this is the online learning platform behavior data.
+- It gives us early engagement signals such as clicks, activity, and interaction patterns.
+
+### Shared Feature Schema
+
+`shared_feature_schema.json` groups variables into common concept families.
+
+- It does not mean UCI and OULAD have identical columns.
+- It means we align them at the concept level so later comparisons are fair.
+
+### F1
+
+`F1` balances precision and recall.
+
+- It is useful when we care about both catching at-risk students and avoiding too many false alarms.
+
+### ROC AUC
+
+`ROC AUC` measures how well the model separates higher-risk from lower-risk students overall.
+
+- It is more about overall ranking quality than one fixed cutoff.
+
+## Where To Read Next
+
+If you want the clearest step-by-step view of the project, read the files in this order:
+
+- `capstone/work/milestone1/README.md`
+- `capstone/work/milestone2/README.md`
+- `capstone/work/milestone3/README.md`
+- `capstone/work/milestone4/README.md`
+
+If you want the latest technical outputs first, start with:
+
+- `capstone/work/milestone4/results/baseline_comparison.csv`
+- `capstone/work/milestone4/results/baseline_metrics.json`
+- `capstone/work/milestone3/Milestone3.pdf`
 
 ## Included Content
 
@@ -48,19 +137,6 @@ Some local files were intentionally not published in this public repository:
 - local course reading PDFs and ZIP files stored for private study and reference
 
 These exclusions were made for privacy and copyright reasons.
-
-## Current Milestone Artifacts
-
-The working files are now organized by milestone under `capstone/work/`:
-
-- `capstone/work/milestone1/`
-  - milestone requirement PDF and Milestone 1 report files
-- `capstone/work/milestone2/`
-  - milestone requirement PDF, Milestone 2 report files, and revision guide
-- `capstone/work/milestone3/`
-  - milestone requirement PDF, Milestone 3 report files, structure document, and report code
-- `capstone/work/milestone4/`
-  - preprocessing and baseline-modeling workspace, including scripts, model-ready datasets, figures, and results
 
 ## Coding Style Reference
 
@@ -88,7 +164,7 @@ The modeling direction emphasizes:
 
 ## Notes
 
-This repository remains document-focused overall, but the local working tree also includes raw datasets and generated analysis artifacts used for Milestones 3 and 4.
+This repository remains document-focused overall, but the local working tree also includes local milestone data and generated analysis artifacts used for Milestones 3 and 4.
 
 ## License
 
