@@ -1,18 +1,17 @@
 .DS_Store
+__pycache__/
 tmp/
 
 # Personal or administrative documents
 capstone/other/
 capstone/transcript.pdf
 
-# Local raw/derived analysis artifacts
+# Local-only data outside the milestone workspaces
 capstone/data/
-capstone/work/milestone3/data/raw/
-capstone/work/milestone3/data/analysis/
-capstone/work/milestone3/data/figures/
-capstone/work/milestone4/data/
-capstone/work/milestone4/results/
-capstone/work/milestone4/figures/
+
+# The extracted OULAD studentVle table exceeds GitHub's single-file limit.
+# Keep the source archive in the repo and let the milestone scripts fall back to it.
+capstone/work/milestone3/data/raw/oulad/studentVle.csv
 
 # Local reference readings kept off the public repo
 capstone/material/*

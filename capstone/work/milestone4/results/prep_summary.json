@@ -1,0 +1,73 @@
+{
+  "random_state": 42,
+  "uci": {
+    "paths": {
+      "multiclass": "capstone/work/milestone4/data/uci_multiclass_model_ready.csv",
+      "binary_early": "capstone/work/milestone4/data/uci_binary_early_model_ready.csv"
+    },
+    "shape": [
+      4424,
+      38
+    ],
+    "target_distribution": {
+      "Graduate": 2209,
+      "Dropout": 1421,
+      "Enrolled": 794
+    },
+    "binary_target_distribution": {
+      "0": 3003,
+      "1": 1421
+    },
+    "missing_total": 0,
+    "missing_by_column_pct": {},
+    "duplicate_total": 0,
+    "categorical_feature_count": 17,
+    "numeric_feature_count": 19,
+    "early_warning_columns_removed": [
+      "Curricular units 2nd sem (credited)",
+      "Curricular units 2nd sem (enrolled)",
+      "Curricular units 2nd sem (evaluations)",
+      "Curricular units 2nd sem (approved)",
+      "Curricular units 2nd sem (grade)",
+      "Curricular units 2nd sem (without evaluations)"
+    ]
+  },
+  "oulad": {
+    "path": "capstone/work/milestone4/data/oulad_binary_early_model_ready.csv",
+    "shape": [
+      32593,
+      54
+    ],
+    "target_distribution": {
+      "Pass": 12361,
+      "Withdrawn": 10156,
+      "Fail": 7052,
+      "Distinction": 3024
+    },
+    "binary_target_distribution": {
+      "0": 22437,
+      "1": 10156
+    },
+    "missing_total": 1201,
+    "missing_by_column_pct": {
+      "imd_band": 3.41,
+      "date_registration": 0.14,
+      "registration_lead_days": 0.14
+    },
+    "duplicate_total": 0,
+    "module_presentations": 22,
+    "cutoff_days": 75,
+    "aggregate_feature_count": 39,
+    "vle_activity_feature_count": 19,
+    "assessment_type_feature_count": 2,
+    "retained_missing_for_imputation": [
+      "imd_band",
+      "date_registration",
+      "registration_lead_days"
+    ]
+  },
+  "shared_schema_paths": {
+    "json": "capstone/work/milestone4/data/shared_feature_schema.json",
+    "csv": "capstone/work/milestone4/data/shared_feature_schema.csv"
+  }
+}

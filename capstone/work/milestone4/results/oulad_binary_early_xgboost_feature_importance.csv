@@ -1,0 +1,90 @@
+feature,importance,problem_type
+numeric__assessment_submission_ratio_early,0.47141805,binary
+numeric__assessment_score_max_early,0.08906882,binary
+categorical__code_module_GGG,0.03934487,binary
+numeric__assessment_type_count_tma_early,0.02568132,binary
+numeric__early_assessment_count_expected,0.02126488,binary
+numeric__assessment_score_mean_early,0.01711801,binary
+numeric__assessment_weighted_score_ratio_early,0.014113579,binary
+numeric__assessment_type_count_cma_early,0.010941784,binary
+numeric__assessment_score_min_early,0.00940156,binary
+numeric__assessment_weighted_score_sum_early,0.008526701,binary
+categorical__code_presentation_2014J,0.008303538,binary
+numeric__early_assessment_weight_expected,0.007565654,binary
+categorical__code_module_FFF,0.0072156307,binary
+categorical__code_module_BBB,0.007072561,binary
+numeric__studied_credits,0.00664694,binary
+numeric__vle_total_clicks_early,0.0064280224,binary
+numeric__assessment_submission_count_early,0.0063094967,binary
+categorical__code_module_EEE,0.006256146,binary
+numeric__assessment_banked_count_early,0.0062296246,binary
+categorical__region_Wales,0.006049827,binary
+categorical__code_module_CCC,0.0060180067,binary
+numeric__vle_event_count_early,0.005908227,binary
+categorical__region_Scotland,0.0058651045,binary
+numeric__vle_unique_sites_early,0.00582059,binary
+numeric__assessment_mean_submission_delay_early,0.0052801375,binary
+numeric__module_presentation_length,0.005052237,binary
+numeric__vle_clicks_ouwiki_early,0.004836805,binary
+categorical__code_presentation_2013J,0.004757499,binary
+categorical__highest_education_Lower Than A Level,0.0047508227,binary
+categorical__disability_N,0.0047006444,binary
+categorical__code_module_DDD,0.0045673167,binary
+numeric__num_of_prev_attempts,0.004279528,binary
+numeric__vle_clicks_htmlactivity_early,0.0039724153,binary
+numeric__vle_clicks_page_early,0.0039126803,binary
+numeric__vle_active_days_early,0.0038379852,binary
+numeric__vle_clicks_questionnaire_early,0.003765749,binary
+categorical__age_band_35-55,0.0037480723,binary
+numeric__vle_clicks_dualpane_early,0.0037133882,binary
+numeric__vle_clicks_externalquiz_early,0.0036159428,binary
+categorical__code_presentation_2013B,0.0035929556,binary
+categorical__disability_Y,0.0035717061,binary
+categorical__region_South East Region,0.0035646628,binary
+numeric__date_registration,0.0035563791,binary
+numeric__assessment_score_std_early,0.0035386952,binary
+numeric__registration_lead_days,0.0034780377,binary
+categorical__region_East Midlands Region,0.0033811498,binary
+numeric__vle_clicks_quiz_early,0.0033723975,binary
+categorical__region_North Region,0.0033706995,binary
+numeric__vle_clicks_oucollaborate_early,0.0033521752,binary
+numeric__vle_clicks_homepage_early,0.003333066,binary
+categorical__region_Ireland,0.0031941882,binary
+numeric__assessment_late_submission_count_early,0.0031869884,binary
+categorical__region_Yorkshire Region,0.003175621,binary
+categorical__region_London Region,0.0031596895,binary
+numeric__vle_clicks_oucontent_early,0.003155618,binary
+categorical__region_South Region,0.0031404109,binary
+numeric__vle_clicks_url_early,0.0031316117,binary
+categorical__highest_education_A Level or Equivalent,0.0031227376,binary
+categorical__imd_band_30-40%,0.003111121,binary
+numeric__vle_clicks_subpage_early,0.0031084742,binary
+numeric__vle_clicks_forumng_early,0.0030765776,binary
+numeric__vle_clicks_resource_early,0.0030677754,binary
+categorical__imd_band_20-30%,0.0030020291,binary
+numeric__vle_clicks_glossary_early,0.0029916598,binary
+categorical__region_South West Region,0.0029767451,binary
+categorical__imd_band_70-80%,0.002947981,binary
+categorical__age_band_0-35,0.002932797,binary
+categorical__imd_band_50-60%,0.0029185477,binary
+categorical__imd_band_40-50%,0.0028623568,binary
+categorical__gender_F,0.0028564727,binary
+categorical__imd_band_90-100%,0.0028456538,binary
+categorical__highest_education_Post Graduate Qualification,0.002778919,binary
+numeric__vle_clicks_ouelluminate_early,0.0027243225,binary
+categorical__highest_education_HE Qualification,0.0027105617,binary
+categorical__region_West Midlands Region,0.0026966145,binary
+categorical__imd_band_80-90%,0.0026844752,binary
+categorical__code_module_AAA,0.0026427999,binary
+categorical__code_presentation_2014B,0.0026250274,binary
+categorical__imd_band_0-10%,0.0025616246,binary
+categorical__imd_band_60-70%,0.0025348547,binary
+categorical__gender_M,0.0025091295,binary
+categorical__imd_band_10-20,0.002459774,binary
+categorical__region_North Western Region,0.0022293134,binary
+categorical__region_East Anglian Region,0.00218442,binary
+categorical__highest_education_No Formal quals,0.0012210653,binary
+categorical__age_band_55<=,0.0,binary
+numeric__vle_clicks_sharedsubpage_early,0.0,binary
+numeric__vle_clicks_repeatactivity_early,0.0,binary
+numeric__vle_clicks_dataplus_early,0.0,binary

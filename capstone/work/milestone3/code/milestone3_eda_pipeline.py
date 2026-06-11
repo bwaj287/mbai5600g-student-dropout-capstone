@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+import zipfile
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -39,6 +40,29 @@ def iqr_outlier_count(series: pd.Series) -> int:
     lower = q1 - 1.5 * iqr
     upper = q3 + 1.5 * iqr
     return int(((s < lower) | (s > upper)).sum())
+
+
+def find_oulad_archive_member(archive_path: Path, filename: str) -> str:
+    with zipfile.ZipFile(archive_path) as archive:
+        for member in archive.namelist():
+            if Path(member).name == filename:
+                return member
+    raise FileNotFoundError(f"Could not find {filename} inside {archive_path}")
+
+
+def read_oulad_csv(oulad_dir: Path, filename: str, **kwargs) -> pd.DataFrame:
+    csv_path = oulad_dir / filename
+    if csv_path.exists():
+        return pd.read_csv(csv_path, **kwargs)
+
+    archive_path = oulad_dir / "oulad.zip"
+    if archive_path.exists():
+        member = find_oulad_archive_member(archive_path, filename)
+        with zipfile.ZipFile(archive_path) as archive:
+            with archive.open(member) as handle:
+                return pd.read_csv(handle, **kwargs)
+
+    raise FileNotFoundError(f"Could not find {filename} in {oulad_dir} or {archive_path}")
 
 
 def run_uci():
@@ -156,37 +180,58 @@ def run_uci():
     }
 
 
-def aggregate_student_virtual_learning_environment(path: Path) -> pd.DataFrame:
+def aggregate_student_virtual_learning_environment(oulad_dir: Path) -> pd.DataFrame:
     aggregate = None
-    for chunk in pd.read_csv(path, chunksize=500_000):
-        grouped = (
-            chunk.groupby(["code_module", "code_presentation", "id_student"])
-            .agg(
-                virtual_learning_environment_event_count=("sum_click", "size"),
-                total_clicks=("sum_click", "sum"),
+
+    def fold_chunk_reader(chunk_reader) -> pd.DataFrame:
+        nonlocal aggregate
+        for chunk in chunk_reader:
+            grouped = (
+                chunk.groupby(["code_module", "code_presentation", "id_student"])
+                .agg(
+                    virtual_learning_environment_event_count=("sum_click", "size"),
+                    total_clicks=("sum_click", "sum"),
+                )
+                .reset_index()
             )
-            .reset_index()
-        )
-        if aggregate is None:
-            aggregate = grouped
-        else:
-            aggregate = pd.concat([aggregate, grouped], ignore_index=True)
-            aggregate = (
-                aggregate.groupby(["code_module", "code_presentation", "id_student"], as_index=False)
-                .sum()
-            )
-    return aggregate
+            if aggregate is None:
+                aggregate = grouped
+            else:
+                aggregate = pd.concat([aggregate, grouped], ignore_index=True)
+                aggregate = (
+                    aggregate.groupby(
+                        ["code_module", "code_presentation", "id_student"], as_index=False
+                    ).sum()
+                )
+
+    csv_path = oulad_dir / "studentVle.csv"
+    if csv_path.exists():
+        fold_chunk_reader(pd.read_csv(csv_path, chunksize=500_000))
+        return aggregate
+
+    archive_path = oulad_dir / "oulad.zip"
+    if archive_path.exists():
+        member = find_oulad_archive_member(archive_path, "studentVle.csv")
+        with zipfile.ZipFile(archive_path) as archive:
+            with archive.open(member) as handle:
+                fold_chunk_reader(pd.read_csv(handle, chunksize=500_000))
+        return aggregate
+
+    raise FileNotFoundError(
+        f"Could not find studentVle.csv in {oulad_dir} or inside {archive_path}"
+    )
+    
 
 
 def run_oulad():
-    student_info = pd.read_csv(OULAD_DIR / "studentInfo.csv")
-    student_registration = pd.read_csv(OULAD_DIR / "studentRegistration.csv")
-    student_assessment = pd.read_csv(OULAD_DIR / "studentAssessment.csv")
-    assessments = pd.read_csv(OULAD_DIR / "assessments.csv")
-    courses = pd.read_csv(OULAD_DIR / "courses.csv")
-    virtual_learning_environment_metadata = pd.read_csv(OULAD_DIR / "vle.csv")
-    student_virtual_learning_environment_agg = (
-        aggregate_student_virtual_learning_environment(OULAD_DIR / "studentVle.csv")
+    student_info = read_oulad_csv(OULAD_DIR, "studentInfo.csv")
+    student_registration = read_oulad_csv(OULAD_DIR, "studentRegistration.csv")
+    student_assessment = read_oulad_csv(OULAD_DIR, "studentAssessment.csv")
+    assessments = read_oulad_csv(OULAD_DIR, "assessments.csv")
+    courses = read_oulad_csv(OULAD_DIR, "courses.csv")
+    virtual_learning_environment_metadata = read_oulad_csv(OULAD_DIR, "vle.csv")
+    student_virtual_learning_environment_agg = aggregate_student_virtual_learning_environment(
+        OULAD_DIR
     )
 
     table_shapes = {

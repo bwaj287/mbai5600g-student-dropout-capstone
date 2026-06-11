@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+import zipfile
 
 import numpy as np
 import pandas as pd
@@ -184,6 +185,29 @@ def find_raw_dir() -> Path:
     raise FileNotFoundError("Could not find the project raw-data directory.")
 
 
+def find_oulad_archive_member(archive_path: Path, filename: str) -> str:
+    with zipfile.ZipFile(archive_path) as archive:
+        for member in archive.namelist():
+            if Path(member).name == filename:
+                return member
+    raise FileNotFoundError(f"Could not find {filename} inside {archive_path}")
+
+
+def read_oulad_csv(oulad_dir: Path, filename: str, **kwargs) -> pd.DataFrame:
+    csv_path = oulad_dir / filename
+    if csv_path.exists():
+        return pd.read_csv(csv_path, **kwargs)
+
+    archive_path = oulad_dir / "oulad.zip"
+    if archive_path.exists():
+        member = find_oulad_archive_member(archive_path, filename)
+        with zipfile.ZipFile(archive_path) as archive:
+            with archive.open(member) as handle:
+                return pd.read_csv(handle, **kwargs)
+
+    raise FileNotFoundError(f"Could not find {filename} in {oulad_dir} or {archive_path}")
+
+
 def build_uci_datasets() -> dict[str, object]:
     raw_dir = find_raw_dir()
     df = pd.read_csv(raw_dir / "uci_student_dropout.csv")
@@ -223,14 +247,15 @@ def build_uci_datasets() -> dict[str, object]:
 def build_oulad_dataset() -> dict[str, object]:
     raw_dir = find_raw_dir()
     oulad_dir = raw_dir / "oulad"
-    student_info = pd.read_csv(oulad_dir / "studentInfo.csv")
-    student_registration = pd.read_csv(oulad_dir / "studentRegistration.csv")
-    courses = pd.read_csv(oulad_dir / "courses.csv")
-    assessments = pd.read_csv(oulad_dir / "assessments.csv")
-    student_assessment = pd.read_csv(oulad_dir / "studentAssessment.csv")
-    vle = pd.read_csv(oulad_dir / "vle.csv")
-    student_vle = pd.read_csv(
-        oulad_dir / "studentVle.csv",
+    student_info = read_oulad_csv(oulad_dir, "studentInfo.csv")
+    student_registration = read_oulad_csv(oulad_dir, "studentRegistration.csv")
+    courses = read_oulad_csv(oulad_dir, "courses.csv")
+    assessments = read_oulad_csv(oulad_dir, "assessments.csv")
+    student_assessment = read_oulad_csv(oulad_dir, "studentAssessment.csv")
+    vle = read_oulad_csv(oulad_dir, "vle.csv")
+    student_vle = read_oulad_csv(
+        oulad_dir,
+        "studentVle.csv",
         dtype={
             "code_module": "string",
             "code_presentation": "string",

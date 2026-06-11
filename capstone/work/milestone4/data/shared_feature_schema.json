@@ -1,0 +1,116 @@
+{
+  "targets": {
+    "uci_multiclass": "Target",
+    "uci_binary_attrition": "is_attrition",
+    "oulad_binary_attrition": "is_attrition"
+  },
+  "feature_families": {
+    "demographics": {
+      "uci": [
+        "Marital Status",
+        "Nacionality",
+        "Gender",
+        "Age at enrollment",
+        "International"
+      ],
+      "oulad": [
+        "gender",
+        "region",
+        "age_band",
+        "imd_band",
+        "disability"
+      ]
+    },
+    "prior_preparation": {
+      "uci": [
+        "Previous qualification",
+        "Previous qualification (grade)",
+        "Mother's qualification",
+        "Father's qualification"
+      ],
+      "oulad": [
+        "highest_education",
+        "num_of_prev_attempts"
+      ]
+    },
+    "program_setup": {
+      "uci": [
+        "Course",
+        "Application mode",
+        "Application order",
+        "Daytime/evening attendance"
+      ],
+      "oulad": [
+        "code_module",
+        "code_presentation",
+        "studied_credits",
+        "module_presentation_length",
+        "date_registration"
+      ]
+    },
+    "financial_support": {
+      "uci": [
+        "Debtor",
+        "Tuition fees up to date",
+        "Scholarship holder"
+      ],
+      "oulad": []
+    },
+    "early_academic_progress": {
+      "uci": [
+        "Curricular units 1st sem (enrolled)",
+        "Curricular units 1st sem (evaluations)",
+        "Curricular units 1st sem (approved)",
+        "Curricular units 1st sem (grade)"
+      ],
+      "oulad": [
+        "assessment_submission_count_early",
+        "assessment_submission_ratio_early",
+        "assessment_score_mean_early",
+        "assessment_weighted_score_ratio_early"
+      ]
+    },
+    "early_engagement": {
+      "uci": [],
+      "oulad": [
+        "vle_total_clicks_early",
+        "vle_event_count_early",
+        "vle_active_days_early",
+        "vle_unique_sites_early"
+      ]
+    },
+    "macro_context": {
+      "uci": [
+        "Unemployment rate",
+        "Inflation rate",
+        "GDP"
+      ],
+      "oulad": []
+    }
+  },
+  "notes": {
+    "cutoff_days": 75,
+    "rationale": "Use a fixed 75-day early-course cutoff for OULAD so every module/presentation retains at least one scheduled assessment while remaining before the midpoint for most presentations.",
+    "label_mapping": {
+      "uci": {
+        "attrition_positive": [
+          "Dropout"
+        ],
+        "attrition_negative": [
+          "Graduate",
+          "Enrolled"
+        ]
+      },
+      "oulad": {
+        "attrition_positive": [
+          "Withdrawn"
+        ],
+        "attrition_negative": [
+          "Pass",
+          "Distinction",
+          "Fail"
+        ]
+      }
+    }
+  }
+}

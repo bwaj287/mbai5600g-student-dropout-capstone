@@ -100,6 +100,12 @@ This milestone was the bridge between project design and actual model building.
 - `data/figures/`
 - `data/raw/`
 
+## Repository Note
+
+- The repository now includes the Milestone 3 analysis outputs, figures, and the tracked OULAD source archive `data/raw/oulad/oulad.zip`.
+- The extracted `data/raw/oulad/studentVle.csv` file is intentionally not tracked because it is about `433MB`, which exceeds GitHub's normal single-file limit.
+- The Milestone 3 and Milestone 4 scripts now fall back to the tracked `oulad.zip` archive when `studentVle.csv` is not present locally.
+
 ## Why Milestone 3 Matters
 
 Milestone 3 established that:

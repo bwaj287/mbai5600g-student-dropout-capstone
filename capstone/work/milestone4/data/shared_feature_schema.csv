@@ -1,0 +1,44 @@
+family,dataset,feature_name
+demographics,uci,Marital Status
+demographics,uci,Nacionality
+demographics,uci,Gender
+demographics,uci,Age at enrollment
+demographics,uci,International
+demographics,oulad,gender
+demographics,oulad,region
+demographics,oulad,age_band
+demographics,oulad,imd_band
+demographics,oulad,disability
+prior_preparation,uci,Previous qualification
+prior_preparation,uci,Previous qualification (grade)
+prior_preparation,uci,Mother's qualification
+prior_preparation,uci,Father's qualification
+prior_preparation,oulad,highest_education
+prior_preparation,oulad,num_of_prev_attempts
+program_setup,uci,Course
+program_setup,uci,Application mode
+program_setup,uci,Application order
+program_setup,uci,Daytime/evening attendance
+program_setup,oulad,code_module
+program_setup,oulad,code_presentation
+program_setup,oulad,studied_credits
+program_setup,oulad,module_presentation_length
+program_setup,oulad,date_registration
+financial_support,uci,Debtor
+financial_support,uci,Tuition fees up to date
+financial_support,uci,Scholarship holder
+early_academic_progress,uci,Curricular units 1st sem (enrolled)
+early_academic_progress,uci,Curricular units 1st sem (evaluations)
+early_academic_progress,uci,Curricular units 1st sem (approved)
+early_academic_progress,uci,Curricular units 1st sem (grade)
+early_academic_progress,oulad,assessment_submission_count_early
+early_academic_progress,oulad,assessment_submission_ratio_early
+early_academic_progress,oulad,assessment_score_mean_early
+early_academic_progress,oulad,assessment_weighted_score_ratio_early
+early_engagement,oulad,vle_total_clicks_early
+early_engagement,oulad,vle_event_count_early
+early_engagement,oulad,vle_active_days_early
+early_engagement,oulad,vle_unique_sites_early
+macro_context,uci,Unemployment rate
+macro_context,uci,Inflation rate
+macro_context,uci,GDP

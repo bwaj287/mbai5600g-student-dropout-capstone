@@ -167,6 +167,8 @@ The modeling direction emphasizes:
 
 This repository remains document-focused overall, but the local working tree also includes local milestone data and generated analysis artifacts used for Milestones 3 and 4.
 
+For `OULAD`, the repository tracks the reusable source archive `capstone/work/milestone3/data/raw/oulad/oulad.zip`. The extracted `studentVle.csv` table is intentionally left out of git because it is roughly `433MB`, above GitHub's normal single-file limit, and the milestone scripts now fall back to the archive when that extracted file is absent.
+
 ## License
 
 No license has been added yet. If this repository is later expanded to include code or reusable assets, a project license can be added at that stage.

@@ -1,0 +1,211 @@
+{
+  "uci": {
+    "shape": [
+      4424,
+      37
+    ],
+    "missing_total": 0,
+    "duplicate_total": 0,
+    "numeric_feature_count": 36,
+    "target_counts": {
+      "Graduate": 2209,
+      "Dropout": 1421,
+      "Enrolled": 794
+    },
+    "group_means": {
+      "Dropout": {
+        "Admission grade": 124.96,
+        "Previous qualification (grade)": 131.11,
+        "Age at enrollment": 26.07,
+        "Curricular units 1st sem (approved)": 2.55,
+        "Curricular units 2nd sem (approved)": 1.94,
+        "Curricular units 1st sem (grade)": 7.26,
+        "Curricular units 2nd sem (grade)": 5.9,
+        "Debtor": 0.22,
+        "Tuition fees up to date": 0.68,
+        "Scholarship holder": 0.09
+      },
+      "Enrolled": {
+        "Admission grade": 125.53,
+        "Previous qualification (grade)": 131.21,
+        "Age at enrollment": 22.37,
+        "Curricular units 1st sem (approved)": 4.32,
+        "Curricular units 2nd sem (approved)": 4.06,
+        "Curricular units 1st sem (grade)": 11.13,
+        "Curricular units 2nd sem (grade)": 11.12,
+        "Debtor": 0.11,
+        "Tuition fees up to date": 0.95,
+        "Scholarship holder": 0.16
+      },
+      "Graduate": {
+        "Admission grade": 128.79,
+        "Previous qualification (grade)": 134.08,
+        "Age at enrollment": 21.78,
+        "Curricular units 1st sem (approved)": 6.23,
+        "Curricular units 2nd sem (approved)": 6.18,
+        "Curricular units 1st sem (grade)": 12.64,
+        "Curricular units 2nd sem (grade)": 12.7,
+        "Debtor": 0.05,
+        "Tuition fees up to date": 0.99,
+        "Scholarship holder": 0.38
+      }
+    },
+    "dropout_corr": {
+      "Curricular units 2nd sem (grade)": -0.572,
+      "Curricular units 2nd sem (approved)": -0.57,
+      "Curricular units 1st sem (grade)": -0.481,
+      "Curricular units 1st sem (approved)": -0.479,
+      "Age at enrollment": 0.254,
+      "Admission grade": -0.096,
+      "Previous qualification (grade)": -0.078,
+      "GDP": -0.046,
+      "Inflation rate": 0.028,
+      "Unemployment rate": 0.013
+    },
+    "outlier_counts": {
+      "Admission grade": 86,
+      "Previous qualification (grade)": 179,
+      "Age at enrollment": 441,
+      "Curricular units 1st sem (grade)": 726,
+      "Curricular units 2nd sem (grade)": 877
+    },
+    "figures": {
+      "target_distribution": "/Users/shawnwang/Documents/capstone/capstone/work/milestone3/data/figures/uci_target_distribution.png",
+      "approved_units_boxplot": "/Users/shawnwang/Documents/capstone/capstone/work/milestone3/data/figures/uci_first_sem_approved_by_target.png",
+      "correlation_heatmap": "/Users/shawnwang/Documents/capstone/capstone/work/milestone3/data/figures/uci_selected_correlation_heatmap.png"
+    }
+  },
+  "oulad": {
+    "table_shapes": {
+      "studentInfo": [
+        32593,
+        12
+      ],
+      "studentRegistration": [
+        32593,
+        5
+      ],
+      "studentAssessment": [
+        173912,
+        5
+      ],
+      "assessments": [
+        206,
+        6
+      ],
+      "courses": [
+        22,
+        3
+      ],
+      "virtual_learning_environment_metadata": [
+        6364,
+        6
+      ],
+      "student_virtual_learning_environment_aggregated_student_level": [
+        29228,
+        5
+      ]
+    },
+    "table_missing": {
+      "studentInfo": {
+        "code_module": 0,
+        "code_presentation": 0,
+        "id_student": 0,
+        "gender": 0,
+        "region": 0,
+        "highest_education": 0,
+        "imd_band": 1111,
+        "age_band": 0,
+        "num_of_prev_attempts": 0,
+        "studied_credits": 0,
+        "disability": 0,
+        "final_result": 0
+      },
+      "studentRegistration": {
+        "code_module": 0,
+        "code_presentation": 0,
+        "id_student": 0,
+        "date_registration": 45,
+        "date_unregistration": 22521
+      },
+      "studentAssessment": {
+        "id_assessment": 0,
+        "id_student": 0,
+        "date_submitted": 0,
+        "is_banked": 0,
+        "score": 173
+      }
+    },
+    "table_duplicates": {
+      "studentInfo": 0,
+      "studentRegistration": 0,
+      "studentAssessment": 0
+    },
+    "target_counts": {
+      "Pass": 12361,
+      "Withdrawn": 10156,
+      "Fail": 7052,
+      "Distinction": 3024
+    },
+    "student_info_group_means": {
+      "Distinction": {
+        "studied_credits": 71.76,
+        "num_of_prev_attempts": 0.06
+      },
+      "Fail": {
+        "studied_credits": 76.09,
+        "num_of_prev_attempts": 0.25
+      },
+      "Pass": {
+        "studied_credits": 74.22,
+        "num_of_prev_attempts": 0.12
+      },
+      "Withdrawn": {
+        "studied_credits": 91.43,
+        "num_of_prev_attempts": 0.19
+      }
+    },
+    "merged_group_means": {
+      "Distinction": {
+        "studied_credits": 71.76,
+        "num_of_prev_attempts": 0.06,
+        "assessment_count": 8.71,
+        "mean_score": 88.49,
+        "virtual_learning_environment_event_count": 682.88,
+        "total_clicks": 2666.76
+      },
+      "Fail": {
+        "studied_credits": 76.09,
+        "num_of_prev_attempts": 0.25,
+        "assessment_count": 4.04,
+        "mean_score": 52.51,
+        "virtual_learning_environment_event_count": 186.01,
+        "total_clicks": 651.85
+      },
+      "Pass": {
+        "studied_credits": 74.22,
+        "num_of_prev_attempts": 0.12,
+        "assessment_count": 8.58,
+        "mean_score": 76.16,
+        "virtual_learning_environment_event_count": 511.49,
+        "total_clicks": 1921.81
+      },
+      "Withdrawn": {
+        "studied_credits": 91.43,
+        "num_of_prev_attempts": 0.19,
+        "assessment_count": 1.29,
+        "mean_score": 29.5,
+        "virtual_learning_environment_event_count": 94.13,
+        "total_clicks": 313.95
+      }
+    },
+    "registration_missing_date_unregistration": 22521,
+    "registration_nonmissing_date_unregistration": 10072,
+    "figures": {
+      "target_distribution": "/Users/shawnwang/Documents/capstone/capstone/work/milestone3/data/figures/oulad_final_result_distribution.png",
+      "studied_credits_boxplot": "/Users/shawnwang/Documents/capstone/capstone/work/milestone3/data/figures/oulad_studied_credits_by_result.png",
+      "log_clicks_boxplot": "/Users/shawnwang/Documents/capstone/capstone/work/milestone3/data/figures/oulad_log_clicks_by_result.png",
+      "mean_score_boxplot": "/Users/shawnwang/Documents/capstone/capstone/work/milestone3/data/figures/oulad_mean_score_by_result.png"
+    }
+  }
+}
