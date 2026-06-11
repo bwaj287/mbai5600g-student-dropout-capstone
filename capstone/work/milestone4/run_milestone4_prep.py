@@ -167,6 +167,12 @@ def rel(path: Path) -> str:
     return str(path.relative_to(REPO_ROOT))
 
 
+def summarize_missingness(frame: pd.DataFrame) -> dict[str, float]:
+    missing = (frame.isna().mean() * 100).round(2)
+    missing = missing[missing > 0]
+    return {column: float(value) for column, value in missing.sort_values(ascending=False).items()}
+
+
 def find_raw_dir() -> Path:
     candidates = [
         CAPSTONE / "data" / "raw",
@@ -206,6 +212,7 @@ def build_uci_datasets() -> dict[str, object]:
         "target_distribution": df["Target"].value_counts().to_dict(),
         "binary_target_distribution": df["is_attrition"].value_counts().to_dict(),
         "missing_total": int(df.isna().sum().sum()),
+        "missing_by_column_pct": summarize_missingness(df),
         "duplicate_total": int(df.duplicated().sum()),
         "categorical_feature_count": len(categorical_columns),
         "numeric_feature_count": len(UCI_NUMERIC_COLUMNS),
@@ -394,6 +401,9 @@ def build_oulad_dataset() -> dict[str, object]:
         "shape": list(model_ready.shape),
         "target_distribution": student_info["final_result"].value_counts().to_dict(),
         "binary_target_distribution": model_ready["is_attrition"].value_counts().to_dict(),
+        "missing_total": int(model_ready.isna().sum().sum()),
+        "missing_by_column_pct": summarize_missingness(model_ready),
+        "duplicate_total": int(model_ready.duplicated().sum()),
         "module_presentations": int(
             model_ready[["code_module", "code_presentation"]].drop_duplicates().shape[0]
         ),
@@ -411,6 +421,9 @@ def build_oulad_dataset() -> dict[str, object]:
                 ]
             )
         ),
+        "retained_missing_for_imputation": [
+            column for column, pct in summarize_missingness(model_ready).items() if pct > 0
+        ],
     }
 
 

@@ -64,7 +64,8 @@ Right now the project is at the end of the baseline stage.
   - a multiclass benchmark reproduction task
   - an early-warning binary attrition task
 - `OULAD` has been converted from multi-table raw data into a student-level early-warning modeling table
-- the next major step is to move from baseline performance into stronger validation, advanced modeling, and cross-dataset comparison
+- the baseline workflow now uses stratified `60/20/20` train-validation-test splits with `5-fold` cross-validation on the selected model
+- the next major step is to move from baseline performance into advanced modeling, stronger robustness checks, and cross-dataset comparison
 
 ## Current Baseline Results
 
@@ -72,9 +73,9 @@ These are the main baseline results from `capstone/work/milestone4/`.
 
 | Task | Best model | Main metrics |
 | --- | --- | --- |
-| UCI multiclass reproduction | Random forest | accuracy `0.766`, macro F1 `0.703` |
-| UCI binary early warning | Logistic regression | accuracy `0.859`, F1 `0.785`, ROC AUC `0.913` |
-| OULAD binary early warning | Logistic regression | accuracy `0.825`, F1 `0.732`, ROC AUC `0.879` |
+| UCI multiclass reproduction | XGBoost | accuracy `0.768`, macro F1 `0.704` |
+| UCI binary early warning | Logistic regression | accuracy `0.858`, F1 `0.783`, ROC AUC `0.910` |
+| OULAD binary early warning | XGBoost | accuracy `0.843`, F1 `0.729`, ROC AUC `0.885` |
 
 ## Core Terms
 

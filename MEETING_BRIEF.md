@@ -337,7 +337,16 @@ Why:
 For each task, we ran:
 
 - logistic regression
+- decision tree
 - random forest
+- gradient boosting
+- XGBoost
+
+For model selection, we used:
+
+- stratified `60/20/20` train-validation-test splitting
+- `5-fold` cross-validation on the selected model for each task
+- train-only preprocessing pipelines for imputation, clipping, encoding, and scaling
 
 We exported:
 
@@ -352,15 +361,15 @@ The current main baseline results are:
 
 | Task | Best model | Main metrics |
 | --- | --- | --- |
-| UCI multiclass reproduction | Random forest | accuracy `0.766`, macro F1 `0.703` |
-| UCI binary early warning | Logistic regression | accuracy `0.859`, F1 `0.785`, ROC AUC `0.913` |
-| OULAD binary early warning | Logistic regression | accuracy `0.825`, F1 `0.732`, ROC AUC `0.879` |
+| UCI multiclass reproduction | XGBoost | accuracy `0.768`, macro F1 `0.704` |
+| UCI binary early warning | Logistic regression | accuracy `0.858`, F1 `0.783`, ROC AUC `0.910` |
+| OULAD binary early warning | XGBoost | accuracy `0.843`, F1 `0.729`, ROC AUC `0.885` |
 
 ### How To Interpret Those Results
 
 - UCI is easier and cleaner, so it gives stronger baseline performance.
 - OULAD is harder because it is richer, more behavioral, and more structurally complex.
-- Even so, OULAD still produced a meaningful early-warning baseline.
+- Even so, OULAD still produced a meaningful early-warning baseline, and its selected model improved once the article-aligned boosting family was added.
 - That means the project now has a credible baseline foundation for later cross-dataset analysis.
 
 ## 8. What We Have Accomplished So Far

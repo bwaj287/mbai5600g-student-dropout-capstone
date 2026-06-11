@@ -73,7 +73,15 @@ The practical goal was:
 
 ### Step 7: Ran baseline models
 
-- Ran `logistic regression` and `random forest` for each task.
+- Ran a broader baseline family:
+  - `logistic regression`
+  - `decision tree`
+  - `random forest`
+  - `gradient boosting`
+  - `xgboost`
+- Aligned the UCI reproduction task with the model family reported in the base article.
+- Used a stratified `60/20/20` train-validation-test split and `5-fold` cross-validation on the selected model for each task.
+- Added train-only numeric outlier clipping so extreme values were controlled without deleting plausible student cases.
 - Exported:
   - metrics
   - confusion matrices
@@ -100,26 +108,40 @@ The practical goal was:
 ## Modeling Setup
 
 - Random seed: `42`
+- split strategy:
+  - `60%` train
+  - `20%` validation
+  - `20%` test
+- validation logic:
+  - best model chosen by validation metric
+  - selected model checked with `5-fold` cross-validation on the combined train-validation data
+- numeric preprocessing:
+  - median imputation
+  - `1st/99th` percentile clipping for outlier control
 - UCI reproduction task:
   - target: original 3-class `Target`
+  - direct article-reproduction benchmark
+  - primary selection metric: `macro_f1`
 - UCI early-warning task:
   - target: `is_attrition`
   - positive class: `Dropout`
   - second-semester variables removed to reduce timing leakage
+  - primary selection metric: `f1`
 - OULAD early-warning task:
   - target: `is_attrition`
   - positive class: `Withdrawn`
   - fixed cutoff: `75` days
   - `date_unregistration` excluded
   - early assessment and VLE events aggregated to student level
+  - primary selection metric: `f1`
 
 ## Baseline Results
 
 | Task | Best model | Main metrics |
 | --- | --- | --- |
-| UCI multiclass reproduction | Random forest | accuracy `0.766`, macro F1 `0.703` |
-| UCI binary early warning | Logistic regression | accuracy `0.859`, F1 `0.785`, ROC AUC `0.913` |
-| OULAD binary early warning | Logistic regression | accuracy `0.825`, F1 `0.732`, ROC AUC `0.879` |
+| UCI multiclass reproduction | XGBoost | accuracy `0.768`, macro F1 `0.704` |
+| UCI binary early warning | Logistic regression | accuracy `0.858`, F1 `0.783`, ROC AUC `0.910` |
+| OULAD binary early warning | XGBoost | accuracy `0.843`, F1 `0.729`, ROC AUC `0.885` |
 
 Full comparison is in `results/baseline_comparison.csv`.
 
@@ -168,9 +190,9 @@ This shared schema is the bridge that later supports:
 
 ## Main Takeaways
 
-- The UCI reproduction baseline is strongest when second-semester academic variables are allowed. The top drivers are approval and grade fields from the first and second semesters.
-- The UCI early-warning version still performs well after removing second-semester fields, which is a better setup for intervention-oriented modeling.
-- The OULAD 75-day model is weaker than UCI but still useful. Early assessment completion and score quality are among the strongest attrition signals.
+- The article-aligned UCI reproduction benchmark now selects `xgboost`, which matches the best-model family reported in the base paper, although the reproduced accuracy is still about `6.16` percentage points below the paper's reported `0.83`.
+- The UCI early-warning version still performs well after removing second-semester fields, and `logistic regression` remains a strong intervention-oriented baseline.
+- The OULAD 75-day model is still harder than UCI, but it now benefits from the richer boosting family and selects `xgboost` as the strongest baseline.
 - OULAD feature importance is still partly course-sensitive, especially `code_module` and `code_presentation`. That is acceptable for a baseline, but later validation should test more robust cross-course and cross-dataset generalization.
 
 ## What Milestone 4 Did Not Finish Yet
@@ -185,15 +207,17 @@ Milestone 4 established the baseline and the modeling-ready data foundation. The
 
 - `results/baseline_comparison.csv`
 - `results/baseline_metrics.json`
-- `figures/uci_binary_early_logistic_regression_top_features.png`
-- `figures/oulad_binary_early_logistic_regression_top_features.png`
+- `Milestone4_deliverable.docx`
+- `figures/uci_multiclass_xgboost_top_features.png`
+- `figures/oulad_binary_early_xgboost_top_features.png`
 - `data/shared_feature_schema.json`
 
 ## Re-run Commands
 
 ```bash
 uv run --with pandas python3 capstone/work/milestone4/run_milestone4_prep.py
-uv run --with pandas --with scikit-learn --with matplotlib python3 capstone/work/milestone4/run_milestone4_baselines.py
+uv run --with pandas --with scikit-learn --with matplotlib --with xgboost python3 capstone/work/milestone4/run_milestone4_baselines.py
+uv run --with python-docx --with pandas python3 capstone/work/milestone4/build_milestone4_report.py
 ```
 
 ## Meeting Summary
@@ -203,10 +227,13 @@ If you need a short description for a meeting, Milestone 4 can be summarized lik
 - We converted both datasets into model-ready forms.
 - We created an early-warning version of UCI and a student-level early-warning version of OULAD.
 - We controlled the most obvious leakage risks.
+- We aligned the UCI reproduction baseline with the base paper's model family and added validation plus cross-validation structure.
 - We ran baseline models and confirmed that both datasets now support the next stage of cross-dataset analysis.
 
 ## Caveats
 
-- There is no standalone Milestone 4 requirements PDF in the repo, so this workspace was derived from the Milestone 3 deliverables and the course schedule file.
+- The official Milestone 4 requirement sheet is now included in this folder as `Activity 4.pdf`.
+- `Milestone4_deliverable.docx` now provides the professionally formatted submission draft generated from the current results.
+- A PDF export was not generated inside this environment because `LibreOffice` and `Poppler` are not installed locally here.
 - The UCI dataset stores many categorical fields as numeric codes. The baseline script explicitly converts those coded fields back into categorical features before modeling.
 - The OULAD baseline uses a fixed 75-day window to keep the setup simple and leakage-aware. Later milestones can test alternate time windows and stronger validation strategies.
