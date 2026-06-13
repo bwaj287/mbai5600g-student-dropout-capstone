@@ -13,6 +13,11 @@ capstone/data/
 # Keep the source archive in the repo and let the milestone scripts fall back to it.
 capstone/work/milestone3/data/raw/oulad/studentVle.csv
 
+# Local milestone working artifacts
+capstone/work/milestone4/build_milestone4_report.py
+capstone/work/milestone4/Milestone4_deliverable.docx
+~$*.docx
+
 # Local reference readings kept off the public repo
 capstone/material/*
 !capstone/material/README.md
