@@ -207,7 +207,8 @@ Milestone 4 established the baseline and the modeling-ready data foundation. The
 
 - `results/baseline_comparison.csv`
 - `results/baseline_metrics.json`
-- `Milestone4_deliverable.docx`
+- `Milestone4.docx`
+- `Milestone4.pdf`
 - `figures/uci_multiclass_xgboost_top_features.png`
 - `figures/oulad_binary_early_xgboost_top_features.png`
 - `data/shared_feature_schema.json`
@@ -217,7 +218,6 @@ Milestone 4 established the baseline and the modeling-ready data foundation. The
 ```bash
 uv run --with pandas python3 capstone/work/milestone4/run_milestone4_prep.py
 uv run --with pandas --with scikit-learn --with matplotlib --with xgboost python3 capstone/work/milestone4/run_milestone4_baselines.py
-uv run --with python-docx --with pandas python3 capstone/work/milestone4/build_milestone4_report.py
 ```
 
 ## Meeting Summary
@@ -233,7 +233,6 @@ If you need a short description for a meeting, Milestone 4 can be summarized lik
 ## Caveats
 
 - The official Milestone 4 requirement sheet is now included in this folder as `Activity 4.pdf`.
-- `Milestone4_deliverable.docx` now provides the professionally formatted submission draft generated from the current results.
-- A PDF export was not generated inside this environment because `LibreOffice` and `Poppler` are not installed locally here.
+- The tracked final submission files in this folder are `Milestone4.docx` and `Milestone4.pdf`.
 - The UCI dataset stores many categorical fields as numeric codes. The baseline script explicitly converts those coded fields back into categorical features before modeling.
 - The OULAD baseline uses a fixed 75-day window to keep the setup simple and leakage-aware. Later milestones can test alternate time windows and stronger validation strategies.
