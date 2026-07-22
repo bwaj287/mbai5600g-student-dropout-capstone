@@ -1,0 +1,399 @@
+{
+  "random_state": 42,
+  "test_size": 0.2,
+  "validation_share_of_trainval": 0.25,
+  "cv_folds": 5,
+  "shap_available": true,
+  "tasks": {
+    "uci_multiclass": {
+      "task": "uci_multiclass",
+      "display_name": "UCI multiclass reproduction",
+      "problem_type": "multiclass",
+      "target": "Target",
+      "row_count": 4424,
+      "feature_count": 36,
+      "categorical_feature_count": 17,
+      "numeric_feature_count": 19,
+      "class_distribution": {
+        "Graduate": 2209,
+        "Dropout": 1421,
+        "Enrolled": 794
+      },
+      "split": {
+        "train_rows": 2654,
+        "validation_rows": 885,
+        "test_rows": 885,
+        "random_state": 42
+      },
+      "baseline_reference": {
+        "baseline_model": "xgboost",
+        "baseline_test_primary_metric": 0.7043697177393596,
+        "baseline_test_accuracy": 0.768361581920904,
+        "baseline_test_roc_auc": null
+      },
+      "models": {
+        "xgboost": {
+          "best_params": {
+            "colsample_bytree": 0.8,
+            "learning_rate": 0.07,
+            "max_depth": 5,
+            "min_child_weight": 1,
+            "n_estimators": 260,
+            "reg_lambda": 1.0,
+            "subsample": 0.85
+          },
+          "selected_threshold": null,
+          "validation_metrics": {
+            "accuracy": 0.7932203389830509,
+            "macro_f1": 0.7272010306798276,
+            "weighted_f1": 0.7835532978055527,
+            "balanced_accuracy": 0.7160113416776591
+          },
+          "test_metrics": {
+            "accuracy": 0.7661016949152543,
+            "macro_f1": 0.6961935620391028,
+            "weighted_f1": 0.7572681270224898,
+            "balanced_accuracy": 0.6876751177449932
+          },
+          "baseline_reference": {
+            "baseline_model": "xgboost",
+            "baseline_test_primary_metric": 0.7043697177393596,
+            "baseline_test_accuracy": 0.768361581920904,
+            "baseline_test_roc_auc": null
+          },
+          "candidate_count": 16,
+          "cross_validation": {
+            "task": "uci_multiclass",
+            "model": "xgboost",
+            "folds": 5,
+            "metrics": {
+              "accuracy": {
+                "mean": 0.7798799734695019,
+                "std": 0.01683518331053602
+              },
+              "balanced_accuracy": {
+                "mean": 0.6999305572254164,
+                "std": 0.021684337101014816
+              },
+              "macro_f1": {
+                "mean": 0.7093123641105074,
+                "std": 0.02323328162183452
+              },
+              "weighted_f1": {
+                "mean": 0.7694577602120416,
+                "std": 0.018331713765157128
+              }
+            }
+          },
+          "paths": {
+            "confusion_matrix": "capstone/work/milestone5/figures/uci_multiclass_xgboost_tuned_confusion_matrix.png",
+            "feature_importance": "capstone/work/milestone5/results/uci_multiclass_xgboost_tuned_feature_importance.csv",
+            "feature_plot": "capstone/work/milestone5/figures/uci_multiclass_xgboost_tuned_top_features.png",
+            "threshold_plot": null,
+            "shap_summary_path": "capstone/work/milestone5/results/uci_multiclass_xgboost_shap_summary.csv",
+            "shap_plot_path": "capstone/work/milestone5/figures/uci_multiclass_xgboost_shap_summary.png",
+            "shap_rows_sampled": 500
+          }
+        }
+      },
+      "encoded_class_mapping": {
+        "0": "Dropout",
+        "1": "Enrolled",
+        "2": "Graduate"
+      }
+    },
+    "uci_binary_early": {
+      "task": "uci_binary_early",
+      "display_name": "UCI binary early warning",
+      "problem_type": "binary",
+      "target": "is_attrition",
+      "row_count": 4424,
+      "feature_count": 30,
+      "categorical_feature_count": 17,
+      "numeric_feature_count": 13,
+      "class_distribution": {
+        "0": 3003,
+        "1": 1421
+      },
+      "split": {
+        "train_rows": 2654,
+        "validation_rows": 885,
+        "test_rows": 885,
+        "random_state": 42
+      },
+      "baseline_reference": {
+        "baseline_model": "logistic_regression",
+        "baseline_test_primary_metric": 0.7827586206896552,
+        "baseline_test_accuracy": 0.8576271186440678,
+        "baseline_test_roc_auc": 0.9101263152961028
+      },
+      "models": {
+        "logistic_regression": {
+          "best_params": {
+            "C": 0.05,
+            "class_weight": "balanced"
+          },
+          "selected_threshold": 0.5,
+          "validation_metrics": {
+            "accuracy": 0.8508474576271187,
+            "balanced_accuracy": 0.8381804972932436,
+            "precision": 0.75,
+            "recall": 0.8028169014084507,
+            "f1": 0.7755102040816326,
+            "roc_auc": 0.9042323826486371,
+            "average_precision": 0.8446884884103647
+          },
+          "test_metrics": {
+            "accuracy": 0.8621468926553673,
+            "balanced_accuracy": 0.8511430479716904,
+            "precision": 0.7664473684210527,
+            "recall": 0.8204225352112676,
+            "f1": 0.7925170068027211,
+            "roc_auc": 0.9109289681516721,
+            "average_precision": 0.8697908296442151
+          },
+          "baseline_reference": {
+            "baseline_model": "logistic_regression",
+            "baseline_test_primary_metric": 0.7827586206896552,
+            "baseline_test_accuracy": 0.8576271186440678,
+            "baseline_test_roc_auc": 0.9101263152961028
+          },
+          "candidate_count": 5,
+          "cross_validation": {
+            "task": "uci_binary_early",
+            "model": "logistic_regression",
+            "folds": 5,
+            "metrics": {
+              "accuracy": {
+                "mean": 0.847416472882155,
+                "std": 0.011744418643616276
+              },
+              "balanced_accuracy": {
+                "mean": 0.8324913363866818,
+                "std": 0.010466864210160642
+              },
+              "precision": {
+                "mean": 0.7495432206138488,
+                "std": 0.027971593150914367
+              },
+              "recall": {
+                "mean": 0.7907025272432182,
+                "std": 0.020444031052353914
+              },
+              "f1": {
+                "mean": 0.7691585267567929,
+                "std": 0.014450463681301864
+              },
+              "roc_auc": {
+                "mean": 0.8996417603106683,
+                "std": 0.009024671408540685
+              },
+              "average_precision": {
+                "mean": 0.8486743234610087,
+                "std": 0.005305132122313486
+              }
+            }
+          },
+          "paths": {
+            "confusion_matrix": "capstone/work/milestone5/figures/uci_binary_early_logistic_regression_tuned_confusion_matrix.png",
+            "feature_importance": "capstone/work/milestone5/results/uci_binary_early_logistic_regression_tuned_feature_importance.csv",
+            "feature_plot": "capstone/work/milestone5/figures/uci_binary_early_logistic_regression_tuned_top_features.png",
+            "threshold_plot": "capstone/work/milestone5/figures/uci_binary_early_logistic_regression_threshold_curve.png"
+          }
+        },
+        "xgboost": {
+          "best_params": {
+            "colsample_bytree": 0.8,
+            "learning_rate": 0.03,
+            "max_depth": 3,
+            "min_child_weight": 3,
+            "n_estimators": 260,
+            "reg_lambda": 1.0,
+            "scale_pos_weight": "auto",
+            "subsample": 0.85
+          },
+          "selected_threshold": 0.46,
+          "validation_metrics": {
+            "accuracy": 0.8587570621468926,
+            "balanced_accuracy": 0.8467899744557194,
+            "precision": 0.7623762376237624,
+            "recall": 0.8133802816901409,
+            "f1": 0.787052810902896,
+            "roc_auc": 0.9070211619132432,
+            "average_precision": 0.8508210158575155
+          },
+          "test_metrics": {
+            "accuracy": 0.8395480225988701,
+            "balanced_accuracy": 0.8354327294884114,
+            "precision": 0.7177914110429447,
+            "recall": 0.823943661971831,
+            "f1": 0.7672131147540984,
+            "roc_auc": 0.9094994258395631,
+            "average_precision": 0.8732010967432854
+          },
+          "baseline_reference": {
+            "baseline_model": "logistic_regression",
+            "baseline_test_primary_metric": 0.7827586206896552,
+            "baseline_test_accuracy": 0.8576271186440678,
+            "baseline_test_roc_auc": 0.9101263152961028
+          },
+          "candidate_count": 16,
+          "cross_validation": {
+            "task": "uci_binary_early",
+            "model": "xgboost",
+            "folds": 5,
+            "metrics": {
+              "accuracy": {
+                "mean": 0.8412013840609243,
+                "std": 0.008785095679783488
+              },
+              "balanced_accuracy": {
+                "mean": 0.8235106835866169,
+                "std": 0.007924806692706553
+              },
+              "precision": {
+                "mean": 0.7432513310278452,
+                "std": 0.021521035916106837
+              },
+              "recall": {
+                "mean": 0.7739894891413556,
+                "std": 0.01708932051264733
+              },
+              "f1": {
+                "mean": 0.7580317054331862,
+                "std": 0.010900564841253669
+              },
+              "roc_auc": {
+                "mean": 0.8955850598364512,
+                "std": 0.009803671386279115
+              },
+              "average_precision": {
+                "mean": 0.8477878119370423,
+                "std": 0.0067161293866777275
+              }
+            }
+          },
+          "paths": {
+            "confusion_matrix": "capstone/work/milestone5/figures/uci_binary_early_xgboost_tuned_confusion_matrix.png",
+            "feature_importance": "capstone/work/milestone5/results/uci_binary_early_xgboost_tuned_feature_importance.csv",
+            "feature_plot": "capstone/work/milestone5/figures/uci_binary_early_xgboost_tuned_top_features.png",
+            "threshold_plot": "capstone/work/milestone5/figures/uci_binary_early_xgboost_threshold_curve.png",
+            "shap_summary_path": "capstone/work/milestone5/results/uci_binary_early_xgboost_shap_summary.csv",
+            "shap_plot_path": "capstone/work/milestone5/figures/uci_binary_early_xgboost_shap_summary.png",
+            "shap_rows_sampled": 500
+          }
+        }
+      }
+    },
+    "oulad_binary_early": {
+      "task": "oulad_binary_early",
+      "display_name": "OULAD binary early warning",
+      "problem_type": "binary",
+      "target": "is_attrition",
+      "row_count": 32593,
+      "feature_count": 51,
+      "categorical_feature_count": 8,
+      "numeric_feature_count": 43,
+      "class_distribution": {
+        "0": 22437,
+        "1": 10156
+      },
+      "split": {
+        "train_rows": 19555,
+        "validation_rows": 6519,
+        "test_rows": 6519,
+        "random_state": 42
+      },
+      "baseline_reference": {
+        "baseline_model": "xgboost",
+        "baseline_test_primary_metric": 0.7291997880233174,
+        "baseline_test_accuracy": 0.8432274888786624,
+        "baseline_test_roc_auc": 0.8848034827377081
+      },
+      "models": {
+        "xgboost": {
+          "best_params": {
+            "colsample_bytree": 0.8,
+            "learning_rate": 0.03,
+            "max_depth": 5,
+            "min_child_weight": 1,
+            "n_estimators": 320,
+            "reg_lambda": 1.0,
+            "scale_pos_weight": "auto",
+            "subsample": 0.85
+          },
+          "selected_threshold": 0.6,
+          "validation_metrics": {
+            "accuracy": 0.8432274888786624,
+            "balanced_accuracy": 0.8125531533951031,
+            "precision": 0.7572667006629271,
+            "recall": 0.7311669128508124,
+            "f1": 0.7439879759519038,
+            "roc_auc": 0.8856010579335805,
+            "average_precision": 0.8235385863164376
+          },
+          "test_metrics": {
+            "accuracy": 0.8409265224727719,
+            "balanced_accuracy": 0.8075126317480128,
+            "precision": 0.7580477673935618,
+            "recall": 0.7188577055637617,
+            "f1": 0.7379327773565832,
+            "roc_auc": 0.8848458847752878,
+            "average_precision": 0.8157806407048527
+          },
+          "baseline_reference": {
+            "baseline_model": "xgboost",
+            "baseline_test_primary_metric": 0.7291997880233174,
+            "baseline_test_accuracy": 0.8432274888786624,
+            "baseline_test_roc_auc": 0.8848034827377081
+          },
+          "candidate_count": 16,
+          "cross_validation": {
+            "task": "oulad_binary_early",
+            "model": "xgboost",
+            "folds": 5,
+            "metrics": {
+              "accuracy": {
+                "mean": 0.8293703764589841,
+                "std": 0.0047293809375237835
+              },
+              "balanced_accuracy": {
+                "mean": 0.8116323118344312,
+                "std": 0.0058502183357617135
+              },
+              "precision": {
+                "mean": 0.7101521130658096,
+                "std": 0.008063810693210152
+              },
+              "recall": {
+                "mean": 0.7645538461538461,
+                "std": 0.011013493606486433
+              },
+              "f1": {
+                "mean": 0.7363132190306345,
+                "std": 0.007544179186582085
+              },
+              "roc_auc": {
+                "mean": 0.8816196798600681,
+                "std": 0.0060935460871902394
+              },
+              "average_precision": {
+                "mean": 0.814534700803574,
+                "std": 0.009552942149132278
+              }
+            }
+          },
+          "paths": {
+            "confusion_matrix": "capstone/work/milestone5/figures/oulad_binary_early_xgboost_tuned_confusion_matrix.png",
+            "feature_importance": "capstone/work/milestone5/results/oulad_binary_early_xgboost_tuned_feature_importance.csv",
+            "feature_plot": "capstone/work/milestone5/figures/oulad_binary_early_xgboost_tuned_top_features.png",
+            "threshold_plot": "capstone/work/milestone5/figures/oulad_binary_early_xgboost_threshold_curve.png",
+            "shap_summary_path": "capstone/work/milestone5/results/oulad_binary_early_xgboost_shap_summary.csv",
+            "shap_plot_path": "capstone/work/milestone5/figures/oulad_binary_early_xgboost_shap_summary.png",
+            "shap_rows_sampled": 500
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+task,model,model_label,error_type,count,share_of_test,mean_risk_score
+uci_binary_early,logistic_regression,UCI early warning - Logistic Regression,FN,51,0.0576271186440678,0.27635258962334985
+uci_binary_early,logistic_regression,UCI early warning - Logistic Regression,FP,71,0.08022598870056497,0.657215500479616
+uci_binary_early,logistic_regression,UCI early warning - Logistic Regression,TN,530,0.5988700564971752,0.19794829192161478
+uci_binary_early,logistic_regression,UCI early warning - Logistic Regression,TP,233,0.2632768361581921,0.8467468847609894
+oulad_binary_early,xgboost,OULAD early warning - XGBoost,FN,571,0.08759012118423071,0.32172590494155884
+oulad_binary_early,xgboost,OULAD early warning - XGBoost,FP,466,0.07148335634299739,0.7784537672996521
+oulad_binary_early,xgboost,OULAD early warning - XGBoost,TN,4022,0.6169657922994324,0.20121851563453674
+oulad_binary_early,xgboost,OULAD early warning - XGBoost,TP,1460,0.22396073017333948,0.8771337270736694

@@ -60,9 +60,7 @@ This was the milestone where the capstone moved from a standard prediction proje
 ## Main Files
 
 - `Activity 2.pdf`
-- `Milestone2.docx`
 - `Milestone2.pdf`
-- `Milestone2_revision_guide.docx`
 
 ## Why Milestone 2 Matters
 

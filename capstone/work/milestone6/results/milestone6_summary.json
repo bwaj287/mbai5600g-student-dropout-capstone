@@ -1,0 +1,38 @@
+{
+  "final_models": [
+    {
+      "task": "uci_binary_early",
+      "model": "logistic_regression",
+      "label": "UCI early warning - Logistic Regression",
+      "setting": "student-record early warning"
+    },
+    {
+      "task": "oulad_binary_early",
+      "model": "xgboost",
+      "label": "OULAD early warning - XGBoost",
+      "setting": "online-learning early warning"
+    }
+  ],
+  "results": {
+    "final_model_validation": "capstone/work/milestone6/results/final_model_validation.csv",
+    "robustness_sensitivity": "capstone/work/milestone6/results/robustness_sensitivity.csv",
+    "resampling_stability": "capstone/work/milestone6/results/resampling_stability.csv",
+    "resampling_stability_summary": "capstone/work/milestone6/results/resampling_stability_summary.csv",
+    "error_summary": "capstone/work/milestone6/results/error_summary.csv",
+    "error_feature_profile": "capstone/work/milestone6/results/error_feature_profile.csv",
+    "segment_performance": "capstone/work/milestone6/results/segment_performance.csv",
+    "business_impact": "capstone/work/milestone6/results/business_impact.csv"
+  },
+  "figures": {
+    "validation_metrics": "capstone/work/milestone6/figures/final_model_validation_metrics.png",
+    "robustness_sensitivity": "capstone/work/milestone6/figures/robustness_sensitivity_f1.png",
+    "business_impact": "capstone/work/milestone6/figures/business_impact_per_1000.png",
+    "error_counts": "capstone/work/milestone6/figures/error_type_counts.png"
+  },
+  "business_assumptions": {
+    "advisor_alert_capacity_per_week": 25,
+    "intervention_cost_per_alert": 100,
+    "retained_student_value": 6000,
+    "illustrative_retention_effect": 0.1
+  }
+}

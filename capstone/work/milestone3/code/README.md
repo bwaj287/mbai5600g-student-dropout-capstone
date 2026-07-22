@@ -13,9 +13,7 @@ This folder contains the scripts used to prepare the Milestone 3 report.
 - `milestone3_report_builder.py`
   - Reads the EDA summary JSON and figures
   - Builds the Word report for Milestone 3
-  - Outputs:
-    - `capstone/work/milestone3/Milestone3_deliverable.docx`
-    - `capstone/work/milestone3/Milestone3_deliverable_prof_style.docx`
+  - Outputs local Word drafts that are kept out of the public remote
 
 ### Recommended Run Order
 

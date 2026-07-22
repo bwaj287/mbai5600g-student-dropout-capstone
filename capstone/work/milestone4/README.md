@@ -207,7 +207,6 @@ Milestone 4 established the baseline and the modeling-ready data foundation. The
 
 - `results/baseline_comparison.csv`
 - `results/baseline_metrics.json`
-- `Milestone4.docx`
 - `Milestone4.pdf`
 - `figures/uci_multiclass_xgboost_top_features.png`
 - `figures/oulad_binary_early_xgboost_top_features.png`
@@ -233,6 +232,6 @@ If you need a short description for a meeting, Milestone 4 can be summarized lik
 ## Caveats
 
 - The official Milestone 4 requirement sheet is now included in this folder as `Activity 4.pdf`.
-- The tracked final submission files in this folder are `Milestone4.docx` and `Milestone4.pdf`.
+- The tracked final submission file in this folder is `Milestone4.pdf`; the Word draft is kept locally.
 - The UCI dataset stores many categorical fields as numeric codes. The baseline script explicitly converts those coded fields back into categorical features before modeling.
 - The OULAD baseline uses a fixed 75-day window to keep the setup simple and leakage-aware. Later milestones can test alternate time windows and stronger validation strategies.

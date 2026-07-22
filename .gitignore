@@ -14,8 +14,15 @@ capstone/data/
 capstone/work/milestone3/data/raw/oulad/studentVle.csv
 
 # Local milestone working artifacts
+capstone/work/**/*.docx
 capstone/work/milestone4/build_milestone4_report.py
 capstone/work/milestone4/Milestone4_deliverable.docx
+capstone/work/milestone5/build_milestone5_report.py
+capstone/work/milestone5/rendered_milestone5/
+capstone/work/milestone5/review_render_m5/
+capstone/work/milestone6/build_milestone6_report.py
+capstone/work/milestone6/rendered_milestone6/
+capstone/work/milestone6/results/*_test_predictions.csv
 ~$*.docx
 
 # Local reference readings kept off the public repo

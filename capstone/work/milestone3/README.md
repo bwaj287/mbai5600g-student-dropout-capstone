@@ -88,9 +88,6 @@ This milestone was the bridge between project design and actual model building.
 
 - `Activity 3-1.pdf`
 - `Milestone3.pdf`
-- `Milestone3_deliverable.docx`
-- `Milestone3_deliverable_prof_style.docx`
-- `Milestone3_structure.docx`
 - `code/milestone3_eda_pipeline.py`
 - `code/milestone3_report_builder.py`
 

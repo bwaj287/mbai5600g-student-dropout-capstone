@@ -1,0 +1,9 @@
+{
+  "feature_family_summary": "capstone/work/milestone5/results/shap_feature_family_comparison.csv",
+  "feature_family_plot": "capstone/work/milestone5/figures/shap_feature_family_comparison.png",
+  "interpretation": {
+    "uci": "UCI explanations are concentrated in academic progress, financial support, and demographic/program variables.",
+    "oulad": "OULAD explanations are concentrated in early assessment behavior, engagement, studied credits, and module/presentation context.",
+    "project_relevance": "The shifted explanation patterns support the project focus on transferability and explanation stability across educational datasets."
+  }
+}

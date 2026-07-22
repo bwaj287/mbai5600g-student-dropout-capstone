@@ -17,12 +17,13 @@ The project has two linked goals:
 
 ## Current Status
 
-The project has completed the first four milestones.
+The project has completed Milestones 1-4 and now includes a Milestone 5 advanced-modeling draft.
 
 - `Milestone 1`: finalized the capstone topic and business problem.
 - `Milestone 2`: completed the literature review and confirmed the two-dataset project design.
 - `Milestone 3`: collected the UCI and OULAD datasets, performed initial EDA, and identified the main preprocessing and leakage risks.
 - `Milestone 4`: built preprocessing pipelines and ran baseline models on both datasets.
+- `Milestone 5`: tuned selected models, compared them with baselines, and prepared SHAP-based explanation outputs.
 
 The current working direction is no longer just "build one dropout model." It is now:
 
@@ -43,6 +44,7 @@ capstone/
       data/
       code/
     milestone4/
+    milestone5/
 ```
 
 ## Milestone Snapshot
@@ -53,19 +55,20 @@ capstone/
 | 2 | Literature review and data source identification | Reframed the project as reproduction plus cross-dataset extension | `capstone/work/milestone2/` |
 | 3 | Data collection and initial EDA | Confirmed dataset quality, EDA findings, and preprocessing risks | `capstone/work/milestone3/` |
 | 4 | Preprocessing and baseline modeling | Built model-ready datasets and ran baseline models | `capstone/work/milestone4/` |
+| 5 | Advanced modeling and optimization | Tuned selected models and generated model explanation outputs | `capstone/work/milestone5/` |
 
 Each milestone folder now includes its own README so the work can be understood stage by stage without reading the whole repository at once.
 
 ## Current Modeling Position
 
-Right now the project is at the end of the baseline stage.
+Right now the project is in the advanced modeling stage.
 
 - `UCI` has been prepared both as:
   - a multiclass benchmark reproduction task
   - an early-warning binary attrition task
 - `OULAD` has been converted from multi-table raw data into a student-level early-warning modeling table
-- the baseline workflow now uses stratified `60/20/20` train-validation-test splits with `5-fold` cross-validation on the selected model
-- the next major step is to move from baseline performance into advanced modeling, stronger robustness checks, and cross-dataset comparison
+- the baseline workflow uses stratified `60/20/20` train-validation-test splits with `5-fold` cross-validation on the selected model
+- the Milestone 5 workflow adds focused hyperparameter tuning, threshold tuning, and SHAP-based explanation outputs
 
 ## Current Baseline Results
 
@@ -76,6 +79,16 @@ These are the main baseline results from `capstone/work/milestone4/`.
 | UCI multiclass reproduction | XGBoost | accuracy `0.768`, macro F1 `0.704` |
 | UCI binary early warning | Logistic regression | accuracy `0.858`, F1 `0.783`, ROC AUC `0.910` |
 | OULAD binary early warning | XGBoost | accuracy `0.843`, F1 `0.729`, ROC AUC `0.885` |
+
+## Current Tuned Results
+
+These are the main tuned results from `capstone/work/milestone5/`.
+
+| Task | Tuned model | Main result |
+| --- | --- | --- |
+| UCI multiclass reproduction | XGBoost | macro F1 `0.696`, slightly below the Milestone 4 baseline |
+| UCI binary early warning | Logistic regression | F1 `0.793`, about `+0.010` above the baseline |
+| OULAD binary early warning | XGBoost | F1 `0.738`, about `+0.009` above the baseline |
 
 ## Core Terms
 
@@ -113,12 +126,13 @@ If you want the clearest step-by-step view of the project, read the files in thi
 - `capstone/work/milestone2/README.md`
 - `capstone/work/milestone3/README.md`
 - `capstone/work/milestone4/README.md`
+- `capstone/work/milestone5/README.md`
 
 If you want the latest technical outputs first, start with:
 
-- `capstone/work/milestone4/results/baseline_comparison.csv`
-- `capstone/work/milestone4/results/baseline_metrics.json`
-- `capstone/work/milestone3/Milestone3.pdf`
+- `capstone/work/milestone5/results/tuned_model_comparison.csv`
+- `capstone/work/milestone5/results/shap_feature_family_comparison.csv`
+- `capstone/work/milestone5/Milestone5.pdf`
 
 ## Included Content
 
@@ -165,7 +179,9 @@ The modeling direction emphasizes:
 
 ## Notes
 
-This repository remains document-focused overall, but the local working tree also includes local milestone data and generated analysis artifacts used for Milestones 3 and 4.
+This repository remains document-focused overall, but the local working tree also includes local milestone data and generated analysis artifacts used for Milestones 3, 4, and 5.
+
+Milestone Word drafts are kept locally and are not intended for the public remote. The repository version should use PDF milestone reports.
 
 For `OULAD`, the repository tracks the reusable source archive `capstone/work/milestone3/data/raw/oulad/oulad.zip`. The extracted `studentVle.csv` table is intentionally left out of git because it is roughly `433MB`, above GitHub's normal single-file limit, and the milestone scripts now fall back to the archive when that extracted file is absent.
 

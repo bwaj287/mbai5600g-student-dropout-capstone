@@ -50,7 +50,6 @@ The purpose of this milestone was to:
 ## Main Files
 
 - `Activity 1-1.pdf`
-- `Milestone1.docx`
 - `Milestone1.pdf`
 
 ## Why Milestone 1 Matters

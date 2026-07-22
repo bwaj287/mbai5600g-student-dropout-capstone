@@ -1,0 +1,41 @@
+task,feature,error_type,count,mean,median
+uci_binary_early,Curricular units 1st sem (approved),FN,51,6.078431372549019,5.0
+uci_binary_early,Curricular units 1st sem (approved),FP,71,2.9295774647887325,3.0
+uci_binary_early,Curricular units 1st sem (approved),TN,530,6.256603773584906,6.0
+uci_binary_early,Curricular units 1st sem (approved),TP,233,1.8669527896995708,1.0
+uci_binary_early,Curricular units 1st sem (grade),FN,51,12.27750534392157,12.33333333
+uci_binary_early,Curricular units 1st sem (grade),FP,71,9.762415518732395,11.25
+uci_binary_early,Curricular units 1st sem (grade),TN,530,12.794487010113208,12.8
+uci_binary_early,Curricular units 1st sem (grade),TP,233,6.024973841030043,10.0
+uci_binary_early,Curricular units 1st sem (enrolled),FN,51,7.117647058823529,6.0
+uci_binary_early,Curricular units 1st sem (enrolled),FP,71,5.253521126760563,6.0
+uci_binary_early,Curricular units 1st sem (enrolled),TN,530,6.818867924528302,6.0
+uci_binary_early,Curricular units 1st sem (enrolled),TP,233,5.639484978540772,6.0
+uci_binary_early,Tuition fees up to date,FN,51,1.0,1.0
+uci_binary_early,Tuition fees up to date,FP,71,0.8450704225352113,1.0
+uci_binary_early,Tuition fees up to date,TN,530,0.9905660377358491,1.0
+uci_binary_early,Tuition fees up to date,TP,233,0.5793991416309013,1.0
+uci_binary_early,Age at enrollment,FN,51,21.84313725490196,20.0
+uci_binary_early,Age at enrollment,FP,71,25.211267605633804,20.0
+uci_binary_early,Age at enrollment,TN,530,21.477358490566036,19.0
+uci_binary_early,Age at enrollment,TP,233,28.145922746781117,26.0
+oulad_binary_early,assessment_submission_ratio_early,FN,571,0.8847051955633392,1.0
+oulad_binary_early,assessment_submission_ratio_early,FP,466,0.2741416309012875,0.0
+oulad_binary_early,assessment_submission_ratio_early,TN,4022,0.9552461461959224,1.0
+oulad_binary_early,assessment_submission_ratio_early,TP,1460,0.1307077625570776,0.0
+oulad_binary_early,assessment_score_max_early,FN,571,76.87740805604203,80.0
+oulad_binary_early,assessment_score_max_early,FP,466,30.15021459227468,0.0
+oulad_binary_early,assessment_score_max_early,TN,4022,83.42889109895575,88.0
+oulad_binary_early,assessment_score_max_early,TP,1460,15.044520547945206,0.0
+oulad_binary_early,assessment_weighted_score_ratio_early,FN,571,0.5843276216632172,0.6555555555555556
+oulad_binary_early,assessment_weighted_score_ratio_early,FP,466,0.1292946227294403,0.0
+oulad_binary_early,assessment_weighted_score_ratio_early,TN,4022,0.6541888068903857,0.75
+oulad_binary_early,assessment_weighted_score_ratio_early,TP,1460,0.0531169996194825,0.0
+oulad_binary_early,vle_total_clicks_early,FN,571,564.5253940455342,367.0
+oulad_binary_early,vle_total_clicks_early,FP,466,215.70171673819743,100.5
+oulad_binary_early,vle_total_clicks_early,TN,4022,712.7978617603183,461.0
+oulad_binary_early,vle_total_clicks_early,TP,1460,129.8664383561644,16.0
+oulad_binary_early,vle_active_days_early,FN,571,27.243432574430823,24.0
+oulad_binary_early,vle_active_days_early,FP,466,11.783261802575108,7.5
+oulad_binary_early,vle_active_days_early,TN,4022,32.06066633515664,28.0
+oulad_binary_early,vle_active_days_early,TP,1460,6.867808219178082,2.0
