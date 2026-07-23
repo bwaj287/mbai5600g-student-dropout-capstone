@@ -1,0 +1,16 @@
+feature_family,mean_abs_shap,share_of_total_shap,window_days
+early_academic_progress,1.2853556,0.410477,35
+program_setup,0.7934057,0.25337332,35
+early_engagement,0.71518296,0.22839297,35
+demographics,0.22231378,0.07099568,35
+prior_preparation,0.11511209,0.03676093,35
+early_academic_progress,1.5877264,0.4757826,60
+early_engagement,0.7390561,0.22146766,60
+program_setup,0.70045793,0.20990123,60
+demographics,0.21925548,0.06570272,60
+prior_preparation,0.09058775,0.027145784,60
+early_academic_progress,1.8485708,0.54455113,75
+early_engagement,0.649737,0.19139922,75
+program_setup,0.6027601,0.17756078,75
+demographics,0.21436091,0.06314634,75
+prior_preparation,0.079240285,0.023342565,75

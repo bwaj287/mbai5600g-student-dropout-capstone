@@ -746,7 +746,7 @@
         "best_reproduced_article_model": "xgboost",
         "best_reproduced_test_accuracy": 0.768361581920904,
         "accuracy_gap_vs_reported": -0.06163841807909598,
-        "notes": "The UCI multiclass task is the direct reproduction benchmark. The binary early-warning tasks are project extensions rather than one-to-one paper reproductions."
+        "notes": "The UCI multiclass task is the reproduction benchmark. The binary early-warning tasks are project extensions rather than one-to-one paper reproductions."
       },
       "encoded_class_mapping": {
         "0": "Dropout",

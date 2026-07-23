@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 import json
 from pathlib import Path
 import zipfile
@@ -22,7 +20,7 @@ OULAD_DIR = RAW / "oulad"
 sns.set_theme(style="whitegrid")
 
 
-def savefig(name: str):
+def savefig(name):
     path = FIG / name
     plt.tight_layout()
     plt.savefig(path, dpi=180, bbox_inches="tight")
@@ -30,7 +28,7 @@ def savefig(name: str):
     return str(path)
 
 
-def iqr_outlier_count(series: pd.Series) -> int:
+def iqr_outlier_count(series):
     s = pd.to_numeric(series, errors="coerce").dropna()
     if s.empty:
         return 0
@@ -42,7 +40,7 @@ def iqr_outlier_count(series: pd.Series) -> int:
     return int(((s < lower) | (s > upper)).sum())
 
 
-def find_oulad_archive_member(archive_path: Path, filename: str) -> str:
+def find_oulad_archive_member(archive_path, filename):
     with zipfile.ZipFile(archive_path) as archive:
         for member in archive.namelist():
             if Path(member).name == filename:
@@ -50,7 +48,7 @@ def find_oulad_archive_member(archive_path: Path, filename: str) -> str:
     raise FileNotFoundError(f"Could not find {filename} inside {archive_path}")
 
 
-def read_oulad_csv(oulad_dir: Path, filename: str, **kwargs) -> pd.DataFrame:
+def read_oulad_csv(oulad_dir, filename, **kwargs):
     csv_path = oulad_dir / filename
     if csv_path.exists():
         return pd.read_csv(csv_path, **kwargs)
@@ -180,10 +178,10 @@ def run_uci():
     }
 
 
-def aggregate_student_virtual_learning_environment(oulad_dir: Path) -> pd.DataFrame:
+def aggregate_student_virtual_learning_environment(oulad_dir):
     aggregate = None
 
-    def fold_chunk_reader(chunk_reader) -> pd.DataFrame:
+    def fold_chunk_reader(chunk_reader):
         nonlocal aggregate
         for chunk in chunk_reader:
             grouped = (

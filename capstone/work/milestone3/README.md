@@ -1,121 +1,34 @@
-# Milestone 3
+# Milestone 3: Data And EDA
 
-This folder contains the third milestone of the capstone project.
+Milestone 3 collected the two datasets and checked whether they could support
+the proposed analysis.
 
-## Milestone 3 Goal
+## Data Checked
 
-Milestone 3 focused on:
+- UCI: `4,424` student records and `37` columns
+- OULAD: linked tables for student information, registration, assessments,
+  courses, Virtual Learning Environment activity, and final results
 
-- collecting the final project datasets
-- performing initial exploratory data analysis
-- evaluating data quality and modeling readiness
+The UCI file had no missing values or duplicate rows. OULAD required several
+table joins and chunked processing of `studentVle.csv`.
 
-This milestone was the bridge between project design and actual model building.
+## Main EDA Findings
 
-## What We Did
+- UCI approved units and semester grades were strongly related to the final
+  student outcome.
+- OULAD withdrawn students generally submitted fewer assessments and had less
+  online activity.
+- UCI second-semester fields would be too late for an early warning.
+- OULAD `date_unregistration` and activity after the warning date would leak
+  information about the outcome.
 
-### Step 1: Finalized the project datasets
+## Files
 
-- Collected the `UCI Predict Students' Dropout and Academic Success` dataset.
-- Collected the `Open University Learning Analytics Dataset (OULAD)`.
-- Stored the raw files locally under `data/raw/`.
+- `Milestone3.pdf`: milestone report
+- `code/milestone3_eda_pipeline.py`: EDA script
+- `data/analysis/`: saved summary tables
+- `data/figures/`: EDA charts
+- `data/raw/`: source data
 
-### Step 2: Verified the structure and quality of both datasets
-
-- Confirmed row counts, columns, target variables, missing values, and duplicates.
-- For `UCI`:
-  - confirmed `4,424` records and `37` columns
-  - confirmed no missing values
-  - confirmed no duplicate rows
-- For `OULAD`:
-  - confirmed the multi-table structure
-  - reviewed `studentInfo`, `studentRegistration`, `studentAssessment`, `studentVle`, `assessments`, `courses`, and `vle`
-
-### Step 3: Performed initial EDA on UCI
-
-- Reviewed target distribution across:
-  - `Graduate`
-  - `Dropout`
-  - `Enrolled`
-- Compared key variables across outcome groups.
-- Ran selected correlation analysis.
-- Confirmed that approved curricular units and semester grades were strongly associated with student outcomes.
-
-### Step 4: Performed initial EDA on OULAD
-
-- Reviewed `final_result` distribution across:
-  - `Pass`
-  - `Withdrawn`
-  - `Fail`
-  - `Distinction`
-- Compared key attributes such as studied credits, assessment participation, scores, and VLE activity.
-- Confirmed that withdrawn students had much lower assessment participation and much lower VLE engagement than successful students.
-
-### Step 5: Tested whether OULAD could realistically support later modeling
-
-- Verified the multi-table join structure using:
-  - `code_module`
-  - `code_presentation`
-  - `id_student`
-- Confirmed that `studentVle` was large but still manageable through chunked aggregation.
-- Confirmed that OULAD was suitable for later student-level feature construction.
-
-### Step 6: Identified the main preprocessing risks
-
-- In `UCI`:
-  - many coded fields should be handled categorically or ordinally
-  - later-semester variables may create early-warning leakage concerns
-- In `OULAD`:
-  - multi-table integration is required
-  - behavior logs must be aggregated before modeling
-  - `date_unregistration` and late-course behavior can leak the outcome
-
-## Key Findings
-
-- `UCI` was already clean enough to move directly into baseline modeling.
-- `OULAD` was much richer but not modeling-ready in raw form.
-- Withdrawn students in OULAD showed much weaker assessment participation and much lower VLE engagement than successful students.
-- The biggest Milestone 3 value was not model performance yet; it was proving that the project had usable data and a clear preprocessing path.
-
-## What This Milestone Produced
-
-- The Milestone 3 report
-- The Milestone 3 structure document
-- EDA code and report-builder code
-- Local figures and summary outputs under `data/`
-
-## Main Files
-
-- `Activity 3-1.pdf`
-- `Milestone3.pdf`
-- `code/milestone3_eda_pipeline.py`
-- `code/milestone3_report_builder.py`
-
-## Data Outputs
-
-- `data/analysis/milestone3_eda_summary.json`
-- `data/figures/`
-- `data/raw/`
-
-## Repository Note
-
-- The repository now includes the Milestone 3 analysis outputs, figures, and the tracked OULAD source archive `data/raw/oulad/oulad.zip`.
-- The extracted `data/raw/oulad/studentVle.csv` file is intentionally not tracked because it is about `433MB`, which exceeds GitHub's normal single-file limit.
-- The Milestone 3 and Milestone 4 scripts now fall back to the tracked `oulad.zip` archive when `studentVle.csv` is not present locally.
-
-## Why Milestone 3 Matters
-
-Milestone 3 established that:
-
-- `UCI` was immediately ready for baseline modeling
-- `OULAD` was valuable but needed aggregation and leakage-aware preprocessing first
-
-That conclusion directly led into Milestone 4, where we actually built the preprocessing pipeline and ran the first baseline models.
-
-## What Milestone 3 Did Not Do Yet
-
-- It did not run the final baseline models.
-- It did not complete the student-level early-warning feature pipeline for OULAD.
-- It did not yet test cross-dataset generalization.
-
-Those tasks became the focus of Milestone 4.
+The extracted OULAD `studentVle.csv` is not tracked because of its size. The
+EDA script reads the same file directly from `oulad.zip` when needed.

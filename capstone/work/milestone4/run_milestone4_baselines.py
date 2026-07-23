@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 import json
 from pathlib import Path
 
@@ -26,11 +24,7 @@ from sklearn.model_selection import StratifiedKFold, cross_validate, train_test_
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder, StandardScaler
 from sklearn.tree import DecisionTreeClassifier
-
-try:
-    from xgboost import XGBClassifier
-except ImportError:  # pragma: no cover - handled at runtime with a clear message
-    XGBClassifier = None
+from xgboost import XGBClassifier
 
 
 ROOT = Path(__file__).resolve().parent
@@ -127,7 +121,7 @@ TASKS = {
 
 
 class QuantileClipper(BaseEstimator, TransformerMixin):
-    def __init__(self, lower_quantile: float = OUTLIER_CLIP_LOWER, upper_quantile: float = OUTLIER_CLIP_UPPER):
+    def __init__(self, lower_quantile=OUTLIER_CLIP_LOWER, upper_quantile=OUTLIER_CLIP_UPPER):
         self.lower_quantile = lower_quantile
         self.upper_quantile = upper_quantile
 
@@ -147,22 +141,22 @@ class QuantileClipper(BaseEstimator, TransformerMixin):
         return np.asarray(input_features, dtype=object)
 
 
-def ensure_dirs() -> None:
+def ensure_dirs():
     FIGURES.mkdir(parents=True, exist_ok=True)
     RESULTS.mkdir(parents=True, exist_ok=True)
 
 
-def rel(path: Path) -> str:
+def rel(path):
     return str(path.relative_to(REPO_ROOT))
 
 
-def split_feature_types(frame: pd.DataFrame) -> tuple[list[str], list[str]]:
+def split_feature_types(frame):
     categorical_columns = frame.select_dtypes(include=["object", "string", "category"]).columns.tolist()
     numeric_columns = [column for column in frame.columns if column not in categorical_columns]
     return categorical_columns, numeric_columns
 
 
-def get_model_config(model_name: str, problem_type: str, class_count: int | None = None) -> dict[str, object]:
+def get_model_config(model_name, problem_type, class_count=None):
     if model_name == "logistic_regression":
         return {
             "max_iter": 3000,
@@ -223,7 +217,7 @@ def get_model_config(model_name: str, problem_type: str, class_count: int | None
     raise ValueError(f"Unsupported model: {model_name}")
 
 
-def build_estimator(model_name: str, problem_type: str, class_count: int | None = None):
+def build_estimator(model_name, problem_type, class_count=None):
     config = get_model_config(model_name, problem_type, class_count)
     if model_name == "logistic_regression":
         return LogisticRegression(**config)
@@ -234,23 +228,18 @@ def build_estimator(model_name: str, problem_type: str, class_count: int | None 
     if model_name == "gradient_boosting":
         return GradientBoostingClassifier(**config)
     if model_name == "xgboost":
-        if XGBClassifier is None:
-            raise ImportError(
-                "xgboost is required for the article-aligned baseline. "
-                "Run with `uv run --with xgboost ...`."
-            )
         return XGBClassifier(**config)
     raise ValueError(f"Unsupported model: {model_name}")
 
 
 def build_pipeline(
-    problem_type: str,
-    categorical_columns: list[str],
-    numeric_columns: list[str],
-    model_name: str,
-    class_count: int | None = None,
-) -> Pipeline:
-    numeric_steps: list[tuple[str, object]] = [
+    problem_type,
+    categorical_columns,
+    numeric_columns,
+    model_name,
+    class_count=None,
+):
+    numeric_steps = [
         ("imputer", SimpleImputer(strategy="median")),
         ("clipper", QuantileClipper()),
     ]
@@ -282,18 +271,18 @@ def build_pipeline(
     )
 
 
-def get_label_values(target_series: pd.Series) -> list[int]:
+def get_label_values(target_series):
     return sorted(pd.Series(target_series).dropna().unique().tolist())
 
 
 def evaluate_predictions(
-    problem_type: str,
-    y_true: pd.Series,
-    y_pred: np.ndarray,
-    y_score: np.ndarray | None,
-    labels: list[int],
-    label_names: list[str],
-) -> dict[str, object]:
+    problem_type,
+    y_true,
+    y_pred,
+    y_score,
+    labels,
+    label_names,
+):
     report = classification_report(
         y_true,
         y_pred,
@@ -326,13 +315,13 @@ def evaluate_predictions(
 
 
 def save_confusion_matrix(
-    task_name: str,
-    model_name: str,
-    y_true: pd.Series,
-    y_pred: np.ndarray,
-    labels: list[int],
-    display_labels: list[str],
-) -> str:
+    task_name,
+    model_name,
+    y_true,
+    y_pred,
+    labels,
+    display_labels,
+):
     matrix = confusion_matrix(y_true, y_pred, labels=labels)
     fig, ax = plt.subplots(figsize=(6.5, 5.5))
     ax.imshow(matrix, cmap="Blues")
@@ -362,19 +351,19 @@ def save_confusion_matrix(
     return rel(out_path)
 
 
-def extract_feature_importance(fitted_pipeline: Pipeline, problem_type: str) -> pd.DataFrame:
+def extract_feature_importance(fitted_pipeline, problem_type):
     preprocessor = fitted_pipeline.named_steps["preprocessor"]
     classifier = fitted_pipeline.named_steps["classifier"]
     feature_names = preprocessor.get_feature_names_out()
 
-    if hasattr(classifier, "feature_importances_"):
-        importances = classifier.feature_importances_
-    else:
+    if isinstance(classifier, LogisticRegression):
         coefficients = classifier.coef_
         if coefficients.ndim == 1:
             importances = np.abs(coefficients)
         else:
             importances = np.abs(coefficients).mean(axis=0)
+    else:
+        importances = classifier.feature_importances_
 
     importance_frame = pd.DataFrame(
         {
@@ -386,7 +375,7 @@ def extract_feature_importance(fitted_pipeline: Pipeline, problem_type: str) -> 
     return importance_frame
 
 
-def save_feature_plot(task_name: str, model_name: str, importance_frame: pd.DataFrame) -> str:
+def save_feature_plot(task_name, model_name, importance_frame):
     top_features = importance_frame.head(15).iloc[::-1]
     fig, ax = plt.subplots(figsize=(8, 6))
     ax.barh(top_features["feature"], top_features["importance"], color="#2f6f8f")
@@ -399,14 +388,14 @@ def save_feature_plot(task_name: str, model_name: str, importance_frame: pd.Data
     return rel(out_path)
 
 
-def get_prediction_scores(problem_type: str, fitted_pipeline: Pipeline, feature_frame: pd.DataFrame) -> np.ndarray | None:
-    if problem_type != "binary" or not hasattr(fitted_pipeline, "predict_proba"):
+def get_prediction_scores(problem_type, fitted_pipeline, feature_frame):
+    if problem_type != "binary":
         return None
     probabilities = fitted_pipeline.predict_proba(feature_frame)
     return probabilities[:, 1]
 
 
-def summarize_outliers(frame: pd.DataFrame, numeric_columns: list[str]) -> dict[str, object]:
+def summarize_outliers(frame, numeric_columns):
     if not numeric_columns:
         return {
             "method": "IQR",
@@ -458,7 +447,7 @@ def summarize_outliers(frame: pd.DataFrame, numeric_columns: list[str]) -> dict[
     }
 
 
-def build_cv_scoring(problem_type: str) -> dict[str, str]:
+def build_cv_scoring(problem_type):
     if problem_type == "multiclass":
         return {
             "accuracy": "accuracy",
@@ -478,14 +467,14 @@ def build_cv_scoring(problem_type: str) -> dict[str, str]:
 
 
 def run_cross_validation_summary(
-    problem_type: str,
-    categorical_columns: list[str],
-    numeric_columns: list[str],
-    model_name: str,
-    class_count: int | None,
-    x_train_val: pd.DataFrame,
-    y_train_val: pd.Series,
-) -> dict[str, object]:
+    problem_type,
+    categorical_columns,
+    numeric_columns,
+    model_name,
+    class_count,
+    x_train_val,
+    y_train_val,
+):
     cv = StratifiedKFold(n_splits=CV_FOLDS, shuffle=True, random_state=RANDOM_STATE)
     pipeline = build_pipeline(
         problem_type,
@@ -517,13 +506,13 @@ def run_cross_validation_summary(
 
 
 def make_summary_row(
-    task_name: str,
-    model_name: str,
-    validation_metrics: dict[str, object],
-    test_metrics: dict[str, object],
-    selected_model_name: str,
-    cv_summary: dict[str, object] | None,
-) -> dict[str, object]:
+    task_name,
+    model_name,
+    validation_metrics,
+    test_metrics,
+    selected_model_name,
+    cv_summary,
+):
     row = {
         "task": task_name,
         "model": model_name,
@@ -541,7 +530,7 @@ def make_summary_row(
     return row
 
 
-def run_task(task_name: str, config: dict[str, object]) -> dict[str, object]:
+def run_task(task_name, config):
     frame = pd.read_csv(config["path"])
     target_name = config["target"]
     drop_columns = set(config["drop_columns"]) | {target_name}
@@ -588,9 +577,9 @@ def run_task(task_name: str, config: dict[str, object]) -> dict[str, object]:
     outlier_summary = summarize_outliers(x_train, numeric_columns)
     labels = get_label_values(target_series)
 
-    model_results: dict[str, object] = {}
-    final_test_metrics_by_model: dict[str, dict[str, object]] = {}
-    final_validation_metrics_by_model: dict[str, dict[str, object]] = {}
+    model_results = {}
+    final_test_metrics_by_model = {}
+    final_validation_metrics_by_model = {}
 
     for model_name in MODEL_ORDER:
         validation_pipeline = build_pipeline(
@@ -758,7 +747,7 @@ def run_task(task_name: str, config: dict[str, object]) -> dict[str, object]:
                 reproduced_accuracy - ARTICLE_BASELINE_REFERENCE["reported_accuracy"]
             ),
             "notes": (
-                "The UCI multiclass task is the direct reproduction benchmark. "
+                "The UCI multiclass task is the reproduction benchmark. "
                 "The binary early-warning tasks are project extensions rather than one-to-one paper reproductions."
             ),
         }
@@ -772,7 +761,7 @@ def run_task(task_name: str, config: dict[str, object]) -> dict[str, object]:
     return task_output
 
 
-def main() -> None:
+def main():
     ensure_dirs()
     task_outputs = {}
     summary_rows = []

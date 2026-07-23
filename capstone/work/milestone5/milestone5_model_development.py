@@ -313,8 +313,6 @@ def build_pipeline(
 
 
 def get_score(problem_type, pipeline, features):
-    if not hasattr(pipeline, "predict_proba"):
-        return None
     probabilities = pipeline.predict_proba(features)
     if problem_type == "binary":
         return probabilities[:, 1]
@@ -421,14 +419,14 @@ def extract_feature_importance(fitted_pipeline):
     classifier = fitted_pipeline.named_steps["classifier"]
     feature_names = preprocessor.get_feature_names_out()
 
-    if hasattr(classifier, "feature_importances_"):
-        importances = classifier.feature_importances_
-    else:
+    if isinstance(classifier, LogisticRegression):
         coefficients = classifier.coef_
         if coefficients.ndim == 1:
             importances = np.abs(coefficients)
         else:
             importances = np.abs(coefficients).mean(axis=0)
+    else:
+        importances = classifier.feature_importances_
 
     return pd.DataFrame({"feature": feature_names, "importance": importances}).sort_values(
         "importance", ascending=False
@@ -506,12 +504,6 @@ def save_shap_summary(
         "shap_plot_path": rel(plot_path),
         "shap_rows_sampled": int(len(x_sample)),
     }
-
-
-def validation_score(problem_type, primary_metric, metrics):
-    if primary_metric not in metrics:
-        raise KeyError(f"Could not find primary metric {primary_metric} in {metrics}")
-    return metrics[primary_metric]
 
 
 def read_baseline_rows():
@@ -643,9 +635,10 @@ def run_task(task_name, config, baseline_frame):
     for model_name, grid in MODEL_SEARCHES[task_name].items():
         print("\nModel:", model_name)
         best_candidate = None
-        candidate_rows = []
+        candidate_count = 0
 
         for candidate_number, params in enumerate(ParameterGrid(grid), start=1):
+            candidate_count += 1
             pipeline = build_pipeline(
                 model_name,
                 config["problem_type"],
@@ -672,7 +665,7 @@ def run_task(task_name, config, baseline_frame):
                 validation_predictions,
                 validation_scores,
             )
-            score = validation_score(config["problem_type"], primary_metric, validation_metrics)
+            score = validation_metrics[primary_metric]
             candidate = {
                 "candidate_number": candidate_number,
                 "params": params,
@@ -681,7 +674,6 @@ def run_task(task_name, config, baseline_frame):
                 "threshold_frame": threshold_frame,
                 "score": score,
             }
-            candidate_rows.append(candidate)
             if best_candidate is None or score > best_candidate["score"]:
                 best_candidate = candidate
 
@@ -758,7 +750,7 @@ def run_task(task_name, config, baseline_frame):
                 if baseline_primary is not None and not pd.isna(baseline_primary)
                 else None
             ),
-            "candidate_count": len(candidate_rows),
+            "candidate_count": candidate_count,
             "best_params": json.dumps(best_params, sort_keys=True),
             "confusion_matrix_path": confusion_path,
             "feature_importance_path": importance_path,
@@ -779,7 +771,7 @@ def run_task(task_name, config, baseline_frame):
             "validation_metrics": best_candidate["validation_metrics"],
             "test_metrics": test_metrics,
             "baseline_reference": baseline_reference,
-            "candidate_count": len(candidate_rows),
+            "candidate_count": candidate_count,
             "cross_validation": cv_summary,
             "paths": {
                 "confusion_matrix": confusion_path,

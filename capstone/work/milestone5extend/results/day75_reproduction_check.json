@@ -1,0 +1,10 @@
+{
+  "reference_rows": 32593,
+  "candidate_rows": 32593,
+  "reference_columns": 54,
+  "candidate_columns": 54,
+  "row_keys_match": true,
+  "categorical_values_match": true,
+  "maximum_numeric_difference": 1.4210854715202004e-14,
+  "exact_reproduction": true
+}

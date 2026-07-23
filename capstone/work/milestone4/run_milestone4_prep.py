@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 import json
 from pathlib import Path
 import zipfile
@@ -159,22 +157,22 @@ SHARED_FEATURE_SCHEMA = {
 }
 
 
-def ensure_dirs() -> None:
+def ensure_dirs():
     OUT_DATA.mkdir(parents=True, exist_ok=True)
     OUT_RESULTS.mkdir(parents=True, exist_ok=True)
 
 
-def rel(path: Path) -> str:
+def rel(path):
     return str(path.relative_to(REPO_ROOT))
 
 
-def summarize_missingness(frame: pd.DataFrame) -> dict[str, float]:
+def summarize_missingness(frame):
     missing = (frame.isna().mean() * 100).round(2)
     missing = missing[missing > 0]
     return {column: float(value) for column, value in missing.sort_values(ascending=False).items()}
 
 
-def find_raw_dir() -> Path:
+def find_raw_dir():
     candidates = [
         CAPSTONE / "data" / "raw",
         CAPSTONE / "work" / "milestone3" / "data" / "raw",
@@ -185,7 +183,7 @@ def find_raw_dir() -> Path:
     raise FileNotFoundError("Could not find the project raw-data directory.")
 
 
-def find_oulad_archive_member(archive_path: Path, filename: str) -> str:
+def find_oulad_archive_member(archive_path, filename):
     with zipfile.ZipFile(archive_path) as archive:
         for member in archive.namelist():
             if Path(member).name == filename:
@@ -193,7 +191,7 @@ def find_oulad_archive_member(archive_path: Path, filename: str) -> str:
     raise FileNotFoundError(f"Could not find {filename} inside {archive_path}")
 
 
-def read_oulad_csv(oulad_dir: Path, filename: str, **kwargs) -> pd.DataFrame:
+def read_oulad_csv(oulad_dir, filename, **kwargs):
     csv_path = oulad_dir / filename
     if csv_path.exists():
         return pd.read_csv(csv_path, **kwargs)
@@ -208,7 +206,7 @@ def read_oulad_csv(oulad_dir: Path, filename: str, **kwargs) -> pd.DataFrame:
     raise FileNotFoundError(f"Could not find {filename} in {oulad_dir} or {archive_path}")
 
 
-def build_uci_datasets() -> dict[str, object]:
+def build_uci_datasets():
     raw_dir = find_raw_dir()
     df = pd.read_csv(raw_dir / "uci_student_dropout.csv")
     df["is_attrition"] = (df["Target"] == "Dropout").astype(int)
@@ -244,7 +242,7 @@ def build_uci_datasets() -> dict[str, object]:
     }
 
 
-def build_oulad_dataset() -> dict[str, object]:
+def build_oulad_dataset():
     raw_dir = find_raw_dir()
     oulad_dir = raw_dir / "oulad"
     student_info = read_oulad_csv(oulad_dir, "studentInfo.csv")
@@ -452,7 +450,7 @@ def build_oulad_dataset() -> dict[str, object]:
     }
 
 
-def write_schema_files() -> dict[str, str]:
+def write_schema_files():
     schema_json_path = OUT_DATA / "shared_feature_schema.json"
     schema_json_path.write_text(json.dumps(SHARED_FEATURE_SCHEMA, indent=2))
 
@@ -473,7 +471,7 @@ def write_schema_files() -> dict[str, str]:
     return {"json": rel(schema_json_path), "csv": rel(schema_csv_path)}
 
 
-def main() -> None:
+def main():
     ensure_dirs()
     uci_summary = build_uci_datasets()
     oulad_summary = build_oulad_dataset()

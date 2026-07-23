@@ -1,28 +1,21 @@
-## Milestone 3 Code
+# Milestone 3 Code
 
-This folder contains the scripts used to prepare the Milestone 3 report.
+`milestone3_eda_pipeline.py` loads UCI and OULAD, calculates the EDA summaries,
+and saves the figures used in the Milestone 3 report.
 
-### Files
+Run it from the repository root:
 
-- `milestone3_eda_pipeline.py`
-  - Loads the UCI and OULAD datasets
-  - Runs the initial EDA used in the report
-  - Saves summary results to `capstone/work/milestone3/data/analysis/milestone3_eda_summary.json`
-  - Saves charts to `capstone/work/milestone3/data/figures/`
+```bash
+python3 capstone/work/milestone3/code/milestone3_eda_pipeline.py
+```
 
-- `milestone3_report_builder.py`
-  - Reads the EDA summary JSON and figures
-  - Builds the Word report for Milestone 3
-  - Outputs local Word drafts that are kept out of the public remote
+Outputs are written to:
 
-### Recommended Run Order
+- `capstone/work/milestone3/data/analysis/`
+- `capstone/work/milestone3/data/figures/`
 
-1. Run `milestone3_eda_pipeline.py`
-2. Run `milestone3_report_builder.py`
+In OULAD, VLE means Virtual Learning Environment. The large `studentVle` table
+contains dated student activity and click counts. The script processes it in
+chunks rather than loading the whole file into memory.
 
-### Notes
-
-- The scripts now resolve project paths relative to their own location.
-- The datasets are stored under `capstone/work/milestone3/data/raw/`.
-- In the OULAD dataset, `vle` means `Virtual Learning Environment`, and `studentVle` is the student-level Virtual Learning Environment activity table from the original dataset.
-- The analysis artifacts under `capstone/work/milestone3/data/` are kept alongside the Milestone 3 workspace.
+The local Word report builder is not part of the public analysis code.

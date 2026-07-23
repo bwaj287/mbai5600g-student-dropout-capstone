@@ -4,6 +4,6 @@
   "interpretation": {
     "uci": "UCI explanations are concentrated in academic progress, financial support, and demographic/program variables.",
     "oulad": "OULAD explanations are concentrated in early assessment behavior, engagement, studied credits, and module/presentation context.",
-    "project_relevance": "The shifted explanation patterns support the project focus on transferability and explanation stability across educational datasets."
+    "project_relevance": "The shifted explanation patterns show how model explanations differ across two educational settings."
   }
 }

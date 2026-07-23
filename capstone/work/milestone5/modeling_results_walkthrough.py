@@ -16,14 +16,14 @@ def print_section(title):
 print_section("Milestone 5 - Advanced Modeling and Optimization")
 
 print(
-    "This walkthrough summarizes the Milestone 5 modeling outputs in the same "
-    "step-by-step style used in the course sample notebooks."
+    "This walkthrough summarizes the Milestone 5 modeling outputs one step "
+    "at a time."
 )
 
 print_section("Step 1 - Load Tuned Model Comparison Results")
 
 comparison = pd.read_csv(RESULTS / "tuned_model_comparison.csv")
-print(comparison.info())
+comparison.info()
 print(comparison.head())
 
 print_section("Step 2 - Compare Baseline and Tuned Model Performance")
