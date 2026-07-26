@@ -1,7 +1,0 @@
-model,settings,average_precision,roc_auc
-XGBoost,"{'n_estimators': 240, 'max_depth': 4, 'learning_rate': 0.05}",0.240313218948215,0.6846831833065358
-XGBoost,"{'n_estimators': 320, 'max_depth': 5, 'learning_rate': 0.03}",0.246256261935917,0.6903135892590985
-XGBoost,"{'n_estimators': 400, 'max_depth': 4, 'learning_rate': 0.03}",0.2522488844345527,0.6895486873144225
-Logistic Regression,C=0.05,0.23149803189024515,0.6242896710364172
-Logistic Regression,C=0.2,0.2290533028981513,0.6176646284929642
-Logistic Regression,C=1.0,0.2272774028654447,0.6148306477167369
