@@ -30,6 +30,10 @@ capstone/work/milestone6/rendered_milestone6/
 capstone/work/milestone6/results/*_test_predictions.csv
 capstone/work/milestone7/AI-Based_Student_Dropout_Early_Warning_System_*.pptx
 capstone/work/milestone7/Milestone7_Even_Teleprompt.txt
+capstone/work/final_report/build_final_report.py
+capstone/work/final_report/build_journal_manuscript.py
+capstone/work/final_report/rendered_final_report/
+capstone/work/final_report/journal_results/journal_test_predictions.csv
 ~$*.docx
 
 # Local reference readings kept off the public repo

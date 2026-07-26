@@ -1,0 +1,36 @@
+cohort,cutoff_day,feature_family,mean_abs_shap,share
+controlled_day75,35,Academic progress,0.70425713,0.3167268
+controlled_day75,35,Demographics,0.29299787,0.13177045
+controlled_day75,35,Engagement,0.70968235,0.3191667
+controlled_day75,35,Prior preparation,0.12212187,0.05492208
+controlled_day75,35,Program setup,0.39448848,0.177414
+controlled_day75,60,Academic progress,0.99080956,0.39535117
+controlled_day75,60,Demographics,0.25280693,0.1008746
+controlled_day75,60,Engagement,0.8025567,0.32023484
+controlled_day75,60,Prior preparation,0.09249872,0.036908686
+controlled_day75,60,Program setup,0.36747858,0.14663069
+controlled_day75,75,Academic progress,1.0249436,0.418949
+controlled_day75,75,Demographics,0.22171216,0.09062556
+controlled_day75,75,Engagement,0.7377428,0.30155474
+controlled_day75,75,Prior preparation,0.08270477,0.03380584
+controlled_day75,75,Program setup,0.37936074,0.15506493
+dynamic_landmark,35,Academic progress,0.80871534,0.34838292
+dynamic_landmark,35,Demographics,0.25196743,0.10854394
+dynamic_landmark,35,Engagement,0.66505206,0.28649485
+dynamic_landmark,35,Prior preparation,0.13883933,0.059809987
+dynamic_landmark,35,Program setup,0.45676607,0.19676825
+dynamic_landmark,60,Academic progress,1.0318838,0.41187376
+dynamic_landmark,60,Demographics,0.23426385,0.09350581
+dynamic_landmark,60,Engagement,0.72323185,0.2886761
+dynamic_landmark,60,Prior preparation,0.102293216,0.040830072
+dynamic_landmark,60,Program setup,0.4136671,0.16511415
+dynamic_landmark,75,Academic progress,1.0109445,0.41536
+dynamic_landmark,75,Demographics,0.23336543,0.0958813
+dynamic_landmark,75,Engagement,0.73554593,0.30220884
+dynamic_landmark,75,Prior preparation,0.08057885,0.033106893
+dynamic_landmark,75,Program setup,0.37346473,0.15344296
+presentation_holdout_2014J,75,Academic progress,0.98749834,0.38242084
+presentation_holdout_2014J,75,Demographics,0.26881596,0.104102276
+presentation_holdout_2014J,75,Engagement,0.86645025,0.33554348
+presentation_holdout_2014J,75,Prior preparation,0.13055404,0.050558653
+presentation_holdout_2014J,75,Program setup,0.32891077,0.12737472
