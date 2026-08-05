@@ -15,6 +15,7 @@ capstone/work/milestone3/data/raw/oulad/studentVle.csv
 
 # Local milestone working artifacts
 capstone/work/**/*.docx
+capstone/work/**/*.inspect.ndjson
 capstone/work/milestone3/code/milestone3_report_builder.py
 capstone/work/milestone4/build_milestone4_report.py
 capstone/work/milestone4/Milestone4_deliverable.docx
@@ -30,6 +31,8 @@ capstone/work/milestone6/rendered_milestone6/
 capstone/work/milestone6/results/*_test_predictions.csv
 capstone/work/milestone7/AI-Based_Student_Dropout_Early_Warning_System_*.pptx
 capstone/work/milestone7/Milestone7_Even_Teleprompt.txt
+capstone/work/milestone8/build_milestone8_report.py
+capstone/work/milestone8/paper/
 ~$*.docx
 
 # Local reference readings kept off the public repo

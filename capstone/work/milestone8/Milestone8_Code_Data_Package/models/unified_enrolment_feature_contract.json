@@ -1,0 +1,86 @@
+{
+  "schema_version": "2.0",
+  "features": [
+    "age_scaled",
+    "prior_preparation",
+    "study_load",
+    "male",
+    "declared_support_need",
+    "financial_stability"
+  ],
+  "core_features": [
+    "age_scaled",
+    "prior_preparation",
+    "study_load"
+  ],
+  "optional_features": [
+    "male",
+    "declared_support_need",
+    "financial_stability"
+  ],
+  "observation_point": "enrolment or registration",
+  "target_definition": "eventual attrition",
+  "score_semantics": "uncalibrated ranking score; do not present as an individual withdrawal probability",
+  "training_datasets": [
+    "OULAD_dataset",
+    "UCI_dataset"
+  ],
+  "training_rows": 29620,
+  "random_state": 42,
+  "feature_schema": [
+    {
+      "shared_feature": "age_scaled",
+      "required": true,
+      "meaning": "Age position on a fixed 18-60 scale",
+      "uci_mapping": "Age at enrollment",
+      "oulad_mapping": "Midpoint of age_band",
+      "new_school_requirement": "Age or compatible age band"
+    },
+    {
+      "shared_feature": "prior_preparation",
+      "required": true,
+      "meaning": "Prior education and preparation score",
+      "uci_mapping": "Previous qualification and grade",
+      "oulad_mapping": "highest_education and prior attempts",
+      "new_school_requirement": "Prior preparation mapped to 0-1"
+    },
+    {
+      "shared_feature": "study_load",
+      "required": true,
+      "meaning": "Registered study load relative to a heavy load",
+      "uci_mapping": "First-semester enrolled units / 12",
+      "oulad_mapping": "studied_credits / 120",
+      "new_school_requirement": "Registered load mapped to 0-1"
+    },
+    {
+      "shared_feature": "male",
+      "required": false,
+      "meaning": "Optional documented binary gender indicator",
+      "uci_mapping": "Gender",
+      "oulad_mapping": "gender",
+      "new_school_requirement": "0/1 if approved; otherwise blank"
+    },
+    {
+      "shared_feature": "declared_support_need",
+      "required": false,
+      "meaning": "Optional declared disability or support need",
+      "uci_mapping": "Educational special needs",
+      "oulad_mapping": "disability",
+      "new_school_requirement": "0/1 if approved; otherwise blank"
+    },
+    {
+      "shared_feature": "financial_stability",
+      "required": false,
+      "meaning": "Optional documented financial-stability proxy",
+      "uci_mapping": "Debtor and tuition-fee status",
+      "oulad_mapping": "imd_band midpoint",
+      "new_school_requirement": "Comparable 0-1 value or blank"
+    }
+  ],
+  "inference_policy": {
+    "optional_missing_values": "median imputation from training data",
+    "recommended_output": "within-course or within-cohort percentile",
+    "default_review_share": 0.15,
+    "external_validation_required": true
+  }
+}

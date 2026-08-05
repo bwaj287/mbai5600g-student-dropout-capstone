@@ -1,0 +1,50 @@
+{
+  "institution": "Example_College",
+  "columns": {
+    "record_id": "snapshot_id",
+    "student_id": "student_number",
+    "course_id": "course_code",
+    "snapshot_day": "day",
+    "age": "age_at_entry",
+    "prior_education_level": "education_band",
+    "prior_academic_score": "entry_gpa",
+    "previous_attempts": "prev_attempts",
+    "study_load": "registered_credits",
+    "male": "gender",
+    "declared_support_need": "accessibility_flag",
+    "financial_stability": "financial_index",
+    "assessment_completion_rate": "completion_rate",
+    "assessment_average_score": "average_score",
+    "assessment_score_available": "has_score",
+    "late_submission_rate": "late_rate",
+    "active_day_rate": "active_rate",
+    "days_since_last_activity_scaled": "inactivity_days",
+    "recent_activity_rate": "recent_rate"
+  },
+  "scales": {
+    "age_min": 18,
+    "age_max": 60,
+    "prior_academic_score_max": 4.0,
+    "previous_attempts_cap": 3,
+    "heavy_study_load": 30,
+    "course_length_days": 140,
+    "days_since_last_activity_cap": 30
+  },
+  "value_maps": {
+    "prior_education_level": {
+      "no_formal": 0.10,
+      "high_school": 0.30,
+      "college": 0.55,
+      "bachelor": 0.80,
+      "postgraduate": 1.00
+    },
+    "male": {
+      "M": 1,
+      "F": 0
+    },
+    "declared_support_need": {
+      "Y": 1,
+      "N": 0
+    }
+  }
+}

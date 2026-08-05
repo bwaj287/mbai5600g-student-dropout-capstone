@@ -1,0 +1,7 @@
+cohort,cutoff_day,train_validation_overlap,train_test_overlap,validation_test_overlap
+dynamic_landmark,35,0,0,0
+dynamic_landmark,60,0,0,0
+dynamic_landmark,75,0,0,0
+controlled_day75,35,0,0,0
+controlled_day75,60,0,0,0
+controlled_day75,75,0,0,0

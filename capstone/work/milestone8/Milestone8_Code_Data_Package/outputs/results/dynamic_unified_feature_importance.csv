@@ -1,0 +1,17 @@
+transformed_feature,importance
+course_progress_ratio,0.23408578
+financial_stability,0.16246402
+male,0.077236526
+age_scaled,0.075366125
+assessment_completion_rate,0.07119908
+study_load,0.058822464
+assessment_average_score,0.057211276
+prior_academic_score,0.0458784
+prior_education_level,0.041952692
+assessment_score_available,0.041692894
+declared_support_need,0.034476053
+recent_activity_rate,0.026435921
+late_submission_rate,0.026121251
+days_since_last_activity_scaled,0.022787586
+active_day_rate,0.015002911
+previous_attempts,0.0092669735

@@ -1,0 +1,4 @@
+institution,record_id,student_id,course_id,snapshot_day,risk_score,risk_percentile,review_flag,optional_feature_coverage
+Example_College,S1002_D35,S1002,BUS101,35,0.3151653,1.0,True,0.9166666666666666
+Example_College,S1001_D0,S1001,BUS101,0,0.19961648,1.0,True,0.5
+Example_College,S1001_D35,S1001,BUS101,35,0.1553901,0.5,False,1.0

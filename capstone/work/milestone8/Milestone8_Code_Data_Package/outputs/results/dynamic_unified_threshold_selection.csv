@@ -1,0 +1,1639 @@
+snapshot_day,threshold,weighted_f1,model,training_scenario
+0,0.42,0.6045197740112994,Logistic Regression,uci_source
+0,0.57,0.6037037037037037,Logistic Regression,uci_source
+0,0.54,0.6018018018018019,Logistic Regression,uci_source
+0,0.55,0.6010928961748634,Logistic Regression,uci_source
+0,0.36,0.6007802340702211,Logistic Regression,uci_source
+0,0.56,0.6007326007326007,Logistic Regression,uci_source
+0,0.43,0.6005747126436782,Logistic Regression,uci_source
+0,0.38,0.6005361930294907,Logistic Regression,uci_source
+0,0.37,0.6,Logistic Regression,uci_source
+0,0.39,0.5994550408719346,Logistic Regression,uci_source
+0,0.44,0.5991316931982634,Logistic Regression,uci_source
+0,0.41,0.5986013986013986,Logistic Regression,uci_source
+0,0.53,0.5978647686832741,Logistic Regression,uci_source
+0,0.58,0.5962264150943396,Logistic Regression,uci_source
+0,0.49,0.5960912052117264,Logistic Regression,uci_source
+0,0.5,0.5953177257525084,Logistic Regression,uci_source
+0,0.52,0.5950704225352113,Logistic Regression,uci_source
+0,0.4,0.5950413223140496,Logistic Regression,uci_source
+0,0.51,0.5934819897084048,Logistic Regression,uci_source
+0,0.48,0.5923566878980892,Logistic Regression,uci_source
+0,0.47,0.5919003115264798,Logistic Regression,uci_source
+0,0.34,0.5908529048207665,Logistic Regression,uci_source
+0,0.45,0.5905044510385756,Logistic Regression,uci_source
+0,0.59,0.5893536121673004,Logistic Regression,uci_source
+0,0.35,0.5885350318471337,Logistic Regression,uci_source
+0,0.6,0.5877862595419847,Logistic Regression,uci_source
+0,0.46,0.5861027190332326,Logistic Regression,uci_source
+0,0.62,0.5852713178294574,Logistic Regression,uci_source
+0,0.61,0.5846153846153846,Logistic Regression,uci_source
+0,0.63,0.5803921568627451,Logistic Regression,uci_source
+0,0.33,0.5800240673886884,Logistic Regression,uci_source
+0,0.64,0.5720000000000001,Logistic Regression,uci_source
+0,0.32,0.5654692931633837,Logistic Regression,uci_source
+0,0.65,0.5532786885245902,Logistic Regression,uci_source
+0,0.31,0.5521885521885522,Logistic Regression,uci_source
+0,0.66,0.55,Logistic Regression,uci_source
+0,0.67,0.5470085470085471,Logistic Regression,uci_source
+0,0.68,0.5379609544468548,Logistic Regression,uci_source
+0,0.73,0.5379310344827587,Logistic Regression,uci_source
+0,0.72,0.5366972477064221,Logistic Regression,uci_source
+0,0.71,0.5351473922902495,Logistic Regression,uci_source
+0,0.3,0.5331905781584583,Logistic Regression,uci_source
+0,0.7,0.5324384787472036,Logistic Regression,uci_source
+0,0.69,0.531868131868132,Logistic Regression,uci_source
+0,0.29,0.5312820512820513,Logistic Regression,uci_source
+0,0.74,0.5290023201856149,Logistic Regression,uci_source
+0,0.76,0.5248226950354611,Logistic Regression,uci_source
+0,0.75,0.5233644859813085,Logistic Regression,uci_source
+0,0.28,0.5216535433070866,Logistic Regression,uci_source
+0,0.27,0.5169409486931268,Logistic Regression,uci_source
+0,0.26,0.5138490926456543,Logistic Regression,uci_source
+0,0.77,0.5119617224880384,Logistic Regression,uci_source
+0,0.25,0.5116713352007468,Logistic Regression,uci_source
+0,0.24,0.5082568807339448,Logistic Regression,uci_source
+0,0.23,0.5054347826086956,Logistic Regression,uci_source
+0,0.22,0.5004484304932735,Logistic Regression,uci_source
+0,0.78,0.5,Logistic Regression,uci_source
+0,0.21,0.4959999999999999,Logistic Regression,uci_source
+0,0.2,0.49033391915641467,Logistic Regression,uci_source
+0,0.14,0.4883520276100085,Logistic Regression,uci_source
+0,0.15,0.4883520276100085,Logistic Regression,uci_source
+0,0.19,0.4873803307223672,Logistic Regression,uci_source
+0,0.16,0.48704663212435223,Logistic Regression,uci_source
+0,0.18,0.48695652173913034,Logistic Regression,uci_source
+0,0.11,0.4863013698630136,Logistic Regression,uci_source
+0,0.12,0.48625429553264593,Logistic Regression,uci_source
+0,0.13,0.48625429553264593,Logistic Regression,uci_source
+0,0.05,0.48588537211291694,Logistic Regression,uci_source
+0,0.06,0.48588537211291694,Logistic Regression,uci_source
+0,0.07,0.48588537211291694,Logistic Regression,uci_source
+0,0.08,0.48588537211291694,Logistic Regression,uci_source
+0,0.09,0.48588537211291694,Logistic Regression,uci_source
+0,0.1,0.48588537211291694,Logistic Regression,uci_source
+0,0.17,0.48526863084922,Logistic Regression,uci_source
+0,0.79,0.4827586206896552,Logistic Regression,uci_source
+0,0.8,0.46115288220551376,Logistic Regression,uci_source
+0,0.81,0.45177664974619286,Logistic Regression,uci_source
+0,0.82,0.4329896907216495,Logistic Regression,uci_source
+0,0.83,0.42519685039370075,Logistic Regression,uci_source
+0,0.84,0.40848806366047746,Logistic Regression,uci_source
+0,0.85,0.3924731182795699,Logistic Regression,uci_source
+0,0.86,0.3825136612021858,Logistic Regression,uci_source
+0,0.87,0.3601108033240997,Logistic Regression,uci_source
+0,0.88,0.34366197183098596,Logistic Regression,uci_source
+0,0.89,0.31213872832369943,Logistic Regression,uci_source
+0,0.9,0.2873900293255132,Logistic Regression,uci_source
+0,0.91,0.26785714285714285,Logistic Regression,uci_source
+0,0.92,0.23636363636363636,Logistic Regression,uci_source
+0,0.93,0.21472392638036808,Logistic Regression,uci_source
+0,0.94,0.18808777429467086,Logistic Regression,uci_source
+0,0.95,0.14838709677419357,Logistic Regression,uci_source
+0,0.61,0.3789236867478496,Logistic Regression,oulad_source
+0,0.62,0.37694038245219474,Logistic Regression,oulad_source
+0,0.6,0.3768810081864205,Logistic Regression,oulad_source
+0,0.59,0.37444661458333445,Logistic Regression,oulad_source
+0,0.63,0.3737674191182478,Logistic Regression,oulad_source
+0,0.58,0.37205905205905326,Logistic Regression,oulad_source
+0,0.65,0.3709832683933088,Logistic Regression,oulad_source
+0,0.56,0.37013474707311794,Logistic Regression,oulad_source
+0,0.57,0.3694969502989322,Logistic Regression,oulad_source
+0,0.64,0.3694248449861037,Logistic Regression,oulad_source
+0,0.66,0.3673931912431298,Logistic Regression,oulad_source
+0,0.55,0.36665491219409085,Logistic Regression,oulad_source
+0,0.53,0.3637334209337668,Logistic Regression,oulad_source
+0,0.54,0.3632052579764011,Logistic Regression,oulad_source
+0,0.52,0.36309741340804896,Logistic Regression,oulad_source
+35,0.55,0.36100487439070894,Logistic Regression,oulad_source
+0,0.51,0.3607978488582101,Logistic Regression,oulad_source
+0,0.49,0.3600588305441834,Logistic Regression,oulad_source
+35,0.51,0.360021069265217,Logistic Regression,oulad_source
+0,0.67,0.35996175705104533,Logistic Regression,oulad_source
+35,0.49,0.35984083256810945,Logistic Regression,oulad_source
+35,0.54,0.35980456501131086,Logistic Regression,oulad_source
+0,0.5,0.3595263724434885,Logistic Regression,oulad_source
+0,0.48,0.3595081166043675,Logistic Regression,oulad_source
+35,0.56,0.3594099930496643,Logistic Regression,oulad_source
+35,0.53,0.35901040202418527,Logistic Regression,oulad_source
+0,0.47,0.3588219044737646,Logistic Regression,oulad_source
+0,0.44,0.35877792499114614,Logistic Regression,oulad_source
+0,0.45,0.35863245619791406,Logistic Regression,oulad_source
+0,0.43,0.3585521572123397,Logistic Regression,oulad_source
+35,0.5,0.35850136759748835,Logistic Regression,oulad_source
+0,0.05,0.3584957596571032,Logistic Regression,oulad_source
+0,0.06,0.3584957596571032,Logistic Regression,oulad_source
+0,0.07,0.3584957596571032,Logistic Regression,oulad_source
+0,0.08,0.3584957596571032,Logistic Regression,oulad_source
+0,0.09,0.3584957596571032,Logistic Regression,oulad_source
+0,0.1,0.3584957596571032,Logistic Regression,oulad_source
+0,0.11,0.3584957596571032,Logistic Regression,oulad_source
+0,0.12,0.3584957596571032,Logistic Regression,oulad_source
+0,0.13,0.3584957596571032,Logistic Regression,oulad_source
+0,0.14,0.3584957596571032,Logistic Regression,oulad_source
+0,0.15,0.3584957596571032,Logistic Regression,oulad_source
+0,0.16,0.3584957596571032,Logistic Regression,oulad_source
+0,0.17,0.3584957596571032,Logistic Regression,oulad_source
+0,0.18,0.3584957596571032,Logistic Regression,oulad_source
+0,0.19,0.3584957596571032,Logistic Regression,oulad_source
+0,0.2,0.3584957596571032,Logistic Regression,oulad_source
+0,0.21,0.3584957596571032,Logistic Regression,oulad_source
+0,0.22,0.3584957596571032,Logistic Regression,oulad_source
+0,0.23,0.3584957596571032,Logistic Regression,oulad_source
+0,0.24,0.3584957596571032,Logistic Regression,oulad_source
+0,0.25,0.3584957596571032,Logistic Regression,oulad_source
+0,0.26,0.3584957596571032,Logistic Regression,oulad_source
+0,0.27,0.3584957596571032,Logistic Regression,oulad_source
+0,0.28,0.3584957596571032,Logistic Regression,oulad_source
+0,0.29,0.3584957596571032,Logistic Regression,oulad_source
+0,0.3,0.3584957596571032,Logistic Regression,oulad_source
+0,0.31,0.3584957596571032,Logistic Regression,oulad_source
+0,0.32,0.3584957596571032,Logistic Regression,oulad_source
+0,0.33,0.3584957596571032,Logistic Regression,oulad_source
+0,0.34,0.3584957596571032,Logistic Regression,oulad_source
+0,0.35,0.3584957596571032,Logistic Regression,oulad_source
+0,0.36,0.3584957596571032,Logistic Regression,oulad_source
+0,0.37,0.3584957596571032,Logistic Regression,oulad_source
+0,0.38,0.3584957596571032,Logistic Regression,oulad_source
+0,0.39,0.3584957596571032,Logistic Regression,oulad_source
+0,0.4,0.3584957596571032,Logistic Regression,oulad_source
+0,0.41,0.3584957596571032,Logistic Regression,oulad_source
+0,0.42,0.3584957596571032,Logistic Regression,oulad_source
+0,0.46,0.35843037376429426,Logistic Regression,oulad_source
+35,0.46,0.35837064057922485,Logistic Regression,oulad_source
+35,0.47,0.35807959858592564,Logistic Regression,oulad_source
+35,0.45,0.3573103154305127,Logistic Regression,oulad_source
+35,0.57,0.35678591258825254,Logistic Regression,oulad_source
+35,0.48,0.3566849008881836,Logistic Regression,oulad_source
+35,0.52,0.3555706521739205,Logistic Regression,oulad_source
+35,0.44,0.35468790136140793,Logistic Regression,oulad_source
+0,0.68,0.3546485515382905,Logistic Regression,oulad_source
+35,0.43,0.35237240829344885,Logistic Regression,oulad_source
+35,0.58,0.35057140508099127,Logistic Regression,oulad_source
+0,0.69,0.34940915362006064,Logistic Regression,oulad_source
+35,0.42,0.3493935471498972,Logistic Regression,oulad_source
+35,0.59,0.3487490523123659,Logistic Regression,oulad_source
+35,0.41,0.34644940283305525,Logistic Regression,oulad_source
+35,0.6,0.3455515702913215,Logistic Regression,oulad_source
+35,0.4,0.3435566436679101,Logistic Regression,oulad_source
+35,0.61,0.34159679183376696,Logistic Regression,oulad_source
+35,0.62,0.3415136755339161,Logistic Regression,oulad_source
+0,0.7,0.34127830395785186,Logistic Regression,oulad_source
+60,0.45,0.3398022702306797,Logistic Regression,oulad_source
+35,0.39,0.33871664219706205,Logistic Regression,oulad_source
+35,0.63,0.336564559906949,Logistic Regression,oulad_source
+60,0.43,0.33632585203656934,Logistic Regression,oulad_source
+35,0.64,0.335416246724459,Logistic Regression,oulad_source
+60,0.44,0.3350776207919011,Logistic Regression,oulad_source
+60,0.41,0.3349035101048405,Logistic Regression,oulad_source
+60,0.42,0.3343903599175457,Logistic Regression,oulad_source
+0,0.71,0.33345604230113013,Logistic Regression,oulad_source
+35,0.38,0.3322834645669089,Logistic Regression,oulad_source
+60,0.49,0.3320030201704206,Logistic Regression,oulad_source
+60,0.48,0.3311890433699903,Logistic Regression,oulad_source
+60,0.46,0.3309710783374788,Logistic Regression,oulad_source
+60,0.47,0.3308838133068479,Logistic Regression,oulad_source
+60,0.4,0.33027657545300465,Logistic Regression,oulad_source
+60,0.39,0.3301094246381856,Logistic Regression,oulad_source
+35,0.37,0.3293018800143479,Logistic Regression,oulad_source
+60,0.38,0.32892043128155396,Logistic Regression,oulad_source
+35,0.36,0.32635496627120325,Logistic Regression,oulad_source
+60,0.37,0.32338079926503627,Logistic Regression,oulad_source
+35,0.35,0.32304573102047646,Logistic Regression,oulad_source
+60,0.34,0.3228993165240285,Logistic Regression,oulad_source
+60,0.35,0.32165221579960673,Logistic Regression,oulad_source
+60,0.36,0.32127700006333565,Logistic Regression,oulad_source
+35,0.65,0.320677753373086,Logistic Regression,oulad_source
+35,0.34,0.31976362442545153,Logistic Regression,oulad_source
+60,0.5,0.31929195608334965,Logistic Regression,oulad_source
+0,0.72,0.31864334318999876,Logistic Regression,oulad_source
+60,0.33,0.31827696375453673,Logistic Regression,oulad_source
+60,0.32,0.31739453830622993,Logistic Regression,oulad_source
+35,0.66,0.31657800455977303,Logistic Regression,oulad_source
+60,0.31,0.3132123690263154,Logistic Regression,oulad_source
+35,0.33,0.31318214032598496,Logistic Regression,oulad_source
+60,0.51,0.31213872832369777,Logistic Regression,oulad_source
+35,0.32,0.3104905764966485,Logistic Regression,oulad_source
+75,0.37,0.3099330559073681,Logistic Regression,oulad_source
+60,0.52,0.30763582966225994,Logistic Regression,oulad_source
+75,0.38,0.30748840291584223,Logistic Regression,oulad_source
+75,0.36,0.30717891674510595,Logistic Regression,oulad_source
+35,0.31,0.3066856522918102,Logistic Regression,oulad_source
+35,0.67,0.3065315315315385,Logistic Regression,oulad_source
+60,0.3,0.3057287320210034,Logistic Regression,oulad_source
+35,0.3,0.3053764870073504,Logistic Regression,oulad_source
+75,0.33,0.30484988452656486,Logistic Regression,oulad_source
+75,0.39,0.3047257468278583,Logistic Regression,oulad_source
+60,0.53,0.3041204235234075,Logistic Regression,oulad_source
+75,0.34,0.3038321167883267,Logistic Regression,oulad_source
+60,0.29,0.301783523638759,Logistic Regression,oulad_source
+75,0.4,0.30149597238205134,Logistic Regression,oulad_source
+0,0.73,0.3009145748200068,Logistic Regression,oulad_source
+35,0.29,0.30072688158020733,Logistic Regression,oulad_source
+75,0.35,0.3006546512567737,Logistic Regression,oulad_source
+60,0.54,0.30050304474450557,Logistic Regression,oulad_source
+60,0.28,0.30044863370643315,Logistic Regression,oulad_source
+75,0.41,0.29869266563261926,Logistic Regression,oulad_source
+35,0.28,0.29845085813457484,Logistic Regression,oulad_source
+35,0.27,0.296197634224436,Logistic Regression,oulad_source
+60,0.55,0.2960924600990642,Logistic Regression,oulad_source
+35,0.68,0.29575814389501465,Logistic Regression,oulad_source
+60,0.56,0.29566963005448843,Logistic Regression,oulad_source
+75,0.32,0.2956211882409435,Logistic Regression,oulad_source
+35,0.26,0.2943139640060858,Logistic Regression,oulad_source
+60,0.27,0.2941662678905407,Logistic Regression,oulad_source
+75,0.31,0.2941367022999741,Logistic Regression,oulad_source
+35,0.25,0.2925446703634966,Logistic Regression,oulad_source
+75,0.3,0.2918380062305363,Logistic Regression,oulad_source
+75,0.28,0.29096045197740833,Logistic Regression,oulad_source
+35,0.24,0.290781440781413,Logistic Regression,oulad_source
+75,0.42,0.2892436778930214,Logistic Regression,oulad_source
+35,0.23,0.2887096286896607,Logistic Regression,oulad_source
+0,0.74,0.2885099706865974,Logistic Regression,oulad_source
+75,0.29,0.28834790829591794,Logistic Regression,oulad_source
+75,0.27,0.28829218218164876,Logistic Regression,oulad_source
+75,0.44,0.28824662813102236,Logistic Regression,oulad_source
+60,0.57,0.2875758921960618,Logistic Regression,oulad_source
+75,0.26,0.2871088732466807,Logistic Regression,oulad_source
+35,0.22,0.28639803763196836,Logistic Regression,oulad_source
+75,0.43,0.28617244356728905,Logistic Regression,oulad_source
+35,0.21,0.28585849588786133,Logistic Regression,oulad_source
+60,0.26,0.285774128686321,Logistic Regression,oulad_source
+35,0.2,0.2839455220800381,Logistic Regression,oulad_source
+35,0.69,0.2835239717692928,Logistic Regression,oulad_source
+35,0.19,0.28312244957869387,Logistic Regression,oulad_source
+75,0.25,0.28271429272362236,Logistic Regression,oulad_source
+35,0.18,0.28225239990631723,Logistic Regression,oulad_source
+60,0.25,0.28191917565608826,Logistic Regression,oulad_source
+35,0.17,0.2813138089959467,Logistic Regression,oulad_source
+35,0.16,0.2810489856506401,Logistic Regression,oulad_source
+75,0.24,0.28082480011222455,Logistic Regression,oulad_source
+35,0.15,0.2806079451337956,Logistic Regression,oulad_source
+35,0.14,0.2805101240449421,Logistic Regression,oulad_source
+35,0.12,0.2801926759909187,Logistic Regression,oulad_source
+35,0.13,0.2801926759909187,Logistic Regression,oulad_source
+35,0.05,0.28014390158985264,Logistic Regression,oulad_source
+35,0.06,0.28014390158985264,Logistic Regression,oulad_source
+35,0.07,0.28014390158985264,Logistic Regression,oulad_source
+35,0.08,0.28014390158985264,Logistic Regression,oulad_source
+35,0.09,0.28014390158985264,Logistic Regression,oulad_source
+35,0.1,0.28014390158985264,Logistic Regression,oulad_source
+35,0.11,0.28014390158985264,Logistic Regression,oulad_source
+75,0.45,0.27870408024942445,Logistic Regression,oulad_source
+60,0.24,0.2774481287570236,Logistic Regression,oulad_source
+60,0.58,0.2770125497398233,Logistic Regression,oulad_source
+75,0.23,0.27580334334245266,Logistic Regression,oulad_source
+60,0.23,0.2756965537930722,Logistic Regression,oulad_source
+75,0.47,0.2739162380602494,Logistic Regression,oulad_source
+75,0.46,0.27345082433200685,Logistic Regression,oulad_source
+35,0.7,0.2733199598796444,Logistic Regression,oulad_source
+60,0.59,0.27200250117242525,Logistic Regression,oulad_source
+0,0.75,0.27151930093239407,Logistic Regression,oulad_source
+75,0.48,0.2709697061957671,Logistic Regression,oulad_source
+60,0.22,0.270605291772376,Logistic Regression,oulad_source
+75,0.49,0.2694497153700178,Logistic Regression,oulad_source
+75,0.22,0.2685367313777537,Logistic Regression,oulad_source
+60,0.21,0.2670568738760923,Logistic Regression,oulad_source
+75,0.21,0.2643772592836077,Logistic Regression,oulad_source
+60,0.2,0.26334495013974163,Logistic Regression,oulad_source
+35,0.71,0.2614209913291106,Logistic Regression,oulad_source
+60,0.19,0.2597946500945641,Logistic Regression,oulad_source
+60,0.6,0.25969428801287264,Logistic Regression,oulad_source
+75,0.2,0.25942780261960935,Logistic Regression,oulad_source
+75,0.5,0.2556119941012608,Logistic Regression,oulad_source
+60,0.18,0.25549641286738684,Logistic Regression,oulad_source
+60,0.61,0.2531311799604487,Logistic Regression,oulad_source
+60,0.17,0.2529885654885606,Logistic Regression,oulad_source
+75,0.19,0.2511631454503908,Logistic Regression,oulad_source
+60,0.16,0.2501681237390671,Logistic Regression,oulad_source
+0,0.76,0.2501351949265071,Logistic Regression,oulad_source
+75,0.51,0.24957555178268173,Logistic Regression,oulad_source
+60,0.15,0.24758110415480447,Logistic Regression,oulad_source
+35,0.72,0.24624060150376376,Logistic Regression,oulad_source
+75,0.18,0.24605701592003515,Logistic Regression,oulad_source
+60,0.14,0.24600638977635297,Logistic Regression,oulad_source
+60,0.13,0.24460834655960678,Logistic Regression,oulad_source
+60,0.12,0.24332911743837632,Logistic Regression,oulad_source
+75,0.17,0.24201077199282403,Logistic Regression,oulad_source
+60,0.11,0.241740729390127,Logistic Regression,oulad_source
+60,0.09,0.24097855595887638,Logistic Regression,oulad_source
+60,0.1,0.2408549618320563,Logistic Regression,oulad_source
+60,0.08,0.2407582360649695,Logistic Regression,oulad_source
+60,0.05,0.24073622623110202,Logistic Regression,oulad_source
+60,0.06,0.24073622623110202,Logistic Regression,oulad_source
+60,0.07,0.24073622623110202,Logistic Regression,oulad_source
+75,0.16,0.23833181722763103,Logistic Regression,oulad_source
+60,0.62,0.23652998983395487,Logistic Regression,oulad_source
+35,0.73,0.23582954075300375,Logistic Regression,oulad_source
+75,0.15,0.23541474418128275,Logistic Regression,oulad_source
+0,0.77,0.23515946100619484,Logistic Regression,oulad_source
+75,0.52,0.2336481287163338,Logistic Regression,oulad_source
+75,0.14,0.23162538854908762,Logistic Regression,oulad_source
+75,0.13,0.22913580246914084,Logistic Regression,oulad_source
+60,0.63,0.22776421346355086,Logistic Regression,oulad_source
+75,0.12,0.22723750484308908,Logistic Regression,oulad_source
+75,0.11,0.22555959441362652,Logistic Regression,oulad_source
+75,0.53,0.22528653295128898,Logistic Regression,oulad_source
+75,0.1,0.22426889479681464,Logistic Regression,oulad_source
+75,0.09,0.2227041297378891,Logistic Regression,oulad_source
+75,0.08,0.2221179121291825,Logistic Regression,oulad_source
+75,0.07,0.22149410222805205,Logistic Regression,oulad_source
+75,0.06,0.22132834424696465,Logistic Regression,oulad_source
+75,0.05,0.2213076419418251,Logistic Regression,oulad_source
+35,0.74,0.21805792163543825,Logistic Regression,oulad_source
+75,0.54,0.2178107606679033,Logistic Regression,oulad_source
+60,0.64,0.21037515706336377,Logistic Regression,oulad_source
+35,0.75,0.20757486788021504,Logistic Regression,oulad_source
+75,0.55,0.2048705063780441,Logistic Regression,oulad_source
+75,0.56,0.19959839357429746,Logistic Regression,oulad_source
+60,0.65,0.19530102790014656,Logistic Regression,oulad_source
+75,0.57,0.19265676567656798,Logistic Regression,oulad_source
+35,0.76,0.1925948499162003,Logistic Regression,oulad_source
+0,0.78,0.18500834148306114,Logistic Regression,oulad_source
+60,0.66,0.17588706600534101,Logistic Regression,oulad_source
+35,0.77,0.17588652482269818,Logistic Regression,oulad_source
+75,0.58,0.16599276441796165,Logistic Regression,oulad_source
+0,0.79,0.15945962245944395,Logistic Regression,oulad_source
+35,0.78,0.15904637491835688,Logistic Regression,oulad_source
+60,0.67,0.15702479338842923,Logistic Regression,oulad_source
+75,0.59,0.15109170305676903,Logistic Regression,oulad_source
+35,0.79,0.1487325835151949,Logistic Regression,oulad_source
+60,0.68,0.13937699680511134,Logistic Regression,oulad_source
+75,0.6,0.13836197277393483,Logistic Regression,oulad_source
+60,0.69,0.13538710985001978,Logistic Regression,oulad_source
+35,0.8,0.13381742738589453,Logistic Regression,oulad_source
+75,0.61,0.12368781378366085,Logistic Regression,oulad_source
+35,0.81,0.11530886302596453,Logistic Regression,oulad_source
+0,0.8,0.1131039765111397,Logistic Regression,oulad_source
+60,0.7,0.11132035990793016,Logistic Regression,oulad_source
+75,0.62,0.10902255639097781,Logistic Regression,oulad_source
+60,0.71,0.10771840542832871,Logistic Regression,oulad_source
+35,0.82,0.1070780399274067,Logistic Regression,oulad_source
+75,0.63,0.10700757575757612,Logistic Regression,oulad_source
+60,0.72,0.09986973512809345,Logistic Regression,oulad_source
+35,0.83,0.09735488611315393,Logistic Regression,oulad_source
+75,0.64,0.09542262048922287,Logistic Regression,oulad_source
+0,0.81,0.0903490759753606,Logistic Regression,oulad_source
+35,0.84,0.08406830549821898,Logistic Regression,oulad_source
+75,0.65,0.07690411634212493,Logistic Regression,oulad_source
+60,0.73,0.07433785889160895,Logistic Regression,oulad_source
+60,0.74,0.07136445242369817,Logistic Regression,oulad_source
+75,0.66,0.06889665501747398,Logistic Regression,oulad_source
+60,0.75,0.06524694154961469,Logistic Regression,oulad_source
+35,0.85,0.06373117033603841,Logistic Regression,oulad_source
+0,0.82,0.06356134488167586,Logistic Regression,oulad_source
+75,0.67,0.05662285136501532,Logistic Regression,oulad_source
+60,0.76,0.05634448007329348,Logistic Regression,oulad_source
+35,0.86,0.056304985337244595,Logistic Regression,oulad_source
+60,0.77,0.051163862641161406,Logistic Regression,oulad_source
+75,0.68,0.0498727735368958,Logistic Regression,oulad_source
+0,0.83,0.04907633321714951,Logistic Regression,oulad_source
+60,0.78,0.04900816802800453,Logistic Regression,oulad_source
+75,0.69,0.047143223161670626,Logistic Regression,oulad_source
+35,0.87,0.04656716417910548,Logistic Regression,oulad_source
+35,0.88,0.04556354916067244,Logistic Regression,oulad_source
+60,0.79,0.0452830188679244,Logistic Regression,oulad_source
+60,0.8,0.04443382704252257,Logistic Regression,oulad_source
+75,0.7,0.04201244813278019,Logistic Regression,oulad_source
+75,0.71,0.03908285565398655,Logistic Regression,oulad_source
+75,0.72,0.03625853914871265,Logistic Regression,oulad_source
+60,0.81,0.035988483685220625,Logistic Regression,oulad_source
+75,0.73,0.033315705975674334,Logistic Regression,oulad_source
+35,0.89,0.03151515151515219,Logistic Regression,oulad_source
+60,0.82,0.030449492508458104,Logistic Regression,oulad_source
+60,0.83,0.027669902912621277,Logistic Regression,oulad_source
+75,0.74,0.027185501066098156,Logistic Regression,oulad_source
+35,0.9,0.02682926829268351,Logistic Regression,oulad_source
+60,0.84,0.022102161100196395,Logistic Regression,oulad_source
+0,0.84,0.02205197966635673,Logistic Regression,oulad_source
+75,0.75,0.020905923344947792,Logistic Regression,oulad_source
+60,0.85,0.020674378538026027,Logistic Regression,oulad_source
+75,0.77,0.017920173771382074,Logistic Regression,oulad_source
+75,0.76,0.017818574514038923,Logistic Regression,oulad_source
+0,0.85,0.017072994284887753,Logistic Regression,oulad_source
+35,0.91,0.015970515970516318,Logistic Regression,oulad_source
+75,0.79,0.014904775048302552,Logistic Regression,oulad_source
+75,0.78,0.014831090359791304,Logistic Regression,oulad_source
+60,0.87,0.011910669975186064,Logistic Regression,oulad_source
+60,0.86,0.011892963330029694,Logistic Regression,oulad_source
+75,0.81,0.01164079822616411,Logistic Regression,oulad_source
+75,0.8,0.011631127111603466,Logistic Regression,oulad_source
+0,0.86,0.010172200828307932,Logistic Regression,oulad_source
+35,0.92,0.009870450339296948,Logistic Regression,oulad_source
+60,0.88,0.007483162883512073,Logistic Regression,oulad_source
+75,0.83,0.006690827989963777,Logistic Regression,oulad_source
+75,0.82,0.006679654884497653,Logistic Regression,oulad_source
+75,0.84,0.005022321428571442,Logistic Regression,oulad_source
+75,0.85,0.005022321428571442,Logistic Regression,oulad_source
+35,0.93,0.00495049504950506,Logistic Regression,oulad_source
+35,0.94,0.003721314864585569,Logistic Regression,oulad_source
+35,0.95,0.0024824162184526825,Logistic Regression,oulad_source
+75,0.88,0.0016877637130801736,Logistic Regression,oulad_source
+75,0.89,0.0016877637130801736,Logistic Regression,oulad_source
+75,0.9,0.0016877637130801736,Logistic Regression,oulad_source
+75,0.87,0.0016835016835016882,Logistic Regression,oulad_source
+75,0.86,0.0016797312430011245,Logistic Regression,oulad_source
+60,0.91,0.0015178345560333873,Logistic Regression,oulad_source
+60,0.92,0.0015178345560333873,Logistic Regression,oulad_source
+60,0.93,0.0015178345560333873,Logistic Regression,oulad_source
+60,0.9,0.0015064022093899021,Logistic Regression,oulad_source
+60,0.89,0.0015033826108744627,Logistic Regression,oulad_source
+0,0.87,0.0,Logistic Regression,oulad_source
+0,0.88,0.0,Logistic Regression,oulad_source
+0,0.89,0.0,Logistic Regression,oulad_source
+0,0.9,0.0,Logistic Regression,oulad_source
+0,0.91,0.0,Logistic Regression,oulad_source
+75,0.91,0.0,Logistic Regression,oulad_source
+0,0.92,0.0,Logistic Regression,oulad_source
+75,0.92,0.0,Logistic Regression,oulad_source
+0,0.93,0.0,Logistic Regression,oulad_source
+75,0.93,0.0,Logistic Regression,oulad_source
+0,0.94,0.0,Logistic Regression,oulad_source
+60,0.94,0.0,Logistic Regression,oulad_source
+75,0.94,0.0,Logistic Regression,oulad_source
+0,0.95,0.0,Logistic Regression,oulad_source
+60,0.95,0.0,Logistic Regression,oulad_source
+75,0.95,0.0,Logistic Regression,oulad_source
+0,0.39,0.45224735260631704,Logistic Regression,pooled
+0,0.41,0.45102716448391,Logistic Regression,pooled
+0,0.4,0.45030791034075224,Logistic Regression,pooled
+0,0.37,0.4499402774855532,Logistic Regression,pooled
+0,0.38,0.4493258834274565,Logistic Regression,pooled
+0,0.36,0.4486292598204595,Logistic Regression,pooled
+0,0.42,0.4472452524629501,Logistic Regression,pooled
+0,0.46,0.44633278882774335,Logistic Regression,pooled
+0,0.43,0.44495906832547966,Logistic Regression,pooled
+0,0.47,0.4443199765504856,Logistic Regression,pooled
+0,0.45,0.4441974977520127,Logistic Regression,pooled
+0,0.44,0.4434919749608493,Logistic Regression,pooled
+0,0.48,0.4429727136060078,Logistic Regression,pooled
+0,0.35,0.441608164018578,Logistic Regression,pooled
+0,0.5,0.4359065931299421,Logistic Regression,pooled
+0,0.34,0.4358853879264848,Logistic Regression,pooled
+0,0.49,0.4357412959306279,Logistic Regression,pooled
+0,0.51,0.43282359858021496,Logistic Regression,pooled
+0,0.52,0.4325302940643171,Logistic Regression,pooled
+0,0.53,0.4303796085943733,Logistic Regression,pooled
+0,0.33,0.42965481645102077,Logistic Regression,pooled
+0,0.32,0.42804933353104047,Logistic Regression,pooled
+0,0.31,0.4252678388860339,Logistic Regression,pooled
+0,0.05,0.4247618702851653,Logistic Regression,pooled
+0,0.06,0.4247618702851653,Logistic Regression,pooled
+0,0.07,0.4247618702851653,Logistic Regression,pooled
+0,0.08,0.4247618702851653,Logistic Regression,pooled
+0,0.09,0.4247618702851653,Logistic Regression,pooled
+0,0.1,0.4247618702851653,Logistic Regression,pooled
+0,0.11,0.4247618702851653,Logistic Regression,pooled
+0,0.12,0.4247618702851653,Logistic Regression,pooled
+0,0.13,0.4247618702851653,Logistic Regression,pooled
+0,0.14,0.4247618702851653,Logistic Regression,pooled
+0,0.15,0.4247618702851653,Logistic Regression,pooled
+0,0.16,0.4247618702851653,Logistic Regression,pooled
+0,0.17,0.4247618702851653,Logistic Regression,pooled
+0,0.18,0.4247618702851653,Logistic Regression,pooled
+0,0.19,0.4247618702851653,Logistic Regression,pooled
+0,0.2,0.4247618702851653,Logistic Regression,pooled
+0,0.21,0.4247618702851653,Logistic Regression,pooled
+0,0.22,0.4247618702851653,Logistic Regression,pooled
+0,0.23,0.4247618702851653,Logistic Regression,pooled
+0,0.24,0.4247618702851653,Logistic Regression,pooled
+0,0.25,0.4247618702851653,Logistic Regression,pooled
+0,0.26,0.42462771288336826,Logistic Regression,pooled
+0,0.28,0.42397860584528235,Logistic Regression,pooled
+0,0.27,0.42341084814092583,Logistic Regression,pooled
+0,0.29,0.4231363693953216,Logistic Regression,pooled
+0,0.3,0.4227722249148161,Logistic Regression,pooled
+0,0.54,0.4210683025085455,Logistic Regression,pooled
+0,0.55,0.4144080246535158,Logistic Regression,pooled
+0,0.56,0.40915652129665897,Logistic Regression,pooled
+0,0.57,0.40508443043268283,Logistic Regression,pooled
+0,0.58,0.401331043039419,Logistic Regression,pooled
+0,0.59,0.3982629591323966,Logistic Regression,pooled
+0,0.61,0.3949627771894689,Logistic Regression,pooled
+0,0.6,0.394429192559998,Logistic Regression,pooled
+0,0.62,0.3935402547401744,Logistic Regression,pooled
+0,0.63,0.38674864944391885,Logistic Regression,pooled
+0,0.64,0.3789351879369871,Logistic Regression,pooled
+0,0.65,0.36851978097299337,Logistic Regression,pooled
+0,0.66,0.36073568514045484,Logistic Regression,pooled
+0,0.67,0.34825256374241637,Logistic Regression,pooled
+0,0.68,0.3381718134604067,Logistic Regression,pooled
+35,0.47,0.33725198148837127,Logistic Regression,pooled
+35,0.49,0.3366022334334781,Logistic Regression,pooled
+35,0.55,0.3364873264728303,Logistic Regression,pooled
+35,0.46,0.33646694214875245,Logistic Regression,pooled
+35,0.5,0.33595708705031924,Logistic Regression,pooled
+35,0.48,0.3358954650268992,Logistic Regression,pooled
+35,0.43,0.3351489603561652,Logistic Regression,pooled
+35,0.56,0.3343095935424036,Logistic Regression,pooled
+35,0.44,0.33421103959429327,Logistic Regression,pooled
+35,0.45,0.33406990759340144,Logistic Regression,pooled
+35,0.54,0.33391444280542526,Logistic Regression,pooled
+35,0.51,0.33270937745305684,Logistic Regression,pooled
+35,0.53,0.33253665783864833,Logistic Regression,pooled
+35,0.52,0.3322727556304265,Logistic Regression,pooled
+35,0.42,0.3317365269460928,Logistic Regression,pooled
+35,0.41,0.32972150085070456,Logistic Regression,pooled
+35,0.58,0.32939035486806956,Logistic Regression,pooled
+35,0.57,0.32927366104182704,Logistic Regression,pooled
+35,0.4,0.3283036917858675,Logistic Regression,pooled
+0,0.69,0.32786104614143374,Logistic Regression,pooled
+35,0.59,0.32778388566044414,Logistic Regression,pooled
+35,0.6,0.3264307842817623,Logistic Regression,pooled
+35,0.39,0.3256564969830697,Logistic Regression,pooled
+35,0.38,0.3218210361067309,Logistic Regression,pooled
+35,0.62,0.3187461477502942,Logistic Regression,pooled
+0,0.7,0.31837275748004545,Logistic Regression,pooled
+35,0.61,0.31769686706182,Logistic Regression,pooled
+60,0.4,0.3176071093129042,Logistic Regression,pooled
+35,0.37,0.31686280831853536,Logistic Regression,pooled
+60,0.43,0.3157123075669896,Logistic Regression,pooled
+60,0.44,0.3147173654727499,Logistic Regression,pooled
+60,0.41,0.3146674673472389,Logistic Regression,pooled
+0,0.71,0.3141563319866803,Logistic Regression,pooled
+35,0.33,0.31353520612912616,Logistic Regression,pooled
+35,0.34,0.3128040110753347,Logistic Regression,pooled
+35,0.35,0.3125455731664977,Logistic Regression,pooled
+35,0.36,0.3124730254639412,Logistic Regression,pooled
+60,0.39,0.3122357019064056,Logistic Regression,pooled
+60,0.37,0.3121305576972427,Logistic Regression,pooled
+60,0.38,0.31200747963135395,Logistic Regression,pooled
+35,0.63,0.31008593396653894,Logistic Regression,pooled
+60,0.34,0.30966628308399663,Logistic Regression,pooled
+60,0.42,0.309544282029229,Logistic Regression,pooled
+35,0.32,0.30951531158538514,Logistic Regression,pooled
+60,0.45,0.3090394480806605,Logistic Regression,pooled
+60,0.35,0.30819594071780676,Logistic Regression,pooled
+60,0.36,0.3079972743603964,Logistic Regression,pooled
+60,0.33,0.307675268579015,Logistic Regression,pooled
+35,0.31,0.3075845156769765,Logistic Regression,pooled
+60,0.47,0.3073509550453368,Logistic Regression,pooled
+35,0.3,0.3069831441348215,Logistic Regression,pooled
+60,0.48,0.30671889123229545,Logistic Regression,pooled
+60,0.46,0.30669984333240763,Logistic Regression,pooled
+35,0.29,0.3050286871413848,Logistic Regression,pooled
+60,0.49,0.304740172181306,Logistic Regression,pooled
+60,0.32,0.3046937576760749,Logistic Regression,pooled
+35,0.64,0.30459337349398385,Logistic Regression,pooled
+0,0.72,0.30415761709653266,Logistic Regression,pooled
+35,0.65,0.303875968992256,Logistic Regression,pooled
+35,0.28,0.3025996879046186,Logistic Regression,pooled
+60,0.5,0.30058918050347916,Logistic Regression,pooled
+35,0.27,0.30028476972927853,Logistic Regression,pooled
+60,0.3,0.2988004362050092,Logistic Regression,pooled
+60,0.51,0.2983621071270453,Logistic Regression,pooled
+60,0.31,0.2982950181762251,Logistic Regression,pooled
+35,0.26,0.2971789256730378,Logistic Regression,pooled
+35,0.66,0.2949633055192597,Logistic Regression,pooled
+35,0.25,0.2946215329745297,Logistic Regression,pooled
+60,0.29,0.2945588305546197,Logistic Regression,pooled
+35,0.24,0.29250779453907166,Logistic Regression,pooled
+35,0.23,0.2913960786750496,Logistic Regression,pooled
+0,0.73,0.29128766786617344,Logistic Regression,pooled
+75,0.34,0.2911841902115227,Logistic Regression,pooled
+75,0.33,0.2902534545185896,Logistic Regression,pooled
+60,0.28,0.29011375196522043,Logistic Regression,pooled
+35,0.67,0.28970695588696105,Logistic Regression,pooled
+35,0.22,0.2893305889219719,Logistic Regression,pooled
+60,0.27,0.28890784216904686,Logistic Regression,pooled
+60,0.52,0.28869286287088847,Logistic Regression,pooled
+35,0.21,0.2885112333930956,Logistic Regression,pooled
+75,0.31,0.28847453046886157,Logistic Regression,pooled
+75,0.35,0.28763789746918034,Logistic Regression,pooled
+35,0.68,0.28762541806020764,Logistic Regression,pooled
+60,0.26,0.2872788908687841,Logistic Regression,pooled
+35,0.2,0.28719775409783815,Logistic Regression,pooled
+75,0.32,0.28672616517920946,Logistic Regression,pooled
+35,0.18,0.28613937987261384,Logistic Regression,pooled
+35,0.19,0.28601340033498057,Logistic Regression,pooled
+75,0.3,0.2856404958677748,Logistic Regression,pooled
+35,0.17,0.2844886245968775,Logistic Regression,pooled
+60,0.25,0.2843905315474626,Logistic Regression,pooled
+75,0.37,0.2837450769781637,Logistic Regression,pooled
+35,0.16,0.2831332391713469,Logistic Regression,pooled
+75,0.39,0.2831265997243582,Logistic Regression,pooled
+60,0.53,0.2830930537352541,Logistic Regression,pooled
+75,0.36,0.2825177214108846,Logistic Regression,pooled
+35,0.15,0.28228598251478765,Logistic Regression,pooled
+75,0.29,0.2818464540520828,Logistic Regression,pooled
+75,0.38,0.28156884770196,Logistic Regression,pooled
+35,0.69,0.2814962814962881,Logistic Regression,pooled
+35,0.14,0.2813221498085469,Logistic Regression,pooled
+60,0.24,0.281316522023901,Logistic Regression,pooled
+35,0.13,0.28108423200230387,Logistic Regression,pooled
+75,0.4,0.2810699588477392,Logistic Regression,pooled
+75,0.28,0.28087252257535555,Logistic Regression,pooled
+35,0.11,0.2805101240449421,Logistic Regression,pooled
+35,0.12,0.2804222034834417,Logistic Regression,pooled
+35,0.1,0.28026586944530346,Logistic Regression,pooled
+35,0.09,0.280241467378658,Logistic Regression,pooled
+35,0.08,0.2801926759909187,Logistic Regression,pooled
+35,0.05,0.28014390158985264,Logistic Regression,pooled
+35,0.06,0.28014390158985264,Logistic Regression,pooled
+35,0.07,0.28014390158985264,Logistic Regression,pooled
+75,0.41,0.2797112380131474,Logistic Regression,pooled
+75,0.27,0.27953580526465444,Logistic Regression,pooled
+75,0.26,0.276923076923084,Logistic Regression,pooled
+60,0.23,0.27676799746011005,Logistic Regression,pooled
+75,0.42,0.2758775877587778,Logistic Regression,pooled
+60,0.54,0.2754875339422354,Logistic Regression,pooled
+75,0.25,0.27414458451248463,Logistic Regression,pooled
+75,0.24,0.27194628221586586,Logistic Regression,pooled
+60,0.22,0.271900061690309,Logistic Regression,pooled
+75,0.43,0.2714584787159821,Logistic Regression,pooled
+0,0.74,0.27077672135002123,Logistic Regression,pooled
+35,0.7,0.27024514929708976,Logistic Regression,pooled
+75,0.23,0.26944827258471465,Logistic Regression,pooled
+60,0.55,0.26942740286298494,Logistic Regression,pooled
+60,0.21,0.2679357969391509,Logistic Regression,pooled
+75,0.44,0.2676090665366818,Logistic Regression,pooled
+60,0.2,0.26681671325370654,Logistic Regression,pooled
+75,0.22,0.26634293829310324,Logistic Regression,pooled
+60,0.19,0.26385989739960564,Logistic Regression,pooled
+60,0.56,0.26365198995107714,Logistic Regression,pooled
+35,0.71,0.26363419861872445,Logistic Regression,pooled
+75,0.21,0.2618848305943584,Logistic Regression,pooled
+60,0.18,0.26028157292460824,Logistic Regression,pooled
+75,0.2,0.2590068159688477,Logistic Regression,pooled
+60,0.17,0.2583959985028362,Logistic Regression,pooled
+75,0.45,0.2572846418119363,Logistic Regression,pooled
+0,0.75,0.25696025351410967,Logistic Regression,pooled
+60,0.16,0.2557875016726834,Logistic Regression,pooled
+75,0.19,0.25497975377316673,Logistic Regression,pooled
+60,0.57,0.2549100398296937,Logistic Regression,pooled
+35,0.72,0.25430140329469714,Logistic Regression,pooled
+75,0.46,0.25421702749369157,Logistic Regression,pooled
+75,0.47,0.25261419922949935,Logistic Regression,pooled
+60,0.15,0.2519783286816564,Logistic Regression,pooled
+60,0.14,0.2509158102894883,Logistic Regression,pooled
+75,0.18,0.25065336184367437,Logistic Regression,pooled
+60,0.13,0.24883817826351226,Logistic Regression,pooled
+60,0.58,0.2475303415184875,Logistic Regression,pooled
+75,0.17,0.24711431529701086,Logistic Regression,pooled
+60,0.12,0.24688704885910642,Logistic Regression,pooled
+75,0.48,0.24669730040206744,Logistic Regression,pooled
+60,0.11,0.24502794342626508,Logistic Regression,pooled
+60,0.1,0.24386773485105767,Logistic Regression,pooled
+75,0.16,0.24381165084683232,Logistic Regression,pooled
+35,0.73,0.24376731301939528,Logistic Regression,pooled
+60,0.09,0.24272978788809849,Logistic Regression,pooled
+60,0.59,0.24230825850139925,Logistic Regression,pooled
+60,0.08,0.2419453632243,Logistic Regression,pooled
+60,0.07,0.24135402664059158,Logistic Regression,pooled
+0,0.76,0.24129420943351287,Logistic Regression,pooled
+75,0.15,0.24107368954166156,Logistic Regression,pooled
+60,0.06,0.24086834563082637,Logistic Regression,pooled
+60,0.05,0.24073622623110202,Logistic Regression,pooled
+60,0.6,0.23749429831230118,Logistic Regression,pooled
+75,0.14,0.23744099203833408,Logistic Regression,pooled
+75,0.49,0.2361612515042111,Logistic Regression,pooled
+35,0.74,0.23601512583127288,Logistic Regression,pooled
+75,0.13,0.23484066350059027,Logistic Regression,pooled
+75,0.12,0.2315519913740869,Logistic Regression,pooled
+75,0.11,0.22974447125715358,Logistic Regression,pooled
+60,0.61,0.22885727684852336,Logistic Regression,pooled
+75,0.1,0.22856956960213912,Logistic Regression,pooled
+75,0.09,0.22636783971230912,Logistic Regression,pooled
+75,0.5,0.22604345787087607,Logistic Regression,pooled
+75,0.08,0.22475694223804268,Logistic Regression,pooled
+0,0.77,0.22386495978919538,Logistic Regression,pooled
+75,0.07,0.22337809721960014,Logistic Regression,pooled
+60,0.62,0.22322435174746386,Logistic Regression,pooled
+35,0.75,0.2225201072386097,Logistic Regression,pooled
+75,0.06,0.222013347119095,Logistic Regression,pooled
+75,0.05,0.22145263946088095,Logistic Regression,pooled
+60,0.63,0.21024705687282402,Logistic Regression,pooled
+75,0.51,0.2099429502852478,Logistic Regression,pooled
+35,0.76,0.20643356643356994,Logistic Regression,pooled
+60,0.64,0.20638988552878876,Logistic Regression,pooled
+75,0.52,0.20613001010441162,Logistic Regression,pooled
+0,0.78,0.20145641592095193,Logistic Regression,pooled
+60,0.65,0.19677871148459383,Logistic Regression,pooled
+75,0.53,0.19638786603541958,Logistic Regression,pooled
+35,0.77,0.19268045710979645,Logistic Regression,pooled
+60,0.66,0.19266714593817386,Logistic Regression,pooled
+75,0.54,0.18332135154565043,Logistic Regression,pooled
+0,0.79,0.18252781969891355,Logistic Regression,pooled
+35,0.78,0.17946813252117383,Logistic Regression,pooled
+60,0.67,0.17791868705706787,Logistic Regression,pooled
+35,0.79,0.17340327059549823,Logistic Regression,pooled
+75,0.55,0.17302325581395353,Logistic Regression,pooled
+60,0.68,0.16944655041698212,Logistic Regression,pooled
+75,0.56,0.16109716051767456,Logistic Regression,pooled
+35,0.8,0.15775273766069153,Logistic Regression,pooled
+0,0.8,0.15697914973504237,Logistic Regression,pooled
+60,0.69,0.15459501557632346,Logistic Regression,pooled
+75,0.57,0.1527832609553892,Logistic Regression,pooled
+35,0.81,0.15094339622641775,Logistic Regression,pooled
+0,0.81,0.14496259364183312,Logistic Regression,pooled
+75,0.58,0.14381474710542397,Logistic Regression,pooled
+60,0.7,0.1424038080126928,Logistic Regression,pooled
+75,0.59,0.14063472308649702,Logistic Regression,pooled
+35,0.82,0.1403920254649045,Logistic Regression,pooled
+60,0.71,0.12972317639927208,Logistic Regression,pooled
+75,0.6,0.12797619047619088,Logistic Regression,pooled
+0,0.82,0.12677871282332498,Logistic Regression,pooled
+35,0.83,0.12434873219868235,Logistic Regression,pooled
+75,0.61,0.12251082251082294,Logistic Regression,pooled
+75,0.62,0.12046603649153699,Logistic Regression,pooled
+60,0.72,0.12038754895897706,Logistic Regression,pooled
+75,0.63,0.11685393258427003,Logistic Regression,pooled
+35,0.84,0.11264080100125365,Logistic Regression,pooled
+75,0.64,0.11174458380843823,Logistic Regression,pooled
+60,0.73,0.10872313527180742,Logistic Regression,pooled
+0,0.83,0.10856386536449018,Logistic Regression,pooled
+75,0.65,0.10063784549964595,Logistic Regression,pooled
+35,0.85,0.09972401103956031,Logistic Regression,pooled
+60,0.74,0.09935483870967708,Logistic Regression,pooled
+75,0.66,0.09375747428844801,Logistic Regression,pooled
+60,0.75,0.09156311314584667,Logistic Regression,pooled
+35,0.86,0.08725084618277722,Logistic Regression,pooled
+75,0.67,0.08607350096711824,Logistic Regression,pooled
+0,0.84,0.08523944702566001,Logistic Regression,pooled
+60,0.76,0.08392226148409869,Logistic Regression,pooled
+75,0.68,0.07681017612524485,Logistic Regression,pooled
+60,0.77,0.07592675301473852,Logistic Regression,pooled
+35,0.87,0.07199230028874067,Logistic Regression,pooled
+60,0.78,0.0690438337497159,Logistic Regression,pooled
+75,0.69,0.061845386533666,Logistic Regression,pooled
+0,0.85,0.060677179761354644,Logistic Regression,pooled
+35,0.88,0.060417072695382296,Logistic Regression,pooled
+75,0.7,0.05952080706179081,Logistic Regression,pooled
+60,0.79,0.057563895924476007,Logistic Regression,pooled
+75,0.71,0.05630918863578207,Logistic Regression,pooled
+75,0.72,0.05515463917525786,Logistic Regression,pooled
+60,0.8,0.05257036520120943,Logistic Regression,pooled
+75,0.73,0.052304505437597223,Logistic Regression,pooled
+35,0.89,0.049329123914760326,Logistic Regression,pooled
+0,0.86,0.04839131168199815,Logistic Regression,pooled
+35,0.9,0.04537313432835918,Logistic Regression,pooled
+60,0.81,0.04472693032015054,Logistic Regression,pooled
+75,0.74,0.04342139680878901,Logistic Regression,pooled
+60,0.82,0.0421701018715943,Logistic Regression,pooled
+75,0.76,0.04099015171679541,Logistic Regression,pooled
+75,0.75,0.04076230809952365,Logistic Regression,pooled
+35,0.91,0.03983101991551082,Logistic Regression,pooled
+0,0.87,0.03840126933276569,Logistic Regression,pooled
+60,0.83,0.03541517109356295,Logistic Regression,pooled
+75,0.77,0.03176312247644692,Logistic Regression,pooled
+35,0.92,0.03045066991473878,Logistic Regression,pooled
+0,0.88,0.02905324208678597,Logistic Regression,pooled
+75,0.78,0.027027027027027094,Logistic Regression,pooled
+75,0.79,0.02544667027612351,Logistic Regression,pooled
+60,0.84,0.024775321836288486,Logistic Regression,pooled
+60,0.85,0.023403217942467018,Logistic Regression,pooled
+0,0.89,0.021272394279677347,Logistic Regression,pooled
+35,0.93,0.01838235294117687,Logistic Regression,pooled
+75,0.8,0.017424448679553547,Logistic Regression,pooled
+0,0.9,0.015016360828562558,Logistic Regression,pooled
+0,0.91,0.010531124603761592,Logistic Regression,pooled
+35,0.94,0.00987654320987676,Logistic Regression,pooled
+60,0.87,0.00891972249752227,Logistic Regression,pooled
+60,0.86,0.008873551885629747,Logistic Regression,pooled
+75,0.84,0.008328706274292082,Logistic Regression,pooled
+75,0.83,0.00831485587583151,Logistic Regression,pooled
+75,0.82,0.008301051466519115,Logistic Regression,pooled
+75,0.81,0.00828729281767958,Logistic Regression,pooled
+60,0.9,0.00600450337753313,Logistic Regression,pooled
+60,0.88,0.005973120955699333,Logistic Regression,pooled
+60,0.89,0.005973120955699333,Logistic Regression,pooled
+75,0.85,0.0050055617352614155,Logistic Regression,pooled
+0,0.92,0.004962673306795341,Logistic Regression,pooled
+35,0.95,0.004952538175815215,Logistic Regression,pooled
+75,0.86,0.0033454139949818883,Logistic Regression,pooled
+60,0.91,0.001509813789632607,Logistic Regression,pooled
+75,0.87,0.0,Logistic Regression,pooled
+75,0.88,0.0,Logistic Regression,pooled
+75,0.89,0.0,Logistic Regression,pooled
+75,0.9,0.0,Logistic Regression,pooled
+75,0.91,0.0,Logistic Regression,pooled
+60,0.92,0.0,Logistic Regression,pooled
+75,0.92,0.0,Logistic Regression,pooled
+0,0.93,0.0,Logistic Regression,pooled
+60,0.93,0.0,Logistic Regression,pooled
+75,0.93,0.0,Logistic Regression,pooled
+0,0.94,0.0,Logistic Regression,pooled
+60,0.94,0.0,Logistic Regression,pooled
+75,0.94,0.0,Logistic Regression,pooled
+0,0.95,0.0,Logistic Regression,pooled
+60,0.95,0.0,Logistic Regression,pooled
+75,0.95,0.0,Logistic Regression,pooled
+0,0.38,0.6145404663923183,XGBoost,uci_source
+0,0.36,0.6137281292059219,XGBoost,uci_source
+0,0.37,0.6130790190735695,XGBoost,uci_source
+0,0.39,0.611961057023644,XGBoost,uci_source
+0,0.5,0.6098807495741057,XGBoost,uci_source
+0,0.35,0.607661822985469,XGBoost,uci_source
+0,0.53,0.6070175438596491,XGBoost,uci_source
+0,0.49,0.6053511705685619,XGBoost,uci_source
+0,0.46,0.6050955414012739,XGBoost,uci_source
+0,0.34,0.6036269430051814,XGBoost,uci_source
+0,0.52,0.6027874564459931,XGBoost,uci_source
+0,0.57,0.6025878003696857,XGBoost,uci_source
+0,0.54,0.6024955436720143,XGBoost,uci_source
+0,0.51,0.6024096385542169,XGBoost,uci_source
+0,0.33,0.6023166023166022,XGBoost,uci_source
+0,0.47,0.6022544283413849,XGBoost,uci_source
+0,0.56,0.6018348623853211,XGBoost,uci_source
+0,0.44,0.6012461059190032,XGBoost,uci_source
+0,0.55,0.5992779783393501,XGBoost,uci_source
+0,0.45,0.5984251968503937,XGBoost,uci_source
+0,0.6,0.5977011494252874,XGBoost,uci_source
+0,0.32,0.596977329974811,XGBoost,uci_source
+0,0.42,0.5967016491754124,XGBoost,uci_source
+0,0.48,0.5963756177924218,XGBoost,uci_source
+0,0.63,0.596078431372549,XGBoost,uci_source
+0,0.59,0.5958254269449715,XGBoost,uci_source
+0,0.64,0.5952380952380952,XGBoost,uci_source
+0,0.65,0.5952380952380952,XGBoost,uci_source
+0,0.4,0.5942857142857143,XGBoost,uci_source
+0,0.62,0.5941747572815534,XGBoost,uci_source
+0,0.41,0.5941176470588235,XGBoost,uci_source
+0,0.43,0.593607305936073,XGBoost,uci_source
+0,0.61,0.5934489402697496,XGBoost,uci_source
+0,0.58,0.5913370998116761,XGBoost,uci_source
+0,0.31,0.5854858548585486,XGBoost,uci_source
+0,0.3,0.5827338129496403,XGBoost,uci_source
+0,0.66,0.5806451612903226,XGBoost,uci_source
+0,0.67,0.5725971370143149,XGBoost,uci_source
+0,0.68,0.5690721649484536,XGBoost,uci_source
+0,0.29,0.5687861271676301,XGBoost,uci_source
+0,0.69,0.5648535564853556,XGBoost,uci_source
+0,0.7,0.5618448637316562,XGBoost,uci_source
+0,0.28,0.5598194130925509,XGBoost,uci_source
+0,0.71,0.5581395348837209,XGBoost,uci_source
+0,0.27,0.5565410199556542,XGBoost,uci_source
+0,0.26,0.5537459283387622,XGBoost,uci_source
+0,0.25,0.549520766773163,XGBoost,uci_source
+0,0.24,0.5433646812957158,XGBoost,uci_source
+0,0.72,0.5407725321888412,XGBoost,uci_source
+0,0.74,0.5394736842105264,XGBoost,uci_source
+0,0.73,0.5379609544468548,XGBoost,uci_source
+0,0.23,0.5371900826446281,XGBoost,uci_source
+0,0.22,0.5368314833501514,XGBoost,uci_source
+0,0.75,0.5357142857142858,XGBoost,uci_source
+0,0.76,0.5306122448979592,XGBoost,uci_source
+0,0.21,0.5288270377733598,XGBoost,uci_source
+0,0.77,0.5195402298850575,XGBoost,uci_source
+0,0.2,0.5184466019417476,XGBoost,uci_source
+0,0.19,0.5144508670520231,XGBoost,uci_source
+0,0.18,0.5123809523809524,XGBoost,uci_source
+0,0.17,0.5065420560747662,XGBoost,uci_source
+0,0.78,0.5059101654846336,XGBoost,uci_source
+0,0.16,0.504655493482309,XGBoost,uci_source
+0,0.15,0.5046040515653775,XGBoost,uci_source
+0,0.12,0.5045045045045043,XGBoost,uci_source
+0,0.14,0.5041095890410958,XGBoost,uci_source
+0,0.13,0.503178928247048,XGBoost,uci_source
+0,0.11,0.5008944543828264,XGBoost,uci_source
+0,0.1,0.49866903283052344,XGBoost,uci_source
+0,0.79,0.4976076555023924,XGBoost,uci_source
+0,0.08,0.4956217162872153,XGBoost,uci_source
+0,0.09,0.49560632688927936,XGBoost,uci_source
+0,0.07,0.49391304347826076,XGBoost,uci_source
+0,0.06,0.490924805531547,XGBoost,uci_source
+0,0.8,0.49019607843137253,XGBoost,uci_source
+0,0.05,0.4875536480686694,XGBoost,uci_source
+0,0.81,0.47642679900744417,XGBoost,uci_source
+0,0.82,0.46969696969696967,XGBoost,uci_source
+0,0.84,0.4575835475578406,XGBoost,uci_source
+0,0.83,0.4564102564102564,XGBoost,uci_source
+0,0.85,0.4263157894736842,XGBoost,uci_source
+0,0.86,0.4032258064516129,XGBoost,uci_source
+0,0.87,0.39999999999999997,XGBoost,uci_source
+0,0.88,0.3956639566395664,XGBoost,uci_source
+0,0.89,0.38567493112947654,XGBoost,uci_source
+0,0.9,0.36768802228412256,XGBoost,uci_source
+0,0.91,0.35492957746478876,XGBoost,uci_source
+0,0.92,0.33810888252148996,XGBoost,uci_source
+0,0.93,0.3,XGBoost,uci_source
+0,0.94,0.2553191489361702,XGBoost,uci_source
+0,0.95,0.19620253164556964,XGBoost,uci_source
+35,0.52,0.3984592689723095,XGBoost,oulad_source
+35,0.51,0.3952657081579248,XGBoost,oulad_source
+35,0.49,0.39502885042166885,XGBoost,oulad_source
+35,0.5,0.39444614912550774,XGBoost,oulad_source
+35,0.54,0.39435137268661663,XGBoost,oulad_source
+35,0.57,0.39292310683387793,XGBoost,oulad_source
+35,0.53,0.3928935736144268,XGBoost,oulad_source
+35,0.45,0.3912876361306917,XGBoost,oulad_source
+35,0.58,0.39095931692617725,XGBoost,oulad_source
+35,0.55,0.39048652559234154,XGBoost,oulad_source
+35,0.46,0.39029592108771693,XGBoost,oulad_source
+35,0.48,0.3900042716787783,XGBoost,oulad_source
+35,0.47,0.38920258917505257,XGBoost,oulad_source
+35,0.59,0.38890043649969736,XGBoost,oulad_source
+35,0.56,0.3887636226982438,XGBoost,oulad_source
+0,0.6,0.3827959430820479,XGBoost,oulad_source
+0,0.61,0.3821119266767654,XGBoost,oulad_source
+0,0.62,0.38158461598715515,XGBoost,oulad_source
+35,0.44,0.3814579346953936,XGBoost,oulad_source
+0,0.63,0.3809353091140868,XGBoost,oulad_source
+35,0.6,0.3808908973531398,XGBoost,oulad_source
+0,0.57,0.3797120635445982,XGBoost,oulad_source
+35,0.43,0.3789548524706728,XGBoost,oulad_source
+0,0.59,0.3783194023226583,XGBoost,oulad_source
+0,0.58,0.37762405397075555,XGBoost,oulad_source
+0,0.56,0.3771296472227512,XGBoost,oulad_source
+0,0.55,0.3758941178296028,XGBoost,oulad_source
+0,0.65,0.37582318077049864,XGBoost,oulad_source
+0,0.67,0.3757583636678817,XGBoost,oulad_source
+35,0.42,0.37562061290874627,XGBoost,oulad_source
+0,0.64,0.37553857409966807,XGBoost,oulad_source
+0,0.54,0.37496767520041485,XGBoost,oulad_source
+0,0.66,0.37432150313152557,XGBoost,oulad_source
+0,0.52,0.37306171641900837,XGBoost,oulad_source
+0,0.69,0.3726936365195673,XGBoost,oulad_source
+0,0.53,0.37257204000654,XGBoost,oulad_source
+35,0.41,0.37253275833471067,XGBoost,oulad_source
+35,0.61,0.3722953379433499,XGBoost,oulad_source
+0,0.68,0.37114979025193096,XGBoost,oulad_source
+0,0.5,0.3708747586009594,XGBoost,oulad_source
+0,0.51,0.36999899151431426,XGBoost,oulad_source
+35,0.4,0.369664715274074,XGBoost,oulad_source
+0,0.48,0.3693973254665136,XGBoost,oulad_source
+0,0.49,0.36938538415240213,XGBoost,oulad_source
+0,0.45,0.36938068487667614,XGBoost,oulad_source
+0,0.44,0.36916164776251137,XGBoost,oulad_source
+0,0.47,0.3687721001178682,XGBoost,oulad_source
+0,0.46,0.3685048086902382,XGBoost,oulad_source
+0,0.42,0.3668774843935697,XGBoost,oulad_source
+0,0.43,0.3667054555411056,XGBoost,oulad_source
+35,0.39,0.3666121112929514,XGBoost,oulad_source
+0,0.41,0.36641948431866195,XGBoost,oulad_source
+35,0.62,0.3657973690283946,XGBoost,oulad_source
+0,0.4,0.36487054073461944,XGBoost,oulad_source
+0,0.7,0.3637330780073954,XGBoost,oulad_source
+60,0.42,0.36347901341410005,XGBoost,oulad_source
+35,0.63,0.3632900845137559,XGBoost,oulad_source
+0,0.39,0.36294263337572874,XGBoost,oulad_source
+35,0.38,0.3622454048683429,XGBoost,oulad_source
+0,0.38,0.3619600069182984,XGBoost,oulad_source
+60,0.44,0.36147465437787424,XGBoost,oulad_source
+60,0.43,0.36134453781511994,XGBoost,oulad_source
+60,0.45,0.3612065673921288,XGBoost,oulad_source
+60,0.38,0.3607971445568038,XGBoost,oulad_source
+60,0.4,0.3604150039904157,XGBoost,oulad_source
+60,0.39,0.36022543040221616,XGBoost,oulad_source
+35,0.37,0.359841912473477,XGBoost,oulad_source
+0,0.37,0.3597372335803907,XGBoost,oulad_source
+0,0.36,0.35948528541948793,XGBoost,oulad_source
+60,0.41,0.3591233604515955,XGBoost,oulad_source
+60,0.37,0.358757870635367,XGBoost,oulad_source
+0,0.35,0.3587214563959978,XGBoost,oulad_source
+0,0.33,0.3586650055734058,XGBoost,oulad_source
+0,0.34,0.3586650055734058,XGBoost,oulad_source
+0,0.31,0.35860857251498107,XGBoost,oulad_source
+0,0.32,0.35860857251498107,XGBoost,oulad_source
+0,0.3,0.3585521572123397,XGBoost,oulad_source
+0,0.05,0.3584957596571032,XGBoost,oulad_source
+0,0.06,0.3584957596571032,XGBoost,oulad_source
+0,0.07,0.3584957596571032,XGBoost,oulad_source
+0,0.08,0.3584957596571032,XGBoost,oulad_source
+0,0.09,0.3584957596571032,XGBoost,oulad_source
+0,0.1,0.3584957596571032,XGBoost,oulad_source
+0,0.11,0.3584957596571032,XGBoost,oulad_source
+0,0.12,0.3584957596571032,XGBoost,oulad_source
+0,0.13,0.3584957596571032,XGBoost,oulad_source
+0,0.14,0.3584957596571032,XGBoost,oulad_source
+0,0.15,0.3584957596571032,XGBoost,oulad_source
+0,0.16,0.3584957596571032,XGBoost,oulad_source
+0,0.17,0.3584957596571032,XGBoost,oulad_source
+0,0.18,0.3584957596571032,XGBoost,oulad_source
+0,0.19,0.3584957596571032,XGBoost,oulad_source
+0,0.2,0.3584957596571032,XGBoost,oulad_source
+0,0.21,0.3584957596571032,XGBoost,oulad_source
+0,0.22,0.3584957596571032,XGBoost,oulad_source
+0,0.23,0.3584957596571032,XGBoost,oulad_source
+0,0.24,0.3584957596571032,XGBoost,oulad_source
+0,0.25,0.3584957596571032,XGBoost,oulad_source
+0,0.26,0.3584957596571032,XGBoost,oulad_source
+0,0.27,0.3584957596571032,XGBoost,oulad_source
+0,0.28,0.3584957596571032,XGBoost,oulad_source
+0,0.29,0.3584957596571032,XGBoost,oulad_source
+35,0.64,0.35633595284873004,XGBoost,oulad_source
+60,0.46,0.35632527122523644,XGBoost,oulad_source
+60,0.36,0.35617194507692557,XGBoost,oulad_source
+35,0.35,0.3545108005082417,XGBoost,oulad_source
+35,0.36,0.35366138604606107,XGBoost,oulad_source
+0,0.71,0.35201020319429716,XGBoost,oulad_source
+60,0.48,0.35163188871053647,XGBoost,oulad_source
+60,0.35,0.35100353404013307,XGBoost,oulad_source
+60,0.34,0.34998392799741995,XGBoost,oulad_source
+35,0.34,0.3499779832672645,XGBoost,oulad_source
+60,0.47,0.3498083100196829,XGBoost,oulad_source
+60,0.33,0.34866707997519325,XGBoost,oulad_source
+60,0.49,0.345791283131859,XGBoost,oulad_source
+75,0.41,0.3456640388114055,XGBoost,oulad_source
+75,0.44,0.34468476760239575,XGBoost,oulad_source
+35,0.65,0.3445048691033327,XGBoost,oulad_source
+60,0.32,0.3444112372982585,XGBoost,oulad_source
+35,0.33,0.34420505833260384,XGBoost,oulad_source
+75,0.39,0.34365468157870954,XGBoost,oulad_source
+75,0.38,0.3429828420589586,XGBoost,oulad_source
+60,0.5,0.34285714285714036,XGBoost,oulad_source
+75,0.4,0.3427419354838761,XGBoost,oulad_source
+75,0.42,0.3422459893048169,XGBoost,oulad_source
+60,0.51,0.3419726421886232,XGBoost,oulad_source
+75,0.43,0.34170522141441184,XGBoost,oulad_source
+75,0.37,0.3410448388996442,XGBoost,oulad_source
+35,0.32,0.3409354785204635,XGBoost,oulad_source
+0,0.72,0.339918706872107,XGBoost,oulad_source
+35,0.31,0.3395315141270004,XGBoost,oulad_source
+75,0.36,0.3394971613949779,XGBoost,oulad_source
+75,0.46,0.33858963037719314,XGBoost,oulad_source
+60,0.31,0.33771041823334685,XGBoost,oulad_source
+75,0.35,0.3368750000000064,XGBoost,oulad_source
+0,0.73,0.33677500746987354,XGBoost,oulad_source
+75,0.45,0.3364193819886997,XGBoost,oulad_source
+60,0.3,0.336155045667179,XGBoost,oulad_source
+60,0.52,0.33597818001487617,XGBoost,oulad_source
+35,0.3,0.33588685916320643,XGBoost,oulad_source
+60,0.53,0.3346685618296931,XGBoost,oulad_source
+75,0.34,0.33453183520599905,XGBoost,oulad_source
+75,0.33,0.3316241785224304,XGBoost,oulad_source
+75,0.32,0.33018932874355283,XGBoost,oulad_source
+35,0.66,0.3300261096605803,XGBoost,oulad_source
+0,0.74,0.3298910536214936,XGBoost,oulad_source
+60,0.29,0.32982945403839237,XGBoost,oulad_source
+75,0.47,0.3293624820002625,XGBoost,oulad_source
+35,0.29,0.3289685274523085,XGBoost,oulad_source
+60,0.54,0.32769726247987113,XGBoost,oulad_source
+75,0.31,0.32623927706110367,XGBoost,oulad_source
+35,0.27,0.32608214733424284,XGBoost,oulad_source
+35,0.28,0.32579287539453505,XGBoost,oulad_source
+75,0.48,0.3251900108577635,XGBoost,oulad_source
+75,0.3,0.3246810382754145,XGBoost,oulad_source
+60,0.28,0.3239968936059987,XGBoost,oulad_source
+35,0.26,0.321997759387059,XGBoost,oulad_source
+75,0.49,0.321057870041234,XGBoost,oulad_source
+60,0.27,0.319803813622935,XGBoost,oulad_source
+35,0.25,0.3190114739629045,XGBoost,oulad_source
+60,0.55,0.3183016511724718,XGBoost,oulad_source
+75,0.29,0.3170965806838708,XGBoost,oulad_source
+35,0.67,0.3157329033991726,XGBoost,oulad_source
+35,0.24,0.31564738864082115,XGBoost,oulad_source
+0,0.75,0.3153613671131702,XGBoost,oulad_source
+60,0.26,0.3152352429716869,XGBoost,oulad_source
+75,0.28,0.31504648226788334,XGBoost,oulad_source
+75,0.5,0.31457991344575365,XGBoost,oulad_source
+35,0.23,0.3125296148378533,XGBoost,oulad_source
+60,0.56,0.3122302158273389,XGBoost,oulad_source
+60,0.57,0.3101955515748629,XGBoost,oulad_source
+60,0.25,0.3091052460689207,XGBoost,oulad_source
+75,0.27,0.30849354534878054,XGBoost,oulad_source
+35,0.22,0.3078711391563997,XGBoost,oulad_source
+60,0.24,0.30625307730181545,XGBoost,oulad_source
+35,0.21,0.3036737884314477,XGBoost,oulad_source
+35,0.68,0.3029131575314151,XGBoost,oulad_source
+75,0.26,0.30241355426501904,XGBoost,oulad_source
+35,0.2,0.300964341780641,XGBoost,oulad_source
+60,0.23,0.3009624555622934,XGBoost,oulad_source
+60,0.58,0.29945694336695183,XGBoost,oulad_source
+35,0.19,0.2989697237848154,XGBoost,oulad_source
+75,0.51,0.29643410852713076,XGBoost,oulad_source
+75,0.25,0.2963493199713745,XGBoost,oulad_source
+35,0.18,0.29597557936702945,XGBoost,oulad_source
+0,0.76,0.2958881235650208,XGBoost,oulad_source
+75,0.52,0.2958560873755209,XGBoost,oulad_source
+60,0.22,0.2953076120959273,XGBoost,oulad_source
+35,0.17,0.29404153059335447,XGBoost,oulad_source
+35,0.16,0.2917606879306912,XGBoost,oulad_source
+60,0.21,0.29074462930059186,XGBoost,oulad_source
+35,0.69,0.2902765896777925,XGBoost,oulad_source
+35,0.15,0.2892990710580009,XGBoost,oulad_source
+75,0.24,0.2884416670767182,XGBoost,oulad_source
+60,0.59,0.2881328861204286,XGBoost,oulad_source
+35,0.14,0.28665312462657033,XGBoost,oulad_source
+35,0.13,0.2853496378962087,XGBoost,oulad_source
+75,0.53,0.28471644769665627,XGBoost,oulad_source
+75,0.23,0.28428504011326783,XGBoost,oulad_source
+35,0.12,0.283943329397847,XGBoost,oulad_source
+60,0.2,0.2833891441476465,XGBoost,oulad_source
+35,0.11,0.2831410407346084,XGBoost,oulad_source
+35,0.1,0.2823722552841913,XGBoost,oulad_source
+35,0.09,0.2821082154960572,XGBoost,oulad_source
+35,0.08,0.2815899215537326,XGBoost,oulad_source
+35,0.07,0.2809508568768088,XGBoost,oulad_source
+60,0.6,0.2808411988739861,XGBoost,oulad_source
+35,0.06,0.2805345729226915,XGBoost,oulad_source
+35,0.05,0.280241467378658,XGBoost,oulad_source
+75,0.22,0.2799308588064113,XGBoost,oulad_source
+60,0.19,0.27840504144941125,XGBoost,oulad_source
+0,0.77,0.27807201032534057,XGBoost,oulad_source
+75,0.54,0.2763723971777654,XGBoost,oulad_source
+75,0.21,0.2752722303046399,XGBoost,oulad_source
+35,0.7,0.2749191414289965,XGBoost,oulad_source
+60,0.18,0.2736704160751285,XGBoost,oulad_source
+75,0.55,0.2735733099209826,XGBoost,oulad_source
+75,0.2,0.27029320660245876,XGBoost,oulad_source
+60,0.61,0.2701495102251248,XGBoost,oulad_source
+60,0.17,0.26925525143220363,XGBoost,oulad_source
+75,0.19,0.266830668306689,XGBoost,oulad_source
+75,0.56,0.26620538965768337,XGBoost,oulad_source
+0,0.78,0.2654231755654037,XGBoost,oulad_source
+60,0.16,0.26354138025844975,XGBoost,oulad_source
+75,0.18,0.2602089268755993,XGBoost,oulad_source
+60,0.15,0.2581206885004304,XGBoost,oulad_source
+60,0.62,0.25659978880675827,XGBoost,oulad_source
+60,0.14,0.2542734341677827,XGBoost,oulad_source
+75,0.17,0.25339193579209435,XGBoost,oulad_source
+35,0.71,0.2533312911625104,XGBoost,oulad_source
+75,0.57,0.252591894439208,XGBoost,oulad_source
+60,0.13,0.25139755065110825,XGBoost,oulad_source
+75,0.16,0.2492667532949749,XGBoost,oulad_source
+60,0.12,0.2490131160066168,XGBoost,oulad_source
+60,0.11,0.24708477781279065,XGBoost,oulad_source
+0,0.79,0.24659805882066424,XGBoost,oulad_source
+60,0.1,0.24486226497594618,XGBoost,oulad_source
+75,0.15,0.24397785287985002,XGBoost,oulad_source
+60,0.09,0.24338493035951997,XGBoost,oulad_source
+60,0.08,0.24330164217804187,XGBoost,oulad_source
+75,0.58,0.24245985115550328,XGBoost,oulad_source
+60,0.07,0.24225300205767158,XGBoost,oulad_source
+60,0.06,0.2413413290906818,XGBoost,oulad_source
+60,0.05,0.24124347268451593,XGBoost,oulad_source
+60,0.63,0.24075760335093774,XGBoost,oulad_source
+75,0.14,0.24061200964125304,XGBoost,oulad_source
+35,0.72,0.2400000000000045,XGBoost,oulad_source
+75,0.13,0.235779284959618,XGBoost,oulad_source
+75,0.12,0.2335065973610607,XGBoost,oulad_source
+0,0.8,0.2320874650394138,XGBoost,oulad_source
+35,0.73,0.23140229143134208,XGBoost,oulad_source
+75,0.11,0.2302243211334171,XGBoost,oulad_source
+60,0.64,0.22965779467680572,XGBoost,oulad_source
+75,0.1,0.22731688362153213,XGBoost,oulad_source
+75,0.09,0.22604517059106696,XGBoost,oulad_source
+75,0.08,0.22448785135779437,XGBoost,oulad_source
+75,0.07,0.22302158273381786,XGBoost,oulad_source
+75,0.06,0.22230595327807573,XGBoost,oulad_source
+75,0.05,0.22226397369657605,XGBoost,oulad_source
+75,0.59,0.2212299573777148,XGBoost,oulad_source
+60,0.65,0.2163424124513615,XGBoost,oulad_source
+75,0.6,0.21436004162330927,XGBoost,oulad_source
+35,0.74,0.2136243386243427,XGBoost,oulad_source
+0,0.81,0.2058807776766141,XGBoost,oulad_source
+60,0.66,0.20226055919095728,XGBoost,oulad_source
+35,0.75,0.19880851063830174,XGBoost,oulad_source
+75,0.61,0.19576832656550577,XGBoost,oulad_source
+60,0.67,0.18858662303129425,XGBoost,oulad_source
+75,0.62,0.18213814342278964,XGBoost,oulad_source
+60,0.68,0.17723102585487852,XGBoost,oulad_source
+0,0.82,0.17268174753928783,XGBoost,oulad_source
+75,0.63,0.16380866425992818,XGBoost,oulad_source
+35,0.76,0.16096011295446838,XGBoost,oulad_source
+60,0.69,0.1607635206786845,XGBoost,oulad_source
+75,0.64,0.15370455591348406,XGBoost,oulad_source
+0,0.83,0.14999700006000105,XGBoost,oulad_source
+75,0.65,0.14721050164088179,XGBoost,oulad_source
+75,0.66,0.14614472123368957,XGBoost,oulad_source
+60,0.7,0.14492753623188354,XGBoost,oulad_source
+75,0.67,0.13584723229393317,XGBoost,oulad_source
+75,0.68,0.1343101343101347,XGBoost,oulad_source
+35,0.77,0.13246471226927503,XGBoost,oulad_source
+0,0.84,0.13040502706402232,XGBoost,oulad_source
+60,0.71,0.1293160325489329,XGBoost,oulad_source
+75,0.69,0.12782694198623437,XGBoost,oulad_source
+75,0.7,0.11986131748390327,XGBoost,oulad_source
+60,0.72,0.11477247253978892,XGBoost,oulad_source
+75,0.71,0.11077694235589007,XGBoost,oulad_source
+35,0.78,0.10790697674418816,XGBoost,oulad_source
+60,0.73,0.10672116257947287,XGBoost,oulad_source
+35,0.79,0.10254476908577019,XGBoost,oulad_source
+0,0.85,0.10100611560465719,XGBoost,oulad_source
+60,0.74,0.09109826589595348,XGBoost,oulad_source
+75,0.72,0.09088575096277307,XGBoost,oulad_source
+35,0.8,0.08610417067076861,XGBoost,oulad_source
+60,0.75,0.08463148105091814,XGBoost,oulad_source
+75,0.73,0.07698309492847877,XGBoost,oulad_source
+60,0.76,0.07016717683070381,XGBoost,oulad_source
+35,0.81,0.06543887147335563,XGBoost,oulad_source
+75,0.74,0.0649590705043572,XGBoost,oulad_source
+0,0.86,0.06380502498802033,XGBoost,oulad_source
+60,0.77,0.0615164520743918,XGBoost,oulad_source
+60,0.78,0.05452352231604326,XGBoost,oulad_source
+0,0.87,0.04651486665274071,XGBoost,oulad_source
+35,0.82,0.04462151394422407,XGBoost,oulad_source
+75,0.75,0.04238197424892715,XGBoost,oulad_source
+60,0.79,0.03901487442087284,XGBoost,oulad_source
+75,0.76,0.03341417407706826,XGBoost,oulad_source
+60,0.8,0.03207500616827032,XGBoost,oulad_source
+35,0.83,0.02869266518488645,XGBoost,oulad_source
+0,0.88,0.027407037327814254,XGBoost,oulad_source
+75,0.77,0.027277686852155012,XGBoost,oulad_source
+75,0.79,0.024262475875379167,XGBoost,oulad_source
+75,0.78,0.024102985483429262,XGBoost,oulad_source
+75,0.8,0.02267699115044254,XGBoost,oulad_source
+75,0.81,0.02267699115044254,XGBoost,oulad_source
+35,0.84,0.019215044971382263,XGBoost,oulad_source
+0,0.89,0.017322266329845074,XGBoost,oulad_source
+60,0.81,0.015944195316392573,XGBoost,oulad_source
+75,0.82,0.01339285714285718,XGBoost,oulad_source
+75,0.83,0.01339285714285718,XGBoost,oulad_source
+75,0.84,0.01339285714285718,XGBoost,oulad_source
+60,0.82,0.012036108324974884,XGBoost,oulad_source
+0,0.9,0.010456756953017362,XGBoost,oulad_source
+35,0.85,0.00864731315626949,XGBoost,oulad_source
+75,0.85,0.00840571588680305,XGBoost,oulad_source
+60,0.83,0.007550969041026908,XGBoost,oulad_source
+35,0.86,0.007416563658838235,XGBoost,oulad_source
+75,0.86,0.006730229949523294,XGBoost,oulad_source
+60,0.84,0.006045340050377814,XGBoost,oulad_source
+75,0.88,0.005059021922428345,XGBoost,oulad_source
+75,0.87,0.0050561797752809124,XGBoost,oulad_source
+60,0.85,0.003029537995455683,XGBoost,oulad_source
+60,0.86,0.003029537995455683,XGBoost,oulad_source
+0,0.91,0.001753488711916443,XGBoost,oulad_source
+75,0.89,0.001689189189189194,XGBoost,oulad_source
+60,0.88,0.0015166835187057583,XGBoost,oulad_source
+60,0.89,0.0015166835187057583,XGBoost,oulad_source
+60,0.87,0.0015159171298635625,XGBoost,oulad_source
+35,0.87,0.0,XGBoost,oulad_source
+35,0.88,0.0,XGBoost,oulad_source
+35,0.89,0.0,XGBoost,oulad_source
+35,0.9,0.0,XGBoost,oulad_source
+60,0.9,0.0,XGBoost,oulad_source
+75,0.9,0.0,XGBoost,oulad_source
+35,0.91,0.0,XGBoost,oulad_source
+60,0.91,0.0,XGBoost,oulad_source
+75,0.91,0.0,XGBoost,oulad_source
+0,0.92,0.0,XGBoost,oulad_source
+35,0.92,0.0,XGBoost,oulad_source
+60,0.92,0.0,XGBoost,oulad_source
+75,0.92,0.0,XGBoost,oulad_source
+0,0.93,0.0,XGBoost,oulad_source
+35,0.93,0.0,XGBoost,oulad_source
+60,0.93,0.0,XGBoost,oulad_source
+75,0.93,0.0,XGBoost,oulad_source
+0,0.94,0.0,XGBoost,oulad_source
+35,0.94,0.0,XGBoost,oulad_source
+60,0.94,0.0,XGBoost,oulad_source
+75,0.94,0.0,XGBoost,oulad_source
+0,0.95,0.0,XGBoost,oulad_source
+35,0.95,0.0,XGBoost,oulad_source
+60,0.95,0.0,XGBoost,oulad_source
+75,0.95,0.0,XGBoost,oulad_source
+0,0.33,0.4633310968776949,XGBoost,pooled
+0,0.32,0.4617663597618924,XGBoost,pooled
+0,0.31,0.4594156106653465,XGBoost,pooled
+0,0.35,0.4579086103325948,XGBoost,pooled
+0,0.34,0.45669605416657405,XGBoost,pooled
+0,0.3,0.45599958306974797,XGBoost,pooled
+0,0.5,0.4552066362047071,XGBoost,pooled
+0,0.36,0.45493217834050337,XGBoost,pooled
+0,0.39,0.4546343480325725,XGBoost,pooled
+0,0.69,0.4544491197592447,XGBoost,pooled
+0,0.37,0.4540297447614762,XGBoost,pooled
+0,0.38,0.4533660346767476,XGBoost,pooled
+0,0.49,0.45319575122891304,XGBoost,pooled
+0,0.29,0.45314605372807903,XGBoost,pooled
+0,0.68,0.4529222445088498,XGBoost,pooled
+0,0.51,0.4521247000196235,XGBoost,pooled
+0,0.42,0.45198272907586745,XGBoost,pooled
+0,0.48,0.4517658489384372,XGBoost,pooled
+0,0.65,0.45159413523143765,XGBoost,pooled
+0,0.67,0.45148124827525715,XGBoost,pooled
+0,0.4,0.45124524237175595,XGBoost,pooled
+0,0.41,0.45102439648206116,XGBoost,pooled
+0,0.28,0.4503959350588803,XGBoost,pooled
+0,0.64,0.45018411451510043,XGBoost,pooled
+0,0.62,0.450043275579251,XGBoost,pooled
+0,0.52,0.449987488557575,XGBoost,pooled
+0,0.43,0.4496288667581238,XGBoost,pooled
+0,0.61,0.44958273912852614,XGBoost,pooled
+0,0.66,0.44923731774702863,XGBoost,pooled
+0,0.7,0.44899810575391563,XGBoost,pooled
+0,0.47,0.447928111531468,XGBoost,pooled
+0,0.63,0.44791646001294005,XGBoost,pooled
+0,0.71,0.44788753509912405,XGBoost,pooled
+0,0.53,0.44745584192107307,XGBoost,pooled
+0,0.6,0.44737449924801515,XGBoost,pooled
+0,0.27,0.4472293560791243,XGBoost,pooled
+0,0.26,0.44675971114520435,XGBoost,pooled
+0,0.54,0.4463653512644138,XGBoost,pooled
+0,0.59,0.4463220257597385,XGBoost,pooled
+0,0.44,0.4460347318478519,XGBoost,pooled
+0,0.55,0.4460170393358487,XGBoost,pooled
+0,0.57,0.44596328234183863,XGBoost,pooled
+0,0.58,0.44594391829768637,XGBoost,pooled
+0,0.46,0.4459228909087469,XGBoost,pooled
+0,0.45,0.4457063927382958,XGBoost,pooled
+0,0.56,0.4446397512318578,XGBoost,pooled
+0,0.25,0.4432390777668023,XGBoost,pooled
+0,0.24,0.4426994190140436,XGBoost,pooled
+0,0.22,0.4412302952976751,XGBoost,pooled
+0,0.23,0.4401146641847475,XGBoost,pooled
+0,0.72,0.4379108435311349,XGBoost,pooled
+0,0.21,0.4374398004385097,XGBoost,pooled
+0,0.2,0.4363465880908723,XGBoost,pooled
+0,0.19,0.4344159898446236,XGBoost,pooled
+0,0.18,0.4341318208764152,XGBoost,pooled
+0,0.17,0.433164607014728,XGBoost,pooled
+0,0.16,0.43175775812690764,XGBoost,pooled
+0,0.14,0.43126751179980677,XGBoost,pooled
+0,0.15,0.43101391904896474,XGBoost,pooled
+0,0.13,0.4306738281214312,XGBoost,pooled
+0,0.73,0.42953185083872786,XGBoost,pooled
+0,0.12,0.42949135089764373,XGBoost,pooled
+0,0.11,0.4293570110382413,XGBoost,pooled
+0,0.1,0.4285112864870869,XGBoost,pooled
+0,0.07,0.4282549222182263,XGBoost,pooled
+0,0.09,0.42786575754827144,XGBoost,pooled
+0,0.08,0.42741738662233963,XGBoost,pooled
+0,0.06,0.42633817471371693,XGBoost,pooled
+0,0.05,0.42589897588893905,XGBoost,pooled
+0,0.74,0.4120724715672422,XGBoost,pooled
+0,0.75,0.3980090504136393,XGBoost,pooled
+35,0.53,0.3977548797855505,XGBoost,pooled
+35,0.52,0.3965183752417888,XGBoost,pooled
+35,0.54,0.39611009811583875,XGBoost,pooled
+35,0.51,0.39517321915142983,XGBoost,pooled
+35,0.48,0.3951376274975628,XGBoost,pooled
+35,0.5,0.39489681050657544,XGBoost,pooled
+35,0.49,0.392630057803477,XGBoost,pooled
+35,0.47,0.3921806538591242,XGBoost,pooled
+35,0.55,0.3883863965267827,XGBoost,pooled
+35,0.46,0.3881698162050285,XGBoost,pooled
+35,0.45,0.3860984588506947,XGBoost,pooled
+35,0.43,0.3827701533848446,XGBoost,pooled
+35,0.44,0.38265459125532475,XGBoost,pooled
+0,0.76,0.38251636568903,XGBoost,pooled
+35,0.42,0.37812273966504867,XGBoost,pooled
+35,0.57,0.37464147957670807,XGBoost,pooled
+35,0.41,0.3737718923536871,XGBoost,pooled
+0,0.77,0.37214336383668134,XGBoost,pooled
+35,0.56,0.37210620806955513,XGBoost,pooled
+35,0.58,0.370847176079743,XGBoost,pooled
+35,0.4,0.3679163034001637,XGBoost,pooled
+35,0.59,0.3670735659501004,XGBoost,pooled
+35,0.39,0.3634564970074558,XGBoost,pooled
+60,0.43,0.3630202450256257,XGBoost,pooled
+60,0.44,0.36253063447398876,XGBoost,pooled
+60,0.45,0.36243635677917585,XGBoost,pooled
+60,0.42,0.36061166190555544,XGBoost,pooled
+60,0.39,0.35913358468247925,XGBoost,pooled
+0,0.78,0.358971331133771,XGBoost,pooled
+35,0.38,0.35872095785621133,XGBoost,pooled
+60,0.38,0.3584375439089423,XGBoost,pooled
+35,0.6,0.3569265283230592,XGBoost,pooled
+60,0.46,0.3561966440977281,XGBoost,pooled
+60,0.41,0.3558804627249289,XGBoost,pooled
+35,0.37,0.35574139594723303,XGBoost,pooled
+60,0.4,0.3543234526186383,XGBoost,pooled
+60,0.48,0.3530298137982956,XGBoost,pooled
+60,0.47,0.3527111842782135,XGBoost,pooled
+35,0.36,0.3514521715960381,XGBoost,pooled
+60,0.37,0.3510938129110104,XGBoost,pooled
+60,0.49,0.3495734171531177,XGBoost,pooled
+60,0.36,0.34864759932702666,XGBoost,pooled
+0,0.79,0.34727215369834785,XGBoost,pooled
+60,0.5,0.3469862694903396,XGBoost,pooled
+35,0.35,0.3461982305423574,XGBoost,pooled
+35,0.61,0.34595484477893507,XGBoost,pooled
+60,0.35,0.34263344311190375,XGBoost,pooled
+35,0.34,0.3411122144984895,XGBoost,pooled
+75,0.39,0.34045248868778805,XGBoost,pooled
+0,0.8,0.3379906897953597,XGBoost,pooled
+75,0.4,0.337358562327665,XGBoost,pooled
+75,0.42,0.33699403828051855,XGBoost,pooled
+75,0.41,0.3369576059850419,XGBoost,pooled
+35,0.33,0.3364801349776827,XGBoost,pooled
+75,0.38,0.3359834082267598,XGBoost,pooled
+60,0.34,0.3359426351956895,XGBoost,pooled
+35,0.62,0.3357915437561523,XGBoost,pooled
+75,0.37,0.3349010703859937,XGBoost,pooled
+60,0.51,0.33467496036101835,XGBoost,pooled
+75,0.43,0.3331867165163877,XGBoost,pooled
+35,0.32,0.3327991244185364,XGBoost,pooled
+75,0.35,0.3327255488294139,XGBoost,pooled
+75,0.34,0.33247512351263686,XGBoost,pooled
+60,0.33,0.3317813416106147,XGBoost,pooled
+75,0.36,0.3300061425061488,XGBoost,pooled
+75,0.33,0.3297886481456939,XGBoost,pooled
+35,0.31,0.32978521913706466,XGBoost,pooled
+60,0.32,0.32721202003338135,XGBoost,pooled
+35,0.3,0.3252891828966088,XGBoost,pooled
+75,0.44,0.3242178447276965,XGBoost,pooled
+75,0.45,0.323224942150775,XGBoost,pooled
+60,0.52,0.32253106186755404,XGBoost,pooled
+60,0.31,0.32172328796484095,XGBoost,pooled
+75,0.32,0.32136081952700873,XGBoost,pooled
+60,0.53,0.3203857487275648,XGBoost,pooled
+35,0.63,0.31976294769389924,XGBoost,pooled
+35,0.29,0.31959798994972366,XGBoost,pooled
+75,0.46,0.3191680575170122,XGBoost,pooled
+60,0.3,0.31876526529126753,XGBoost,pooled
+0,0.81,0.31875443153419525,XGBoost,pooled
+75,0.31,0.3176321963544562,XGBoost,pooled
+60,0.29,0.3162516840476953,XGBoost,pooled
+35,0.28,0.3154240022444859,XGBoost,pooled
+60,0.28,0.31447627273162804,XGBoost,pooled
+75,0.3,0.31118033921773003,XGBoost,pooled
+35,0.27,0.3111369385382935,XGBoost,pooled
+60,0.27,0.31101451955978265,XGBoost,pooled
+60,0.26,0.3108391764548193,XGBoost,pooled
+60,0.54,0.30979626011722056,XGBoost,pooled
+75,0.29,0.3077266138923034,XGBoost,pooled
+75,0.47,0.30724018167245576,XGBoost,pooled
+35,0.26,0.3070028760617754,XGBoost,pooled
+60,0.25,0.3040461929590149,XGBoost,pooled
+75,0.28,0.3034409175780283,XGBoost,pooled
+35,0.25,0.30310982810652104,XGBoost,pooled
+60,0.55,0.30243050502110397,XGBoost,pooled
+35,0.24,0.3000290350678829,XGBoost,pooled
+75,0.27,0.29953869810354394,XGBoost,pooled
+75,0.48,0.29937923250564313,XGBoost,pooled
+75,0.49,0.2980555143238823,XGBoost,pooled
+60,0.24,0.2979745681978154,XGBoost,pooled
+35,0.23,0.2968090173043069,XGBoost,pooled
+35,0.64,0.29677419354839235,XGBoost,pooled
+0,0.82,0.2949501125525573,XGBoost,pooled
+60,0.56,0.2945142506895504,XGBoost,pooled
+35,0.22,0.2932690803266618,XGBoost,pooled
+75,0.26,0.2932263814616827,XGBoost,pooled
+60,0.57,0.2916400765794518,XGBoost,pooled
+35,0.21,0.29155439933101424,XGBoost,pooled
+75,0.5,0.29121390872399755,XGBoost,pooled
+60,0.23,0.29057843294343283,XGBoost,pooled
+35,0.2,0.28984530555978266,XGBoost,pooled
+35,0.65,0.28977035490605946,XGBoost,pooled
+35,0.19,0.288440500790054,XGBoost,pooled
+75,0.25,0.2873925501432734,XGBoost,pooled
+35,0.18,0.2873604826545727,XGBoost,pooled
+35,0.17,0.28624457416551646,XGBoost,pooled
+75,0.51,0.2857142857142846,XGBoost,pooled
+35,0.16,0.2850014850014573,XGBoost,pooled
+60,0.58,0.2849078532292882,XGBoost,pooled
+60,0.22,0.2848719937936329,XGBoost,pooled
+75,0.24,0.2837819185645339,XGBoost,pooled
+35,0.15,0.28348734905963985,XGBoost,pooled
+35,0.14,0.2819639396252733,XGBoost,pooled
+35,0.11,0.2813929768322612,XGBoost,pooled
+35,0.13,0.28127287098565684,XGBoost,pooled
+35,0.1,0.2808773052533319,XGBoost,pooled
+35,0.12,0.2807796838013692,XGBoost,pooled
+35,0.09,0.2803146863296961,XGBoost,pooled
+35,0.05,0.28014390158985264,XGBoost,pooled
+35,0.06,0.28014390158985264,XGBoost,pooled
+35,0.07,0.28014390158985264,XGBoost,pooled
+35,0.08,0.28014390158985264,XGBoost,pooled
+60,0.21,0.2793317064013462,XGBoost,pooled
+0,0.83,0.27758033848265495,XGBoost,pooled
+75,0.23,0.277341148261629,XGBoost,pooled
+75,0.52,0.2766355140186907,XGBoost,pooled
+60,0.2,0.27331178030440095,XGBoost,pooled
+75,0.22,0.2728901783428682,XGBoost,pooled
+75,0.53,0.26940639269406313,XGBoost,pooled
+60,0.59,0.268717948717949,XGBoost,pooled
+35,0.66,0.26818378222670797,XGBoost,pooled
+75,0.21,0.26760854298344056,XGBoost,pooled
+60,0.19,0.26743365330321334,XGBoost,pooled
+60,0.6,0.26261205835823537,XGBoost,pooled
+60,0.18,0.26233230134158425,XGBoost,pooled
+75,0.2,0.2606342763917132,XGBoost,pooled
+75,0.54,0.2602689930934201,XGBoost,pooled
+60,0.17,0.2581425834425684,XGBoost,pooled
+75,0.19,0.2565837530275709,XGBoost,pooled
+60,0.16,0.25475986560378977,XGBoost,pooled
+60,0.15,0.2523172992487023,XGBoost,pooled
+35,0.67,0.25179640718563334,XGBoost,pooled
+60,0.14,0.25105275000803134,XGBoost,pooled
+0,0.84,0.2494050510629361,XGBoost,pooled
+60,0.13,0.2490635515205335,XGBoost,pooled
+75,0.18,0.24821196961275335,XGBoost,pooled
+60,0.12,0.24694699735615777,XGBoost,pooled
+60,0.61,0.2447349310094407,XGBoost,pooled
+60,0.11,0.24471364952819424,XGBoost,pooled
+75,0.55,0.24447383336482123,XGBoost,pooled
+75,0.17,0.24390595182371905,XGBoost,pooled
+60,0.1,0.24280814510397197,XGBoost,pooled
+60,0.09,0.24256588455979103,XGBoost,pooled
+60,0.08,0.2414299706170373,XGBoost,pooled
+60,0.07,0.24135402664059158,XGBoost,pooled
+60,0.06,0.24091241766283986,XGBoost,pooled
+60,0.05,0.24073622623110202,XGBoost,pooled
+0,0.85,0.23987577521081452,XGBoost,pooled
+75,0.16,0.23957166853303996,XGBoost,pooled
+75,0.15,0.2368475204060687,XGBoost,pooled
+75,0.14,0.234555398014994,XGBoost,pooled
+75,0.13,0.23149716107182503,XGBoost,pooled
+75,0.56,0.23072418504782352,XGBoost,pooled
+75,0.12,0.23032327797976332,XGBoost,pooled
+0,0.86,0.23027178514828459,XGBoost,pooled
+75,0.11,0.22783825816485725,XGBoost,pooled
+75,0.1,0.22635688807481458,XGBoost,pooled
+75,0.09,0.2245171160833861,XGBoost,pooled
+35,0.68,0.22447388932190587,XGBoost,pooled
+75,0.08,0.22342342342342833,XGBoost,pooled
+75,0.07,0.2226827430293945,XGBoost,pooled
+75,0.06,0.22213876631302712,XGBoost,pooled
+60,0.62,0.22180451127819514,XGBoost,pooled
+75,0.05,0.22163934426229995,XGBoost,pooled
+0,0.87,0.21351817678740723,XGBoost,pooled
+75,0.57,0.21345146999597278,XGBoost,pooled
+60,0.63,0.2129629629629626,XGBoost,pooled
+35,0.69,0.20948359857096852,XGBoost,pooled
+75,0.58,0.20285065069200603,XGBoost,pooled
+0,0.88,0.19692379994062084,XGBoost,pooled
+60,0.64,0.19438358892650826,XGBoost,pooled
+0,0.89,0.19392880744513835,XGBoost,pooled
+75,0.59,0.1903348876642648,XGBoost,pooled
+35,0.7,0.18966096005371288,XGBoost,pooled
+75,0.6,0.18260869565217427,XGBoost,pooled
+0,0.9,0.1810366815507214,XGBoost,pooled
+60,0.65,0.17947669664758742,XGBoost,pooled
+75,0.61,0.17137729923732653,XGBoost,pooled
+35,0.71,0.1650233523611863,XGBoost,pooled
+75,0.62,0.16243654822335069,XGBoost,pooled
+0,0.91,0.15670408542114325,XGBoost,pooled
+60,0.66,0.15378168866540906,XGBoost,pooled
+35,0.72,0.15032795603616667,XGBoost,pooled
+0,0.92,0.14963188436619596,XGBoost,pooled
+60,0.67,0.14729672200936517,XGBoost,pooled
+75,0.63,0.14639905548996499,XGBoost,pooled
+35,0.73,0.1395180286283774,XGBoost,pooled
+0,0.93,0.1358486622248423,XGBoost,pooled
+60,0.68,0.13315983517675078,XGBoost,pooled
+60,0.69,0.12527569475077152,XGBoost,pooled
+75,0.64,0.12523992322456853,XGBoost,pooled
+0,0.94,0.12517620661764944,XGBoost,pooled
+75,0.65,0.1212268743914317,XGBoost,pooled
+35,0.74,0.1206513693560349,XGBoost,pooled
+0,0.95,0.11039284060448173,XGBoost,pooled
+75,0.66,0.1086688071128677,XGBoost,pooled
+60,0.7,0.10440308669995425,XGBoost,pooled
+75,0.67,0.10105052526263161,XGBoost,pooled
+35,0.75,0.09455097778621797,XGBoost,pooled
+60,0.71,0.09228650137741018,XGBoost,pooled
+35,0.76,0.08517168616919416,XGBoost,pooled
+75,0.68,0.08326986544808351,XGBoost,pooled
+60,0.72,0.08116883116883093,XGBoost,pooled
+35,0.77,0.07052406000389784,XGBoost,pooled
+75,0.69,0.07008502963153845,XGBoost,pooled
+60,0.73,0.06368531959728382,XGBoost,pooled
+35,0.78,0.05900865460267632,XGBoost,pooled
+75,0.7,0.05691906005221946,XGBoost,pooled
+60,0.74,0.053579895685158675,XGBoost,pooled
+60,0.75,0.04696860771627112,XGBoost,pooled
+75,0.71,0.040837974012198464,XGBoost,pooled
+35,0.79,0.03945795137505067,XGBoost,pooled
+60,0.76,0.0388161086851042,XGBoost,pooled
+75,0.72,0.03807991418610898,XGBoost,pooled
+35,0.8,0.03494677646113752,XGBoost,pooled
+75,0.73,0.03190051365233856,XGBoost,pooled
+60,0.77,0.02458210422812185,XGBoost,pooled
+60,0.78,0.02322708178897942,XGBoost,pooled
+35,0.81,0.023217922606925144,XGBoost,pooled
+75,0.74,0.02247807017543866,XGBoost,pooled
+75,0.75,0.019283746556473882,XGBoost,pooled
+35,0.82,0.01840867253017017,XGBoost,pooled
+75,0.76,0.01604426002766256,XGBoost,pooled
+35,0.83,0.01600000000000035,XGBoost,pooled
+60,0.8,0.015022533800701003,XGBoost,pooled
+75,0.77,0.015016685205784246,XGBoost,pooled
+60,0.79,0.014977533699450775,XGBoost,pooled
+75,0.78,0.013381655979927553,XGBoost,pooled
+75,0.79,0.011738401341531616,XGBoost,pooled
+75,0.8,0.011738401341531616,XGBoost,pooled
+60,0.82,0.00906116284923229,XGBoost,pooled
+60,0.81,0.009054325955734377,XGBoost,pooled
+75,0.81,0.008398656215005624,XGBoost,pooled
+35,0.84,0.0061919504643964205,XGBoost,pooled
+60,0.83,0.006049911772119969,XGBoost,pooled
+75,0.82,0.005051922537187776,XGBoost,pooled
+60,0.84,0.0015170670037926626,XGBoost,pooled
+60,0.85,0.0015170670037926626,XGBoost,pooled
+35,0.86,0.0012419788863589595,XGBoost,pooled
+35,0.85,0.001241464928615794,XGBoost,pooled
+75,0.83,0.0,XGBoost,pooled
+75,0.84,0.0,XGBoost,pooled
+75,0.85,0.0,XGBoost,pooled
+60,0.86,0.0,XGBoost,pooled
+75,0.86,0.0,XGBoost,pooled
+35,0.87,0.0,XGBoost,pooled
+60,0.87,0.0,XGBoost,pooled
+75,0.87,0.0,XGBoost,pooled
+35,0.88,0.0,XGBoost,pooled
+60,0.88,0.0,XGBoost,pooled
+75,0.88,0.0,XGBoost,pooled
+35,0.89,0.0,XGBoost,pooled
+60,0.89,0.0,XGBoost,pooled
+75,0.89,0.0,XGBoost,pooled
+35,0.9,0.0,XGBoost,pooled
+60,0.9,0.0,XGBoost,pooled
+75,0.9,0.0,XGBoost,pooled
+35,0.91,0.0,XGBoost,pooled
+60,0.91,0.0,XGBoost,pooled
+75,0.91,0.0,XGBoost,pooled
+35,0.92,0.0,XGBoost,pooled
+60,0.92,0.0,XGBoost,pooled
+75,0.92,0.0,XGBoost,pooled
+35,0.93,0.0,XGBoost,pooled
+60,0.93,0.0,XGBoost,pooled
+75,0.93,0.0,XGBoost,pooled
+35,0.94,0.0,XGBoost,pooled
+60,0.94,0.0,XGBoost,pooled
+75,0.94,0.0,XGBoost,pooled
+35,0.95,0.0,XGBoost,pooled
+60,0.95,0.0,XGBoost,pooled
+75,0.95,0.0,XGBoost,pooled

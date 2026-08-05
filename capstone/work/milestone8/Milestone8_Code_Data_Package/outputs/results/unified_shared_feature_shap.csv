@@ -1,0 +1,13 @@
+institution,shared_feature,mean_absolute_shap
+UCI_dataset,age_scaled,0.47003916
+UCI_dataset,prior_preparation,0.1324557
+UCI_dataset,study_load,0.21073319
+UCI_dataset,male,0.19629583
+UCI_dataset,declared_support_need,0.01599617
+UCI_dataset,financial_stability,0.44695
+OULAD_dataset,age_scaled,0.16068897
+OULAD_dataset,prior_preparation,0.13900332
+OULAD_dataset,study_load,0.19597316
+OULAD_dataset,male,0.11040789
+OULAD_dataset,declared_support_need,0.038570967
+OULAD_dataset,financial_stability,0.18085483

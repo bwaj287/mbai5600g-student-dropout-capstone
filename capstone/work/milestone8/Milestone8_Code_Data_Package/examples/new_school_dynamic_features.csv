@@ -1,0 +1,5 @@
+institution,record_id,student_id,course_id,snapshot_day,age_scaled,prior_education_level,study_load,course_progress_ratio,prior_academic_score,previous_attempts,male,declared_support_need,financial_stability,assessment_completion_rate,assessment_average_score,assessment_score_available,late_submission_rate,active_day_rate,days_since_last_activity_scaled,recent_activity_rate
+Example_College,EX_001_D0,EX_001,BUS101,0,0.12,0.55,1.0,0.0,0.78,0.0,0,0,0.70,,,0,,,,
+Example_College,EX_001_D35,EX_001,BUS101,35,0.12,0.55,1.0,0.25,0.78,0.0,0,0,0.70,1.0,0.74,1,0.0,0.43,0.03,0.50
+Example_College,EX_002_D35,EX_002,BUS101,35,0.31,0.30,0.8,0.25,0.54,0.33,1,1,,0.35,0.48,1,0.50,0.17,0.47,0.07
+Example_College,EX_003_D35,EX_003,BUS101,35,0.45,0.80,0.6,0.25,,0.0,0,0,0.85,,,0,,,,

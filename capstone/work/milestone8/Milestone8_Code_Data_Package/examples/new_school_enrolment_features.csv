@@ -1,0 +1,7 @@
+institution,record_id,student_id,course_id,age_scaled,prior_preparation,study_load,male,declared_support_need,financial_stability
+Example_College,EX001,S001,BUS101,0.12,0.72,0.50,0,0,0.80
+Example_College,EX002,S002,BUS101,0.36,0.45,0.75,1,0,0.40
+Example_College,EX003,S003,BUS101,0.05,0.60,0.50,,1,
+Example_College,EX004,S004,IT201,0.24,0.35,1.00,1,0,0.25
+Example_College,EX005,S005,IT201,0.48,0.82,0.50,0,0,0.90
+Example_College,EX006,S006,IT201,0.18,0.55,0.75,,,

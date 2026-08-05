@@ -1,0 +1,9 @@
+comparison,baseline,candidate,metric,difference,ci_low,ci_high,permutation_p,test_rows,test_students
+OULAD: zero-shot vs 20% local adaptation,zero_uci_to_oulad,adapt_uci_to_oulad_20,roc_auc,0.1391429954745418,0.11765072455837754,0.16128698805351743,0.000999000999000999,6512,5757
+OULAD: zero-shot vs 20% local adaptation,zero_uci_to_oulad,adapt_uci_to_oulad_20,average_precision,0.10813475523714605,0.09004418817004914,0.12730601360343735,0.000999000999000999,6512,5757
+UCI: zero-shot vs 20% local adaptation,zero_oulad_to_uci,adapt_oulad_to_uci_20,roc_auc,0.16587377844437667,0.1247961352570699,0.2110409193148991,0.000999000999000999,885,885
+UCI: zero-shot vs 20% local adaptation,zero_oulad_to_uci,adapt_oulad_to_uci_20,average_precision,0.21287341328776804,0.15904208301845318,0.25958879530265433,0.000999000999000999,885,885
+OULAD: local-only vs pooled model,within_oulad,pooled_to_oulad,roc_auc,-0.010797969129389129,-0.015606971124757571,-0.006307896278101344,0.000999000999000999,6512,5757
+OULAD: local-only vs pooled model,within_oulad,pooled_to_oulad,average_precision,-0.008833007888532585,-0.014319780895781814,-0.0032826271800131565,0.025974025974025976,6512,5757
+UCI: local-only vs pooled model,within_uci,pooled_to_uci,roc_auc,-4.1011459773532266e-05,-0.008242298948337187,0.008206719507041237,0.994005994005994,885,885
+UCI: local-only vs pooled model,within_uci,pooled_to_uci,average_precision,-0.009585661043756577,-0.02234875352857376,0.004894372652611612,0.23576423576423577,885,885

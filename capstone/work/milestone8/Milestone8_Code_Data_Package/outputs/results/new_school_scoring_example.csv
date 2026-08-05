@@ -1,0 +1,7 @@
+institution,record_id,student_id,course_id,risk_score,risk_percentile,review_flag
+Example_College,EX004,S004,IT201,0.6965059,1.0,True
+Example_College,EX002,S002,BUS101,0.6624118,1.0,True
+Example_College,EX006,S006,IT201,0.60156626,0.6666666666666666,False
+Example_College,EX003,S003,BUS101,0.47173473,0.6666666666666666,False
+Example_College,EX005,S005,IT201,0.44423413,0.3333333333333333,False
+Example_College,EX001,S001,BUS101,0.4234981,0.3333333333333333,False

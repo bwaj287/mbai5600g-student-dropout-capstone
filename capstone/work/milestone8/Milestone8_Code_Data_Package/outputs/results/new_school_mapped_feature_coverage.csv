@@ -1,0 +1,17 @@
+feature,required,available_share
+age_scaled,True,1.0
+prior_education_level,True,1.0
+study_load,True,1.0
+course_progress_ratio,True,1.0
+prior_academic_score,False,1.0
+previous_attempts,False,1.0
+male,False,1.0
+declared_support_need,False,1.0
+financial_stability,False,0.6666666666666666
+assessment_completion_rate,False,0.6666666666666666
+assessment_average_score,False,0.6666666666666666
+assessment_score_available,False,1.0
+late_submission_rate,False,0.6666666666666666
+active_day_rate,False,0.6666666666666666
+days_since_last_activity_scaled,False,0.6666666666666666
+recent_activity_rate,False,0.6666666666666666

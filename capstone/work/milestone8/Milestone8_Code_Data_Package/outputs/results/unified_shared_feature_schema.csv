@@ -1,0 +1,7 @@
+shared_feature,required,meaning,uci_mapping,oulad_mapping,new_school_requirement
+age_scaled,True,Age position on a fixed 18-60 scale,Age at enrollment,Midpoint of age_band,Age or compatible age band
+prior_preparation,True,Prior education and preparation score,Previous qualification and grade,highest_education and prior attempts,Prior preparation mapped to 0-1
+study_load,True,Registered study load relative to a heavy load,First-semester enrolled units / 12,studied_credits / 120,Registered load mapped to 0-1
+male,False,Optional documented binary gender indicator,Gender,gender,0/1 if approved; otherwise blank
+declared_support_need,False,Optional declared disability or support need,Educational special needs,disability,0/1 if approved; otherwise blank
+financial_stability,False,Optional documented financial-stability proxy,Debtor and tuition-fee status,imd_band midpoint,Comparable 0-1 value or blank

@@ -1,0 +1,17 @@
+feature,required,group,meaning,uci_mapping,oulad_mapping,new_school_requirement
+age_scaled,True,background,Age position on a fixed 18-60 scale,(Age at enrollment - 18) / 42,Age-band midpoint on the same scale,Age or a compatible age band
+prior_education_level,True,background,Highest prior education on a documented 0-1 ladder,Previous qualification,highest_education,Local education ladder mapped to 0-1
+study_load,True,background,Registered load relative to a heavy full load,First-semester enrolled units / 12,studied_credits / 120,Registered load / documented heavy load
+course_progress_ratio,True,timing,Share of planned course duration elapsed,0 at enrolment,cutoff day / presentation length,Elapsed days / planned course days
+prior_academic_score,False,background,Normalized pre-entry grade or GPA,Previous qualification grade / 200,Unavailable,Prior score / local maximum or blank
+previous_attempts,False,background,Prior attempts capped and scaled to 0-1,Unavailable,num_of_prev_attempts / 3,Prior attempts / documented cap or blank
+male,False,sensitive_optional,Optional documented binary gender indicator,Gender,gender,0/1 if approved; otherwise blank
+declared_support_need,False,sensitive_optional,Optional declared disability or support need,Educational special needs,disability,0/1 if approved; otherwise blank
+financial_stability,False,sensitive_optional,Optional documented financial-stability proxy,Debt and tuition status,Area-deprivation-band midpoint,Comparable 0-1 measure or blank
+assessment_completion_rate,False,assessment,Share of due assessment weight submitted by snapshot,Unavailable at enrolment,Submitted due weight / total due weight,Same due-by-snapshot calculation or blank
+assessment_average_score,False,assessment,Weighted normalized score among submitted assessments,Unavailable at enrolment,Weighted submitted score / submitted weight,Earned / possible score through snapshot
+assessment_score_available,False,assessment,Whether at least one score is available at snapshot,0 at enrolment,Any submitted scored assessment by snapshot,0/1 or blank if feed is unavailable
+late_submission_rate,False,assessment,Share of submitted assessments submitted after due date,Unavailable,Late submissions / submissions by snapshot,Same due-date calculation or blank
+active_day_rate,False,activity,Share of observable course days with LMS activity,Unavailable,Active days / days observable by snapshot,Platform-neutral active-day rate or blank
+days_since_last_activity_scaled,False,activity,Days since last LMS activity capped at 30 and divided by 30,Unavailable,Snapshot day minus last activity day,Platform-neutral recency or blank
+recent_activity_rate,False,activity,Share of observable days active in the last 14 days,Unavailable,Active days in trailing 14-day window / days,Platform-neutral trailing activity or blank

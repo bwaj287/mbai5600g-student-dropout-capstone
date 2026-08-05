@@ -1,0 +1,225 @@
+{
+  "schema_version": "3.0",
+  "features": [
+    "age_scaled",
+    "prior_education_level",
+    "study_load",
+    "course_progress_ratio",
+    "prior_academic_score",
+    "previous_attempts",
+    "male",
+    "declared_support_need",
+    "financial_stability",
+    "assessment_completion_rate",
+    "assessment_average_score",
+    "assessment_score_available",
+    "late_submission_rate",
+    "active_day_rate",
+    "days_since_last_activity_scaled",
+    "recent_activity_rate"
+  ],
+  "core_features": [
+    "age_scaled",
+    "prior_education_level",
+    "study_load",
+    "course_progress_ratio"
+  ],
+  "optional_features": [
+    "prior_academic_score",
+    "previous_attempts",
+    "male",
+    "declared_support_need",
+    "financial_stability",
+    "assessment_completion_rate",
+    "assessment_average_score",
+    "assessment_score_available",
+    "late_submission_rate",
+    "active_day_rate",
+    "days_since_last_activity_scaled",
+    "recent_activity_rate"
+  ],
+  "feature_groups": {
+    "background": [
+      "prior_academic_score",
+      "previous_attempts",
+      "male",
+      "declared_support_need",
+      "financial_stability"
+    ],
+    "assessment": [
+      "assessment_completion_rate",
+      "assessment_average_score",
+      "assessment_score_available",
+      "late_submission_rate"
+    ],
+    "activity": [
+      "active_day_rate",
+      "days_since_last_activity_scaled",
+      "recent_activity_rate"
+    ]
+  },
+  "validation_threshold": {
+    "0": 0.33,
+    "35": 0.53,
+    "60": 0.43,
+    "75": 0.39
+  },
+  "score_semantics": "Uncalibrated ranking score; use within-course or within-cohort percentiles for review.",
+  "target_definition": "future attrition after the snapshot",
+  "training_rows": 67466,
+  "training_students": 18411,
+  "random_state": 42,
+  "feature_schema": [
+    {
+      "feature": "age_scaled",
+      "required": true,
+      "group": "background",
+      "meaning": "Age position on a fixed 18-60 scale",
+      "uci_mapping": "(Age at enrollment - 18) / 42",
+      "oulad_mapping": "Age-band midpoint on the same scale",
+      "new_school_requirement": "Age or a compatible age band"
+    },
+    {
+      "feature": "prior_education_level",
+      "required": true,
+      "group": "background",
+      "meaning": "Highest prior education on a documented 0-1 ladder",
+      "uci_mapping": "Previous qualification",
+      "oulad_mapping": "highest_education",
+      "new_school_requirement": "Local education ladder mapped to 0-1"
+    },
+    {
+      "feature": "study_load",
+      "required": true,
+      "group": "background",
+      "meaning": "Registered load relative to a heavy full load",
+      "uci_mapping": "First-semester enrolled units / 12",
+      "oulad_mapping": "studied_credits / 120",
+      "new_school_requirement": "Registered load / documented heavy load"
+    },
+    {
+      "feature": "course_progress_ratio",
+      "required": true,
+      "group": "timing",
+      "meaning": "Share of planned course duration elapsed",
+      "uci_mapping": "0 at enrolment",
+      "oulad_mapping": "cutoff day / presentation length",
+      "new_school_requirement": "Elapsed days / planned course days"
+    },
+    {
+      "feature": "prior_academic_score",
+      "required": false,
+      "group": "background",
+      "meaning": "Normalized pre-entry grade or GPA",
+      "uci_mapping": "Previous qualification grade / 200",
+      "oulad_mapping": "Unavailable",
+      "new_school_requirement": "Prior score / local maximum or blank"
+    },
+    {
+      "feature": "previous_attempts",
+      "required": false,
+      "group": "background",
+      "meaning": "Prior attempts capped and scaled to 0-1",
+      "uci_mapping": "Unavailable",
+      "oulad_mapping": "num_of_prev_attempts / 3",
+      "new_school_requirement": "Prior attempts / documented cap or blank"
+    },
+    {
+      "feature": "male",
+      "required": false,
+      "group": "sensitive_optional",
+      "meaning": "Optional documented binary gender indicator",
+      "uci_mapping": "Gender",
+      "oulad_mapping": "gender",
+      "new_school_requirement": "0/1 if approved; otherwise blank"
+    },
+    {
+      "feature": "declared_support_need",
+      "required": false,
+      "group": "sensitive_optional",
+      "meaning": "Optional declared disability or support need",
+      "uci_mapping": "Educational special needs",
+      "oulad_mapping": "disability",
+      "new_school_requirement": "0/1 if approved; otherwise blank"
+    },
+    {
+      "feature": "financial_stability",
+      "required": false,
+      "group": "sensitive_optional",
+      "meaning": "Optional documented financial-stability proxy",
+      "uci_mapping": "Debt and tuition status",
+      "oulad_mapping": "Area-deprivation-band midpoint",
+      "new_school_requirement": "Comparable 0-1 measure or blank"
+    },
+    {
+      "feature": "assessment_completion_rate",
+      "required": false,
+      "group": "assessment",
+      "meaning": "Share of due assessment weight submitted by snapshot",
+      "uci_mapping": "Unavailable at enrolment",
+      "oulad_mapping": "Submitted due weight / total due weight",
+      "new_school_requirement": "Same due-by-snapshot calculation or blank"
+    },
+    {
+      "feature": "assessment_average_score",
+      "required": false,
+      "group": "assessment",
+      "meaning": "Weighted normalized score among submitted assessments",
+      "uci_mapping": "Unavailable at enrolment",
+      "oulad_mapping": "Weighted submitted score / submitted weight",
+      "new_school_requirement": "Earned / possible score through snapshot"
+    },
+    {
+      "feature": "assessment_score_available",
+      "required": false,
+      "group": "assessment",
+      "meaning": "Whether at least one score is available at snapshot",
+      "uci_mapping": "0 at enrolment",
+      "oulad_mapping": "Any submitted scored assessment by snapshot",
+      "new_school_requirement": "0/1 or blank if feed is unavailable"
+    },
+    {
+      "feature": "late_submission_rate",
+      "required": false,
+      "group": "assessment",
+      "meaning": "Share of submitted assessments submitted after due date",
+      "uci_mapping": "Unavailable",
+      "oulad_mapping": "Late submissions / submissions by snapshot",
+      "new_school_requirement": "Same due-date calculation or blank"
+    },
+    {
+      "feature": "active_day_rate",
+      "required": false,
+      "group": "activity",
+      "meaning": "Share of observable course days with LMS activity",
+      "uci_mapping": "Unavailable",
+      "oulad_mapping": "Active days / days observable by snapshot",
+      "new_school_requirement": "Platform-neutral active-day rate or blank"
+    },
+    {
+      "feature": "days_since_last_activity_scaled",
+      "required": false,
+      "group": "activity",
+      "meaning": "Days since last LMS activity capped at 30 and divided by 30",
+      "uci_mapping": "Unavailable",
+      "oulad_mapping": "Snapshot day minus last activity day",
+      "new_school_requirement": "Platform-neutral recency or blank"
+    },
+    {
+      "feature": "recent_activity_rate",
+      "required": false,
+      "group": "activity",
+      "meaning": "Share of observable days active in the last 14 days",
+      "uci_mapping": "Unavailable",
+      "oulad_mapping": "Active days in trailing 14-day window / days",
+      "new_school_requirement": "Platform-neutral trailing activity or blank"
+    }
+  ],
+  "inference_policy": {
+    "optional_missing_values": "Median imputation; structured optional groups were masked during training so missing feeds do not change the schema.",
+    "required_missing_values": "Reject the record.",
+    "recommended_output": "Within-course or within-cohort percentile",
+    "external_validation_required": true,
+    "school_specific_retraining_required": false
+  }
+}
